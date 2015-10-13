@@ -6,448 +6,449 @@
 	@include font-face("LW", "../fonts/LINOWRITE_2.TTF");
 	$base-color:#f6e730;
 	$bg-color:#fff;
-	$font-family: "LW", sans-serif !default;
-	sans-serif;
+	$font-family: "LW",
+	sans-serif !default;
 	img.loading {
-		text-align: center;
-		opacity: 1;
-		width: 32px !important;
-		height: auto;
+	    text-align: center;
+	    opacity: 1;
+	    width: 32px !important;
+	    height: auto;
 	}
 	
 	img {
-		opacity: 0;
-		//    .transition(all 1s ease);
+	    opacity: 0;
+	    //    .transition(all 1s ease);
 	}
 	
 	img.doneLoading {
-		opacity: 1;
+	    opacity: 1;
 	}
 	
 	.btn {
-		display: inline-block;
-		padding: 6px 12px;
-		margin-bottom: 0;
-		font-family: $font-family;
-		font-size: 14px;
-		font-weight: 600;
-		line-height: 1.42857143;
-		text-align: center;
-		white-space: nowrap;
-		vertical-align: middle;
-		-ms-touch-action: manipulation;
-		touch-action: manipulation;
-		cursor: pointer;
-		background-image: none;
-		border: 1px solid #000;
-		text-transform: lowercase;
-		background-color: transparent;
-		&:focus {
-			border-color: inherit;
-			color: inherit;
-			outline: 0px;
-		}
-		&:hover {
-			border-color: lighten(#000, 30%)!important;
-			color: lighten(#000, 30%)!important;
-		}
+	    display: inline-block;
+	    padding: 6px 12px;
+	    margin-bottom: 0;
+	    font-family: $font-family;
+	    font-size: 14px;
+	    font-weight: 600;
+	    line-height: 1.42857143;
+	    text-align: center;
+	    white-space: nowrap;
+	    vertical-align: middle;
+	    -ms-touch-action: manipulation;
+	    touch-action: manipulation;
+	    cursor: pointer;
+	    background-image: none;
+	    border: 1px solid #000;
+	    text-transform: lowercase;
+	    background-color: transparent;
+	    &:focus {
+	        border-color: inherit;
+	        color: inherit;
+	        outline: 0px;
+	    }
+	    &:hover {
+	        border-color: lighten(#000, 30%)!important;
+	        color: lighten(#000, 30%)!important;
+	    }
 	}
 	
 	.btn.btn-white {
-		color: #fff;
-		border-color: #fff;
-		&:hover {
-			border-color: darken(#fff, 15%)!important;
-			color: darken(#fff, 15%)!important;
-		}
+	    color: #fff;
+	    border-color: #fff;
+	    &:hover {
+	        border-color: darken(#fff, 15%)!important;
+	        color: darken(#fff, 15%)!important;
+	    }
 	}
 	
 	body {
-		margin: 0px;
-		font-family: $font-family;
+	    margin: 0px;
+	    font-family: $font-family;
 	}
 	
 	figure {
-		margin: 0px;
+	    margin: 0px;
 	}
 	
 	@each $bg,
 	$size in (star, 100%),
-	(road, 100%),
+	(road, cover),
 	(letters, 100%),
 	(black, 100%) {
-		.#{$bg}-bg {
-			background: url('../img/background/#{$bg}.jpg') no-repeat;
-			background-size: $size;
-		}
+	    .#{$bg}-bg {
+	        background: url('../img/background/#{$bg}.jpg') no-repeat;
+	        background-size: $size;
+	    }
 	}
 	
 	.road-bg {
-		height: 500px;
+	    min-height: 500px;
 	}
 	
 	.letters-bg {
-		min-height: 400px;
+	    min-height: 400px;
 	}
 	
 	.black-bg {
-		min-height: 400px;
+	    min-height: 400px;
 	}
 	
 	.pull-right {
-		float: right;
+	    float: right;
 	}
 	
 	.full-image {
-		width: 100%;
+	    width: 100%;
 	}
 	
 	.text-center {
-		text-align: center;
+	    text-align: center;
 	}
 	
 	.margin-auto {
-		margin: 0 auto;
+	    margin: 0 auto;
 	}
 	
 	.section1 {
-		padding-top: 80px;
-		position: relative;
-		.donut-astronaut {
-			position: absolute;
-			right: 18%;
-			top: 125px;
-		}
-		.donut {
-			position: absolute;
-			right: 125px;
-		}
-		.blub img {
-			width: 70%;
-		}
-		.blub {
-			text-align: center;
-		}
-		.letgo {
-			margin-top: 100px;
-		}
-		.astrioid {
-			position: absolute;
-			bottom: 0px;
-		}
+	    padding-top: 80px;
+	    position: relative;
+	    .donut-astronaut {
+	        position: absolute;
+	        right: 18%;
+	        top: 125px;
+	    }
+	    .donut {
+	        position: absolute;
+	        right: 125px;
+	    }
+	    .blub img {
+	        width: 70%;
+	    }
+	    .blub {
+	        text-align: center;
+	    }
+	    .letgo {
+	        margin-top: 100px;
+	    }
+	    .astrioid {
+	        position: absolute;
+	        bottom: 0px;
+	    }
 	}
 	
 	.bulidings {
-		position: relative;
-		.coutch {
-			position: absolute;
-			z-index: 1;
-			bottom: -74px;
-			width: 100%;
-			left: 49%;
-			@include transform(translateX(-50%));
-		}
+	    position: relative;
+	    .coutch {
+	        position: absolute;
+	        z-index: 1;
+	        bottom: -74px;
+	        width: 100%;
+	        left: 49%;
+	        @include transform(translateX(-50%));
+	    }
 	}
 	
 	.road-bg.onroad {
-		position: relative;
-		.nav {
-			position: absolute;
-			top: 25%;
-			left: 26%;
-			ul {
-				list-style: none;
-				li {
-					margin: 15px 0;
-					text-align: right;
-					a {
-						color: #000;
-						text-decoration: none;
-						font-size: 20px;
-						font-family: $font-family;
-					}
-				}
-			}
-		}
-		.taxi {
-			position: absolute;
-		}
-		.taxi1 {
-			bottom: 28%;
-			left: 10%;
-		}
-		.taxi2 {
-			right: 14%;
-			bottom: 28%;
-		}
-		.taxi.taxi3 {
-			bottom: 10%;
-			left: 40%;
-		}
+	    position: relative;
+	    .nav {
+	        position: absolute;
+	        top: 25%;
+	        left: 26%;
+	        ul {
+	            list-style: none;
+	            li {
+	                margin: 15px 0;
+	                text-align: right;
+	                a {
+	                    color: #000;
+	                    text-decoration: none;
+	                    font-size: 20px;
+	                    font-family: $font-family;
+	                }
+	            }
+	        }
+	    }
+	    .taxi {
+	        position: absolute;
+	    }
+	    .taxi1 {
+	        bottom: 28%;
+	        left: 10%;
+	    }
+	    .taxi2 {
+	        right: 14%;
+	        bottom: 28%;
+	    }
+	    .taxi.taxi3 {
+	        bottom: 10%;
+	        left: 40%;
+	    }
 	}
 	
 	.letters-bg {
-		position: relative;
-		.hands {
-			figure {
-				text-align: center;
-			}
-		}
-		figure.hands-main {
-			img {
-				width: 95%;
-			}
-		}
-		figure.hand-outside {
-			position: absolute;
-			top: 0;
-			left: 29.2%;
-			z-index: 2;
-		}
-		figure.hand-cap {
-			position: absolute;
-			top: -2px;
-			right: 25.7%;
-			z-index: 2;
-		}
-		.type-writer {
-			position: relative;
-			.yellow-paper {
-				text-align: center;
-				margin-top: -68px;
-				z-index: 1;
-				position: inherit;
-				img {
-					width: 90%;
-				}
-			}
-			.cont-center {
-				width: 50%;
-				position: absolute;
-				top: 3.5%;
-				left: 50%;
-				@include transform(translateX(-50%));
-				text-align: center;
-				z-index: 2;
-				h4 {
-					text-align: center;
-					font-size: 36px;
-					margin-bottom: 60px;
-					margin-top: 10px;
-					font-family: $font-family;
-				}
-				p {
-					text-align: center;
-					margin: 20px 0;
-					font-family: $font-family;
-				}
-			}
-			.rikshaw {
-				position: absolute;
-				top: 25%;
-				left: 25%;
-				z-index: 2;
-			}
-			.cat {
-				position: absolute;
-				top: 50%;
-				;
-				right: 44%;
-				z-index: 2;
-			}
-			.app-main {
-				position: relative;
-				height: 210px;
-				.apps {
-					position: absolute;
-					width: 100%;
-					.typewriter {
-						position: absolute;
-						left: 34.8%;
-						bottom: 30px;
-						img {
-							width: 90%;
-						}
-					}
-					.cont-right {
-						width: 355px;
-						color: #fff;
-						float: right;
-						margin-top: -80px;
-						margin-bottom: 40px;
-						margin-right: 25px;
-						padding-right: 25px;
-						h4 {
-							text-align: center;
-							font-size: 36px;
-							margin-bottom: 35px;
-							margin-top: 0px;
-							font-family: $font-family;
-						}
-						p {
-							text-align: justify;
-							font-family: $font-family;
-						}
-					}
-				}
-			}
-			.ios {
-				position: absolute;
-				bottom: 215px;
-				left: 50%;
-				@include transform(translateX(-50%));
-				z-index: 1;
-				text-transform: lowercase;
-				font-size: 26px;
-			}
-		}
+	    position: relative;
+	    .hands {
+	        figure {
+	            text-align: center;
+	        }
+	    }
+	    figure.hands-main {
+	        img {
+	            width: 95%;
+	        }
+	    }
+	    figure.hand-outside {
+	        position: absolute;
+	        top: 0;
+	        left: 29.2%;
+	        z-index: 2;
+	    }
+	    figure.hand-cap {
+	        position: absolute;
+	        top: -2px;
+	        right: 25.7%;
+	        z-index: 2;
+	    }
+	    .type-writer {
+	        position: relative;
+	        .yellow-paper {
+	            text-align: center;
+	            margin-top: -68px;
+	            z-index: 1;
+	            position: inherit;
+	            img {
+	                width: 90%;
+	            }
+	        }
+	        .cont-center {
+	            width: 50%;
+	            position: absolute;
+	            top: 3.5%;
+	            left: 50%;
+	            @include transform(translateX(-50%));
+	            text-align: center;
+	            z-index: 2;
+	            h4 {
+	                text-align: center;
+	                font-size: 36px;
+	                margin-bottom: 60px;
+	                margin-top: 10px;
+	                font-family: $font-family;
+	            }
+	            p {
+	                text-align: center;
+	                margin: 20px 0;
+	                font-family: $font-family;
+	            }
+	        }
+	        .rikshaw {
+	            position: absolute;
+	            top: 27%;
+	            left: 25%;
+	            z-index: 2;
+	        }
+	        .cat {
+	            position: absolute;
+	            top: 51%;
+	            ;
+	            right: 44%;
+	            z-index: 2;
+	        }
+	        .app-main {
+	            position: relative;
+	            height: 210px;
+	            .apps {
+	                position: absolute;
+	                width: 100%;
+	                .typewriter {
+	                    position: absolute;
+	                    left: 35.8%;
+	                    bottom: 37px;
+	                    img {
+	                        width: 361px;
+	                    }
+	                }
+	                .cont-right {
+	                    width: 355px;
+	                    color: #fff;
+	                    float: right;
+	                    margin-top: -80px;
+	                    margin-bottom: 40px;
+	                    margin-right: 25px;
+	                    padding-right: 25px;
+	                    h4 {
+	                        text-align: center;
+	                        font-size: 36px;
+	                        margin-bottom: 35px;
+	                        margin-top: 0px;
+	                        font-family: $font-family;
+	                    }
+	                    p {
+	                        text-align: justify;
+	                        font-family: $font-family;
+	                    }
+	                }
+	            }
+	        }
+	        .ios {
+	            position: absolute;
+	            bottom: 215px;
+	            left: 50%;
+	            @include transform(translateX(-50%));
+	            z-index: 1;
+	            text-transform: lowercase;
+	            font-size: 26px;
+	        }
+	    }
 	}
 	
 	.black-white-lines {
-		position: relative;
-		.buregler1 {
-			position: absolute;
-			left: 110px;
-			bottom: 15.7%;
-		}
-		.buregler2 {
-			position: absolute;
-			left: 300px;
-			bottom: 24%;
-		}
-		.batman {
-			position: absolute;
-			right: 100px;
-			bottom: 1%;
-		}
+	    position: relative;
+	    .buregler1 {
+	        position: absolute;
+	        left: 110px;
+	        bottom: 15.7%;
+	    }
+	    .buregler2 {
+	        position: absolute;
+	        left: 300px;
+	        bottom: 24%;
+	    }
+	    .batman {
+	        position: absolute;
+	        right: 100px;
+	        bottom: 1%;
+	    }
 	}
 	
 	.blubs {
-		position: relative;
-		.bulb-2 {
-			position: absolute;
-			top: 0;
-			left: 31.7%;
-		}
-		.bulb-1 {
-			text-align: center;
-			img {
-				max-width: 100%;
-				margin: 0 auto;
-				width: auto!important;
-			}
-		}
-		.bulb-facebook {
-			position: absolute;
-			top: 0;
-			left: 32.6%;
-		}
-		.bulb-insta {
-			position: absolute;
-			top: 0;
-			left: 28%;
-		}
-		.bulb-pinterest {
-			position: absolute;
-			top: 0;
-			right: 34.2%;
-		}
-		.bulb-twitter {
-			position: absolute;
-			top: 0;
-			left: 37.3%;
-		}
-		.bulb-youtube {
-			position: absolute;
-			top: 0;
-			right: 27%;
-		}
-		.conts {
-			color: #fff;
-			position: relative;
-			height: 310px;
-			.cont-center {
-				position: absolute;
-				width: 360px;
-				left: 44%;
-				h4 {
-					text-align: center;
-					font-size: 36px;
-					margin-bottom: 35px;
-					margin-top: 0px;
-					font-family: $font-family;
-				}
-				p {
-					text-align: justify;
-				}
-			}
-		}
+	    position: relative;
+	    .bulb-2 {
+	        position: absolute;
+	        top: 0;
+	        left: 31.7%;
+	    }
+	    .bulb-1 {
+	        text-align: center;
+	        img {
+	            max-width: 100%;
+	            margin: 0 auto;
+	            width: auto!important;
+	        }
+	    }
+	    .bulb-facebook {
+	        position: absolute;
+	        top: 0;
+	        left: 32.6%;
+	    }
+	    .bulb-insta {
+	        position: absolute;
+	        top: 0;
+	        left: 28%;
+	    }
+	    .bulb-pinterest {
+	        position: absolute;
+	        top: 0;
+	        right: 33.2%;
+	    }
+	    .bulb-twitter {
+	        position: absolute;
+	        top: 0;
+	        left: 37.3%;
+	    }
+	    .bulb-youtube {
+	        position: absolute;
+	        top: 0;
+	        right: 27%;
+	    }
+	    .conts {
+	        color: #fff;
+	        position: relative;
+	        height: 310px;
+	        .cont-center {
+	            position: absolute;
+	            width: 360px;
+	            left: 44%;
+	            h4 {
+	                text-align: center;
+	                font-size: 36px;
+	                margin-bottom: 35px;
+	                margin-top: 0px;
+	                font-family: $font-family;
+	            }
+	            p {
+	                text-align: justify;
+	            }
+	        }
+	    }
 	}
 	
 	.musical {
-		position: relative;
-		background-color: #191919;
-		padding: 30px 0;
-		.yellow-lights {
-			z-index: 5;
-			position: relative;
-		}
-		.pianoo {
-			position: absolute;
-			width: 100%;
-			bottom: 15px;
-			z-index: 5;
-		}
-		.tvs {
-			position: absolute;
-			width: 100%;
-			bottom: 80px;
-			z-index: 0;
-		}
+	    position: relative;
+	    background-color: #191919;
+	    padding: 30px 0;
+	    margin-top: 50px;
+	    .yellow-lights {
+	        z-index: 5;
+	        position: relative;
+	    }
+	    .pianoo {
+	        position: absolute;
+	        width: 100%;
+	        bottom: 15px;
+	        z-index: 5;
+	    }
+	    .tvs {
+	        position: absolute;
+	        width: 100%;
+	        bottom: 80px;
+	        z-index: 0;
+	    }
 	}
 	
 	.contact {
-		min-height: 700px;
-		padding-top: 290px;
-		.link-ting {
-			p {
-				margin: 0;
-				text-align: right;
-				color: #fff;
-				padding-right: 279px;
-				a {
-					text-decoration: none;
-					color: $base-color;
-				}
-			}
-		}
-		.address {
-			padding-left: 13.8%;
-			ul {
-				display: block;
-				margin-bottom: 0px;
-				li {
-					display: inline-block;
-					color: #fff;
-					padding-right: 25px;
-					font-family: $font-family;
-				}
-			}
-			h4 {
-				margin: 0 0;
-				color: $base-color;
-				font-family: $font-family;
-			}
-			p {
-				margin-top: 5px;
-			}
-		}
+	    min-height: 700px;
+	    padding-top: 290px;
+	    .link-ting {
+	        p {
+	            margin: 0;
+	            text-align: right;
+	            color: #fff;
+	            padding-right: 279px;
+	            a {
+	                text-decoration: none;
+	                color: $base-color;
+	            }
+	        }
+	    }
+	    .address {
+	        padding-left: 13.8%;
+	        ul {
+	            display: block;
+	            margin-bottom: 0px;
+	            li {
+	                display: inline-block;
+	                color: #fff;
+	                padding-right: 25px;
+	                font-family: $font-family;
+	            }
+	        }
+	        h4 {
+	            margin: 0 0;
+	            color: $base-color;
+	            font-family: $font-family;
+	        }
+	        p {
+	            margin-top: 5px;
+	        }
+	    }
 	}
 	
 	.footer-bg {
-		.paper-crush {
-			img {
-				margin-bottom: -3px;
-			}
-		}
+	    .paper-crush {
+	        img {
+	            margin-bottom: -3px;
+	        }
+	    }
 	}
