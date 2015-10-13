@@ -6,7 +6,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   $scope.menutitle = NavigationService.makeactive("Home");
   TemplateService.title = $scope.menutitle;
   $scope.navigation = NavigationService.getnav();
-
 })
 
 .controller('FeatureCtrl', function($scope, TemplateService) {
