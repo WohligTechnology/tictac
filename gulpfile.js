@@ -5,10 +5,13 @@ var jsArray = [
     './bower_components/angular-bootstrap/ui-bootstrap.min.js',
     './bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js',
     './bower_components/ui-router/release/angular-ui-router.min.js',
+    './bower_components/lodash/lodash.min.js',
+    './bower_components/typed.js/dist/typed.min.js',
     './js/app.js',
     './js/controllers.js',
     './js/templateservice.js',
     './js/navigation.js',
+    './w/js/templates.js',
 ];
 var replacehostFrom = "http://localhost/demo/";
 var replacehostTo = "http://wohlig.co.in/demo2/";
@@ -17,7 +20,7 @@ var ftpdetails = {
     host: 'wohlig.co.in',
     user: 'enter your username',
     pass: 'enter your password',
-    remotePath: "public_html/ting-digital"
+    remotePath: "public_html/tingdigital"
 };
 
 //Do not change anything below
