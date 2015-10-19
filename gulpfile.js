@@ -11,6 +11,8 @@ var jsArray = [
     './js/controllers.js',
     './js/templateservice.js',
     './js/navigation.js',
+
+    // do not remove this
     './w/js/templates.js',
 ];
 var replacehostFrom = "http://localhost/demo/";
