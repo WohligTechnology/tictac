@@ -3,6 +3,7 @@
 	@import "../bower_components/ng-dialog/css/ngDialog.css";
 	@import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
 	@import "../bower_components/fontawesome/css/font-awesome.min.css";
+	@import "../bower_components/bootstrap/dist/css/bootstrap.min.css";
 	@include font-face("LW", "../fonts/LINOWRITE_2");
 	$base-color:#f6e730;
 	$bg-color:#fff;
@@ -35,6 +36,7 @@
 	h5,
 	h6 {
 		font-family: $font-family;
+		font-weight: 600;
 	}
 	
 	.btn {
@@ -52,6 +54,7 @@
 		touch-action: manipulation;
 		cursor: pointer;
 		background-image: none;
+		border-radius: 0px;
 		border: 1px solid #000;
 		text-transform: lowercase;
 		background-color: transparent;
@@ -322,7 +325,7 @@
 					.typewriter {
 						position: absolute;
 						left: 35.7%;
-						bottom: 40px;
+						bottom: 58px;
 						width: 27%;
 						img {
 							width: 100%;
