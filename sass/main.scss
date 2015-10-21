@@ -172,8 +172,12 @@
 		position: relative;
 		.donut-astronaut {
 			position: absolute;
-			right: 18%;
-			top: 125px;
+			right: 15%;
+			top: 17%;
+			width: 10%;
+		}
+		.astronaut {
+			width: 100%;
 		}
 		.donut {
 			position: absolute;
@@ -309,12 +313,14 @@
 				top: 25%;
 				left: 25%;
 				z-index: 2;
+				width: 15%;
 			}
 			.cat {
 				position: absolute;
 				top: 51%;
 				right: 44%;
 				z-index: 2;
+				width: 8%;
 			}
 			.app-main {
 				//				position: relative;
@@ -710,23 +716,115 @@
 	}
 	
 	@media (max-width:780px) {
-		.blubs {
-			.conts {
+		.bulidings .coutch {
+			bottom: -40px;
+		}
+		.letters-bg .type-writer {
+			margin: 10px 0px;
+			.rikshaw {
+				position: absolute;
+				top: 25%;
+				left: 25%;
+				z-index: 2;
+				width: 15%;
+			}
+			.cat {
+				position: absolute;
+				top: 46%;
+				right: 44%;
+				z-index: 2;
+				width: 8%;
+			}
+		}
+		.letters-bg {
+			figure.hand-cap {
+				display: none;
+			}
+			figure.hand-outside {
+				display: none;
+			}
+			.type-writer {
+				.yellow-paper {
+					display: none;
+				}
 				.cont-center {
-					position: static;
-					top: 3.5%;
-					left: 50%;
-					@include transform(translateX(0));
-					text-align: center;
-					z-index: 2;
-					width: 90%;
+					width: 100%;
+					position: inherit;
+					color: #fff;
+					padding: 0px 20px;
+					p {
+						text-align: justify;
+					}
+				}
+				.app-main .apps .typewriter {
+					position: initial;
+					bottom: 0;
 					margin: 0 auto;
-					padding: 40px 0px 0px 0px;
-					h4 {
-						font-size: 24px;
+				}
+				.ios {
+					position: initial;
+					transform: initial;
+					text-align: center;
+					span {
+						color: #fff;
 					}
 				}
 			}
+		}
+		.app-main {
+			.apps {
+				position: initial!important;
+				.cont-right {
+					width: 100%!important;
+					float: inherit!important;
+					margin-top: 0px!important;
+					margin-bottom: 0px!important;
+					margin-right: 0px!important;
+					padding: 0 20px !important;
+				}
+			}
+		}
+		.letters-bg .type-writer .app-main {
+			height: auto;
+		}
+		.btn {
+			border-color: #fff;
+		}
+		.blubs {
+			.conts {
+				padding: 50px 20px;
+				.cont-center {
+					position: initial;
+					width: 100%;
+				}
+			}
+		}
+		.section1 {
+			.donut {
+				display: none;
+			}
+			.letgo {
+				display: none;
+			}
+			.astronaut {
+				display: none;
+			}
+		}
+	}
+	
+	@media (max-width:960px) {
+		.letters-bg {
+			.type-writer {
+				.cat {
+					display: none;
+				}
+				.rikshaw {
+					display: none;
+				}
+			}
+		}
+		.letters-bg .type-writer .cont-center p {
+			margin: 10px 0;
 		}
 	}
 	
