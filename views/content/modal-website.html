@@ -1,0 +1,32 @@
+<div class="paper-bg padding">
+	<div class="website container">
+		<div class="head">
+			<h2 class="margin-less">Website</h2>
+			<form class="radio-website">
+				<input type="radio" name="" value=""> all
+				<input type="radio" name="" value=""> static
+				<input type="radio" name="" value=""> ecom
+				<input type="radio" name="" value=""> cms
+				<input type="radio" name="" value=""> portal
+				<input type="radio" name="" value=""> responsive
+			</form>
+		</div>
+		<div class="row">
+			<div class="col-md-3 col-sm-6" ng-repeat="items in website">
+				<div class="projects">
+					<div class="box">
+						<img src="{{items.img}}" class="img-responsive">
+					</div>
+					<div class="main">
+						<h4 class="text-center">{{items.title}}</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	<div class="col-md-12">
+				<div class="arrow-down pull-right">
+				<i class="fa fa-angle-down"></i>
+			</div>
+		</div>
+	</div>
+</div>

@@ -39,7 +39,7 @@ firstapp.directive('typedJs', function ($document) {
 			var $element = $(element);
 			dem = $element;
 			$element.typed({
-				strings: ["ios!", "Andriod!"],
+				strings: ["ios!", "Android!"],
 				startDelay: 20,
 				typeSpeed: 100,
 				loop: true

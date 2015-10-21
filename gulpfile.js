@@ -7,6 +7,7 @@ var jsArray = [
     './bower_components/ui-router/release/angular-ui-router.min.js',
     './bower_components/lodash/lodash.min.js',
     './bower_components/typed.js/dist/typed.min.js',
+    './bower_components/ng-dialog/js/ngDialog.min.js',
     './js/app.js',
     './js/controllers.js',
     './js/templateservice.js',
