@@ -1,16 +1,17 @@
 <div class="paper-bg">
-	<div class="website container">
-		<div class="head">
-			<h2>videos<h2>
+    <div class="website container">
+        <div class="head">
+            <h2>videos<h2>
 		</div>
 		<div class="row">
 			<div class="col-md-4 col-sm-6" ng-repeat="items in videos">
 				<div class="projects">
 					<div class="box">
-						<img src="{{items.img}}" class="img-responsive">
-											<div class="play">
+						<!-- <img src="{{items.img}}" class="img-responsive">
+							<div class="play">
 						<i class="fa fa-youtube-play"></i>
-					</div>
+							</div> -->
+						<div youtube code="items.videourl"></div>
 					</div>
 					<div class="main">
 						<h4 class="text-center">{{items.title}}</h4>

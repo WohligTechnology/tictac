@@ -1,26 +1,27 @@
 <div class="paper-bg padding">
-	<div class="website container">
-		<div class="head">
-			<h2>digital marketing<h2>
+    <div class="website container">
+        <div class="head">
+            <h2>digital marketing<h2>
 		</div>
 		<div class="row">
 			<div class="col-md-3 min-height" ng-repeat="items in market">
 				<div class="box">
-					<img src="{{items.img}}" class="img-responsive">
+					<img ng-src="{{items.image | serverimage}}" class="img-responsive">
 				</div>
 				<div class="main social-icons">
-					<i class="fa fa-facebook"></i>
-					<i class="fa fa-twitter"></i>
-					<i class="fa fa-pinterest-p"></i>
-					<i class="fa fa-linkedin"></i>
-					<i class="fa fa-youtube-play"></i>
-					<i class="fa fa-google-plus"></i>
-					<i class="fa fa-instagram"></i>
+					<a href="{{items.facebooklink}}" target="_blank"><i class="fa fa-facebook" ng-if="items.facebooklink"></i></a>
+					<i class="fa fa-twitter" ng-if="items.twitterlink"></i>
+					<i class="fa fa-pinterest-p" ng-if="items.pinterestlink"></i>
+					<i class="fa fa-linkedin" ng-if="items.linkedinlink"></i>
+					<i class="fa fa-youtube-play" ng-if="items.youtubelink"></i>
+					<i class="fa fa-google-plus" ng-if="items.googlelink"></i>
+					<i class="fa fa-instagram" ng-if="items.instagramlink"></i>
 				</div>
 			</div>
 		</div>
+
 	<div class="col-md-12">
-				<div class="arrow-down pull-right">
+		<div class="arrow-down pull-right">
 			<i class="fa fa-angle-down"></i>
 			</div>
 		</div>
