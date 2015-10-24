@@ -99,7 +99,7 @@
 	}
 	
 	.road-bg {
-		background: url('../img/background/road.jpg') no-repeat;
+		background: url('../img/background/paper-road.png') no-repeat;
 		background-size: 100% 100%;
 		min-height: 500px;
 	}
@@ -178,10 +178,30 @@
 		}
 		.astronaut {
 			width: 100%;
+			//			@include keyframes(fadeIn) {
+			//				from {
+			//					@include transform(scale(0));
+			//				}
+			//				to {
+			//					@include transform(scale(1));
+			//				}
+			//			}
 		}
 		.donut {
 			position: absolute;
 			right: 125px;
+			img {
+				&:hover {
+					@include animation(scale 1.0s ease-in,
+					slide 2.0s ease);
+					// The above outputs the same CSS as using independent, granular mixins.
+					@include animation-name(scale,
+					slide);
+					@include animation-duration(2s);
+					@include animation-timing-function(ease);
+					@include animation-iteration-count(infinite);
+				}
+			}
 		}
 		.blub img {
 			width: 70%;
@@ -200,25 +220,50 @@
 	
 	.bulidings {
 		position: relative;
+		.buliding1 {
+			position: absolute;
+			top: 0;
+			z-index: 3;
+		}
+		.buliding2 {
+			position: absolute;
+			top: 0;
+			z-index: 1;
+		}
+		.buliding {
+			z-index: 0;
+			position: inherit;
+		}
 		.coutch {
 			position: absolute;
-			z-index: 1;
+			z-index: 4;
 			bottom: -74px;
 			width: 100%;
-			left: 49%;
+			left: 47%;
 			@include transform(translateX(-50%));
 			img {
-				width: 32%;
+				width: 29%;
 			}
 		}
 	}
 	
 	.road-bg.onroad {
 		position: relative;
+		.pot-holes2 {
+			position: absolute;
+			right: 40%;
+			bottom: 30%;
+		}
+		.pot-holes1 {
+			position: absolute;
+			top: 0px;
+			left: 0;
+		}
 		.nav {
 			position: absolute;
 			top: 25%;
 			left: 26%;
+			z-index: 2;
 			ul {
 				list-style: none;
 				li {
@@ -278,13 +323,15 @@
 		}
 		.type-writer {
 			position: relative;
+			width: 1200px;
+			margin: 0 auto;
 			.yellow-paper {
 				text-align: center;
 				margin-top: -68px;
 				z-index: 1;
 				position: inherit;
 				img {
-					width: 90%;
+					width: 100%;
 				}
 			}
 			.cont-center {
@@ -323,16 +370,16 @@
 				width: 8%;
 			}
 			.app-main {
-				//				position: relative;
 				height: 210px;
 				.apps {
 					position: absolute;
 					width: 100%;
+					left: 0px;
 					.typewriter {
 						position: absolute;
-						left: 35.7%;
-						bottom: 58px;
-						width: 27%;
+						left: 34.5%;
+						bottom: 68px;
+						width: 29.5%;
 						img {
 							width: 100%;
 						}
@@ -343,7 +390,7 @@
 						float: right;
 						margin-top: -50px;
 						margin-bottom: 40px;
-						margin-right: 40px;
+						//						margin-right: 40px;
 						padding-right: 25px;
 						h4 {
 							text-align: center;
@@ -423,31 +470,31 @@
 			position: absolute;
 			top: 0;
 			left: 32.6%;
-			width: 5%
+			width: 4%
 		}
 		.bulb-insta {
 			position: absolute;
 			top: 0;
 			left: 28%;
-			width: 5%
+			width: 4%
 		}
 		.bulb-pinterest {
 			position: absolute;
 			top: 0;
 			right: 33.2%;
-			width: 5%
+			width: 4%
 		}
 		.bulb-twitter {
 			position: absolute;
 			top: 0;
 			left: 37.3%;
-			width: 5%
+			width: 4%
 		}
 		.bulb-youtube {
 			position: absolute;
 			top: 0;
 			right: 27%;
-			width: 5%
+			width: 4%
 		}
 		.conts {
 			color: #fff;
@@ -702,6 +749,7 @@
 	.box {
 		position: relative;
 		cursor: pointer;
+		box-shadow: -6px -1px 4px -3px rgba(0, 0, 0, 0.6);
 		.play {
 			position: absolute;
 			top: 50%;
@@ -715,27 +763,45 @@
 		}
 	}
 	
-	@media (max-width:780px) {
-		.bulidings .coutch {
-			bottom: -40px;
-		}
-		.letters-bg .type-writer {
-			margin: 10px 0px;
-			.rikshaw {
-				position: absolute;
-				top: 25%;
-				left: 25%;
-				z-index: 2;
-				width: 15%;
+	@media (max-width:1200px) {
+		.letters-bg {
+			.type-writer {
+				position: relative;
+				width: 992px;
+				margin: 0 auto;
 			}
-			.cat {
+			figure.hand-outside {
 				position: absolute;
-				top: 46%;
-				right: 44%;
+				top: 0;
+				left: 29%;
 				z-index: 2;
-				width: 8%;
+				img {
+					width: 70px;
+				}
+			}
+			figure.hand-cap {
+				position: absolute;
+				top: -2px;
+				right: 25.7%;
+				z-index: 2;
+				img {
+					width: 75px;
+				}
+			}
+			.app-main {
+				.apps {
+					.typewriter {
+						bottom: 98px!important;
+					}
+				}
 			}
 		}
+		.cat {
+			top: 49%!important;
+		}
+	}
+	
+	@media (max-width:992px) {
 		.letters-bg {
 			figure.hand-cap {
 				display: none;
@@ -744,6 +810,13 @@
 				display: none;
 			}
 			.type-writer {
+				width: 100%;
+				.cat {
+					display: none;
+				}
+				.rikshaw {
+					display: none;
+				}
 				.yellow-paper {
 					display: none;
 				}
@@ -756,10 +829,23 @@
 						text-align: justify;
 					}
 				}
-				.app-main .apps .typewriter {
-					position: initial;
-					bottom: 0;
-					margin: 0 auto;
+				.app-main {
+					.apps {
+						position: initial!important;
+						.typewriter {
+							position: initial;
+							bottom: 0;
+							margin: 0 auto;
+						}
+						.cont-right {
+							width: 100%!important;
+							//							float: inherit!important;
+							margin-top: 0px!important;
+							margin-bottom: 20px!important;
+							margin-right: 0px!important;
+							padding: 0 20px !important;
+						}
+					}
 				}
 				.ios {
 					position: initial;
@@ -771,18 +857,18 @@
 				}
 			}
 		}
-		.app-main {
-			.apps {
-				position: initial!important;
-				.cont-right {
-					width: 100%!important;
-					float: inherit!important;
-					margin-top: 0px!important;
-					margin-bottom: 0px!important;
-					margin-right: 0px!important;
-					padding: 0 20px !important;
-				}
-			}
+		.btn {
+			border: 1px solid #fff;
+		}
+		.black-white-lines {
+			position: relative;
+			//			margin-top: 180px;
+		}
+	}
+	
+	@media (max-width:780px) {
+		.bulidings .coutch {
+			bottom: -40px;
 		}
 		.letters-bg .type-writer .app-main {
 			height: auto;
@@ -810,21 +896,38 @@
 				display: none;
 			}
 		}
-	}
-	
-	@media (max-width:960px) {
-		.letters-bg {
-			.type-writer {
-				.cat {
-					display: none;
-				}
-				.rikshaw {
-					display: none;
-				}
+		.road-bg.onroad {
+			.nav {
+				top: 15%;
+			}
+			.pot-holes2 {
+				display: none;
 			}
 		}
-		.letters-bg .type-writer .cont-center p {
-			margin: 10px 0;
+	}
+	
+	@media (max-width:480px) {
+		.bulidings .coutch {
+			bottom: -26px;
+		}
+		.road-bg.onroad {
+			min-height: 350px;
+			.nav {
+				top: 10%;
+				ul {
+					li {
+						margin: 5px 0;
+					}
+				}
+			}
+			.pot-holes2 {
+				display: none;
+			}
+			.taxi {
+				img {
+					width: 75px;
+				}
+			}
 		}
 	}
 	
