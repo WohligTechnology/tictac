@@ -3,7 +3,7 @@
         <div class="head">
             <h2>videos<h2>
 		</div>
-		<div class="row">
+		<div class="row" ng-repeat="videos in allvideos">
 			<div class="col-md-4 col-sm-6" ng-repeat="items in videos">
 				<div class="projects">
 					<div class="box">
@@ -19,8 +19,8 @@
 				</div>
 			</div>
 		</div>
-	<div class="col-md-12">
-				<div class="arrow-down pull-right">
+		<div class="col-md-12" ng-click="getMoreVideos();">
+			<div class="arrow-down pull-right">
 				<i class="fa fa-angle-down"></i>
 			</div>
 		</div>

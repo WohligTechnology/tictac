@@ -38,23 +38,23 @@ var navigationservice = angular.module('navigationservice', [])
             }
             return menuname;
         },
-        getallapps: function(callback, err) {
-            return $http.get(adminurl + 'getallapps', {
+        getallapps: function(pageno, callback, err) {
+            return $http.get(adminurl + 'getallapps?pageno=' + pageno + '&maxrow=' + 8, {
                 withCredentials: true
             }).success(callback).error(err);
         },
-        getalldigitalmarketing: function(callback, err) {
-            return $http.get(adminurl + 'getalldigitalmarketing', {
+        getalldigitalmarketing: function(pageno, callback, err) {
+            return $http.get(adminurl + 'getalldigitalmarketing?pageno=' + pageno + '&maxrow=' + 8, {
                 withCredentials: false
             }).success(callback).error(err);
         },
-        getallvideo: function(callback, err) {
-            return $http.get(adminurl + 'getallvideo', {
+        getallvideo: function(pageno, callback, err) {
+            return $http.get(adminurl + 'getallvideo?pageno=' + pageno + '&maxrow=' + 6, {
                 withCredentials: false
             }).success(callback).error(err);
         },
-        getallwebsite: function(id, callback, err) {
-            return $http.get(adminurl + 'getallwebsite?id=' + id, {
+        getallwebsite: function(id, pageno, callback, err) {
+            return $http.get(adminurl + 'getallwebsite?id=' + id + '&pageno=' + pageno + '&maxrow=' + 8, {
                 withCredentials: false
             }).success(callback).error(err);
         }

@@ -9,41 +9,96 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
     $scope.filterid = 7;
 
-    NavigationService.getallapps(function(data, status) {
-        console.log(data);
-        $scope.app = data.queryresult;
-    }, function(err) {
-        if (err)
-            console.log(err)
-    });
+    $scope.appsPageNo = 0;
+    $scope.dmPageNo = 0;
+    $scope.videosPageNo = 0;
+    $scope.websitePageNo = 1;
 
-    NavigationService.getalldigitalmarketing(function(data, status) {
-        console.log(data);
-        $scope.market = data.queryresult;
-    }, function(err) {
-        if (err)
-            console.log(err)
-    });
+    $scope.app = [];
+    $scope.market = [];
+    $scope.videos = [];
+    $scope.website = [];
 
-    NavigationService.getallvideo(function(data, status) {
-        console.log(data);
-        $scope.videos = data.queryresult;
-    }, function(err) {
-        if (err)
-            console.log(err)
-    });
-
-    $scope.filterWebsites = function(id) {
-        NavigationService.getallwebsite(id, function(data, status) {
+    $scope.loadMoreApps = function(pageno) {
+        NavigationService.getallapps(pageno, function(data, status) {
             console.log(data);
-            $scope.website = data.queryresult;
+            _.each(data.queryresult, function(n) {
+                $scope.app.push(n);
+            });
+            $scope.allapps = _.chunk($scope.app, 4);
         }, function(err) {
             if (err)
                 console.log(err)
         });
     }
 
+    $scope.getMoreApps = function() {
+        $scope.loadMoreApps(++$scope.appsPageNo);
+    }
+    $scope.getMoreApps();
+
+    $scope.loadMoreDM = function(pageno) {
+        NavigationService.getalldigitalmarketing(pageno, function(data, status) {
+            console.log(data);
+            _.each(data.queryresult, function(n) {
+                $scope.market.push(n);
+            });
+            $scope.allmarket = _.chunk($scope.market, 4);
+        }, function(err) {
+            if (err)
+                console.log(err)
+        });
+    }
+
+    $scope.getMoreDM = function() {
+        $scope.loadMoreDM(++$scope.dmPageNo);
+    }
+    $scope.getMoreDM();
+
+    $scope.loadMoreVideos = function(pageno) {
+        NavigationService.getallvideo(pageno, function(data, status) {
+            console.log(data);
+            _.each(data.queryresult, function(n) {
+                $scope.videos.push(n);
+            });
+            $scope.allvideos = _.chunk($scope.videos, 3);
+        }, function(err) {
+            if (err)
+                console.log(err)
+        });
+    }
+
+    $scope.getMoreVideos = function() {
+        $scope.loadMoreVideos(++$scope.videosPageNo);
+    }
+    $scope.getMoreVideos();
+
+    $scope.filterWebsites = function(id) {
+        $scope.websitePageNo = 1;
+        NavigationService.getallwebsite(id, 1, function(data, status) {
+            console.log(data);
+            $scope.website = data.queryresult;
+            $scope.allwebsites = _.chunk(data.queryresult, 4);
+        }, function(err) {
+            if (err)
+                console.log(err)
+        });
+    }
     $scope.filterWebsites(7);
+
+    $scope.getMoreWebsites = function(id) {
+        NavigationService.getallwebsite(id, ++$scope.websitePageNo, function(data, status) {
+            console.log(data);
+            _.each(data.queryresult, function(n) {
+                $scope.website.push(n);
+            });
+            $scope.allwebsites = _.chunk($scope.website, 4);
+            console.log($scope.allwebsites);
+        }, function(err) {
+            if (err)
+                console.log(err)
+        });
+    }
 
     // $scope.website = [{
     //     title: 'ting',

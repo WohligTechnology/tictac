@@ -3,26 +3,40 @@
         <div class="head">
             <h2>digital marketing<h2>
 		</div>
-		<div class="row">
+		<div class="row" ng-repeat="market in allmarket">
 			<div class="col-md-3 min-height" ng-repeat="items in market">
 				<div class="box">
 					<img ng-src="{{items.image | serverimage}}" class="img-responsive">
 				</div>
 				<div class="main social-icons">
-					<a href="{{items.facebooklink}}" target="_blank"><i class="fa fa-facebook" ng-if="items.facebooklink"></i></a>
-					<i class="fa fa-twitter" ng-if="items.twitterlink"></i>
-					<i class="fa fa-pinterest-p" ng-if="items.pinterestlink"></i>
-					<i class="fa fa-linkedin" ng-if="items.linkedinlink"></i>
-					<i class="fa fa-youtube-play" ng-if="items.youtubelink"></i>
-					<i class="fa fa-google-plus" ng-if="items.googlelink"></i>
-					<i class="fa fa-instagram" ng-if="items.instagramlink"></i>
+					<a href="{{items.facebooklink}}" target="_blank">
+						<i class="fa fa-facebook" ng-if="items.facebooklink"></i>
+					</a>
+					<a href="{{items.twitterlink}}" target="_blank">
+						<i class="fa fa-twitter" ng-if="items.twitterlink"></i>
+					</a>
+					<a href="{{items.pinterestlink}}" target="_blank">	
+						<i class="fa fa-pinterest-p" ng-if="items.pinterestlink"></i>
+					</a>
+					<a href="{{items.linkedinlink}}" target="_blank">
+						<i class="fa fa-linkedin" ng-if="items.linkedinlink"></i>
+					</a>
+					<a href="{{items.youtubelink}}" target="_blank">
+						<i class="fa fa-youtube-play" ng-if="items.youtubelink"></i>
+					</a>
+					<a href="{{items.googlelink}}" target="_blank">
+						<i class="fa fa-google-plus" ng-if="items.googlelink"></i>
+					</a>
+					<a href="{{items.instagramlink}}" target="_blank">
+						<i class="fa fa-instagram" ng-if="items.instagramlink"></i>
+					</a>
 				</div>
 			</div>
 		</div>
 
-	<div class="col-md-12">
-		<div class="arrow-down pull-right">
-			<i class="fa fa-angle-down"></i>
+		<div class="col-md-12">
+			<div class="arrow-down pull-right" ng-click="getMoreDM();">
+				<i class="fa fa-angle-down"></i>
 			</div>
 		</div>
 	</div>
