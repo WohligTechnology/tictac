@@ -128,13 +128,20 @@
 		padding: 20px;
 	}
 	
-	.ngdialog-content {
+	//	.ngdialog-content {
+	//		background: url("../img/background/paper-repeat.jpg") no-repeat;
+	//		background-size: cover;
+	//		position: absolute;
+	//		top: 50%;
+	//		width: 100%;
+	//		@include transform(translateY(-50%));
+	//	}
+	.paper-bg {
 		background: url("../img/background/paper-repeat.jpg") no-repeat;
 		background-size: cover;
 		position: absolute;
-		top: 50%;
 		width: 100%;
-		@include transform(translateY(-50%));
+		z-index: 2;
 	}
 	
 	.ngdialog-close {
@@ -149,6 +156,7 @@
 		width: 30px;
 		padding: 0px 6px;
 		line-height: 1;
+		z-index: 2;
 		&:hover {
 			background: lighten(#000, 10%);
 			color: darken(#ddd, 10%);
@@ -156,7 +164,8 @@
 	}
 	
 	.ngdialog-overlay {
-		background: rgba(255, 255, 255, 0.0);
+		background: rgba(0, 0, 0, 0.5);
+		z-index: 1;
 	}
 	
 	.text-center {
@@ -864,6 +873,11 @@
 			position: relative;
 			//			margin-top: 180px;
 		}
+		.road-bg.onroad {
+			.nav {
+				top: 15%;
+			}
+		}
 	}
 	
 	@media (max-width:780px) {
@@ -919,9 +933,6 @@
 						margin: 5px 0;
 					}
 				}
-			}
-			.pot-holes2 {
-				display: none;
 			}
 			.taxi {
 				img {
