@@ -39,7 +39,7 @@ var navigationservice = angular.module('navigationservice', [])
             return menuname;
         },
         getallapps: function(pageno, callback, err) {
-            return $http.get(adminurl + 'getallapps?pageno=' + pageno + '&maxrow=' + 8, {
+            return $http.get(adminurl + 'getallapps?pageno=' + pageno + '&maxrow=' + 4, {
                 withCredentials: true
             }).success(callback).error(err);
         },
