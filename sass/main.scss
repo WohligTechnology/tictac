@@ -206,69 +206,41 @@
 			bottom: 0px;
 		}
 	}
-
-
-////animation
-//
-//.astronaut {
-//@include animationFrames(scale, slide);
-//  animation: animationFrames ease-out 0.8s;
-//  animation-iteration-count: infinite;
-//  transform-origin: 50% 50%;
-//  animation-fill-mode:forwards; /*when the spec is finished*/
-//  -webkit-animation: animationFrames ease-out 0.8s;
-//  -webkit-animation-iteration-count: infinite;
-//  -webkit-transform-origin: 50% 50%;
-//  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
-//  -moz-animation: animationFrames ease-out 0.8s;
-//  -moz-animation-iteration-count: infinite;
-//  -moz-transform-origin: 50% 50%;
-//  -moz-animation-fill-mode:forwards; /*FF 5+*/
-//  -o-animation: animationFrames ease-out 0.8s;
-//  -o-animation-iteration-count: infinite;
-//  -o-transform-origin: 50% 50%;
-//  -o-animation-fill-mode:forwards; /*Not implemented yet*/
-//  -ms-animation: animationFrames ease-out 0.8s;
-//  -ms-animation-iteration-count: infinite;
-//  -ms-transform-origin: 50% 50%;
-//  -ms-animation-fill-mode:forwards; /*IE 10+*/
-//}
-//
-//@keyframes animationFrames{
-//  0% {
-//    opacity:0;
-//    transform:  translate(300px,0px)  skewX(0deg) ;
-//  }
-//  60% {
-//    opacity:1;
-//    transform:  translate(-40px,0px)  skewX(30deg) ;
-//  }
-//  80% {
-//    opacity:1;
-//    transform:  translate(0px,0px)  skewX(-15deg) ;
-//  }
-//  100% {
-//    opacity:1;
-//    transform:  translate(0px,0px)  skewX(0deg) ;
-//  }
-//}
-//
-//
-////animation end
-//	
-	.bulidings {
+	
+	////animation
+	.donut-astronaut {
+		@include animation(translatesocial 10s ease 0s infinite alternate);
+	}
+	
+	@include keyframes (translatesocial) {
+		0% {
+			transform: translate(10%, 20%);
+		}
+		20% {
+			transform: translate (20%, 40%);
+		}	
+		100% {
+			transform: translate (70%, 80%);
+		}		
+//		100% {
+//			transform: translate (20%, 40%);
+//		}
+	}
+	
+	;
+	.buildings {
 		position: relative;
-		.buliding1 {
+		.building1 {
 			position: absolute;
 			top: 0;
 			z-index: 3;
 		}
-		.buliding2 {
+		.building2 {
 			position: absolute;
 			top: 0;
 			z-index: 1;
 		}
-		.buliding {
+		.building {
 			z-index: 0;
 			position: inherit;
 		}
@@ -415,8 +387,8 @@
 					left: 0px;
 					.typewriter {
 						position: absolute;
-						left: 34.5%;
-						bottom: 68px;
+						left: 34.4%;
+						bottom: 66px;
 						width: 29.5%;
 						img {
 							width: 100%;
@@ -910,7 +882,7 @@
 	}
 	
 	@media (max-width:780px) {
-		.bulidings .coutch {
+		.buildings .coutch {
 			bottom: -40px;
 		}
 		.letters-bg .type-writer .app-main {
@@ -950,7 +922,7 @@
 	}
 	
 	@media (max-width:480px) {
-		.bulidings .coutch {
+		.buildings .coutch {
 			bottom: -26px;
 		}
 		.road-bg.onroad {
