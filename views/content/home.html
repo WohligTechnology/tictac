@@ -2,7 +2,6 @@
 	<div class="star-bg">
 		<div class="section1">
 			<div class="donut-astronaut pull-right">
-				<!--			<div class="donut-astronaut pull-right" pin=".section1" ng-scroll-animation-from="{'rotation': 0, 'ease': Linear.easeNone}" ng-scroll-duration="1000" ng-scroll-animation-to="{'rotation': 360, 'ease': Linear.easeNone}" ng-scroll-duration="1000" ng-scroll-offset="10">-->
 				<div class="donut">
 					<figure>
 						<img src="img/donut.png" alt="donut">
@@ -35,35 +34,35 @@
 </section>
 
 <section class="section2">
-	<div class="star-bg" style="height:910px;">
-		<div class="buildings">
-			<div class="building" ng-scroll-animation-from="{'y':500, 'ease': Linear.easeNone}" ng-scroll-duration="100" ng-scroll-animation-to="{'y': 0, 'ease': Linear.easeNone}" ng-scroll-offset="100" pin=".section2">
+	<div class="star-bg">
+		<div class="buildings" id="id1">
+			<div class="building hided" id="id2" ng-scroll-animation-from="{'y':500, 'ease': Bounce.easeOut}" ng-scroll-duration="100" ng-scroll-animation-to="{'y': 0, 'ease': Linear}" ng-scroll-offset="400" element="#id1" toggleClassid="id2">
 				<figure>
-					<img src="img/house1.png" class="full-image" alt="astroid">
+					<img src="img/house1.png" class="full-image" alt="">
 				</figure>
 			</div>
-			<div class="building1" ng-scroll-animation-from="{'y':500, 'ease': Linear.easeNone}" ng-scroll-duration="100" ng-scroll-animation-to="{'y': 0, 'ease': Linear.easeNone}" ng-scroll-offset="600" pin=".section2">
+			<div class="building1" ng-scroll-animation-from="{'y':500, 'ease': Bounce.easeOut}" ng-scroll-duration="200" ng-scroll-animation-to="{'y': 0, 'ease': Linear}" ng-scroll-offset="400" pin="">
 				<figure>
-					<img src="img/house2.png" class="full-image" alt="astroid">
+					<img src="img/house2.png" class="full-image" alt="">
 				</figure>
 			</div>
-			<div class="building2" ng-scroll-animation-from="{'y':500, 'ease': Linear.easeOut}" ng-scroll-duration="200" ng-scroll-animation-to="{'y': 0, 'ease': Linear.easeOut}" ng-scroll-offset="600" pin=".section2">
+			<div class="building2" ng-scroll-animation-from="{'y':500, 'ease': Bounce.easeOut}" ng-scroll-duration="300" ng-scroll-animation-to="{'y': 0, 'ease': Linear}" ng-scroll-offset="400" pin="">
 				<figure>
-					<img src="img/house3.png" class="full-image" alt="astroid">
+					<img src="img/house3.png" class="full-image" alt="">
 				</figure>
 			</div>
-<!--			<div class="coutch" ng-scroll-animation-from="{'y':-800, ease':Linear.easeOut}" ng-scroll-duration="300" ng-scroll-animation-to="{'y': 0, 'ease': Linear.easeOut}" ng-scroll-offset="100" pin=".section2">-->
-<!--				<div class="coutch" ng-scroll-animation-from="{'y':-200, 'ease': Linear.easeOut}" ng-scroll-duration="300" ng-scroll-animation-to="{'y': 0, 'ease': Linear.easeOut}" ng-scroll-offset="600" pin=".section2">-->
-							<div class="coutch">
+			<!--			<div class="coutch" ng-scroll-animation-from="{'y':-800, ease':Linear.easeOut}" ng-scroll-duration="300" ng-scroll-animation-to="{'y': 0, 'ease': Linear.easeOut}" ng-scroll-offset="100" pin=".section2">-->
+			<div class="coutch" ng-scroll-animation-from="{'y':-300, 'ease': Bounce.easeOut}" ng-scroll-duration="400" ng-scroll-animation-to="{'y': 0,  'ease': Bounce.easeOut}" ng-scroll-offset="300"  toggleClassid="#id1">
+				<!--			<div class="coutch">-->
 				<figure class="text-center">
-					<img src="img/coutch.png" class="" alt="astroid">
+					<img src="img/coutch.png" class="" alt="">
 				</figure>
 			</div>
 		</div>
 	</div>
 </section>
-<section>
-	<div class="road-bg onroad">
+<section class="section3">
+	<div class="road-bg onroad" style="z-index: 10;">
 		<div class="pot-holes1">
 			<figure>
 				<img src="img/pot-holes1.png" class="full-image">
@@ -102,7 +101,7 @@
 				</li>
 			</ul>
 		</div>
-		<div class="taxi taxi2">
+		<div class="taxi taxi2" ng-scroll-animation-from="{'x':150, 'ease': Linear.ease}" ng-scroll-duration="200" ng-scroll-animation-to="{'x': -300, 'ease': Linear.ease}" ng-scroll-offset="900">
 			<figure>
 				<img src="img/taxi.png">
 			</figure>
@@ -129,7 +128,6 @@
 		</div>
 		<div class="">
 			<div class="type-writer">
-
 				<div class="yellow-paper">
 					<figure>
 						<img src="img/paper-yellow.png">
@@ -137,17 +135,18 @@
 				</div>
 				<div class="cont-center">
 					<h4>websites</h4>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+					<p>We love making websites. We love making websites .We love making Websites. We love making websites. We love making websites. We love making websites .We love making Websites. We love making websites. We love making websites. We love making websites .We love making Websites. We love making websites.................... websites. </p>
+					<p class="text-center">Can't you tell?</p>
 					<div>
-						<button class="btn btn-ouline">Click Here</button>
+						<button class="btn btn-ouline" ng-click="showWebsite();">Click Here</button>
 					</div>
 				</div>
-				<div class="rikshaw">
+				<div class="rikshaw" ng-scroll-animation-from="{'x':0, 'ease': Linear.easeOut}" ng-scroll-duration="200" ng-scroll-animation-to="{'x': 500, 'ease': Linear.ease}" ng-scroll-offset="1700">
 					<figure>
 						<img src="img/rikshaw.png" class="full-image">
 					</figure>
 				</div>
-				<div class="cat">
+				<div class="cat" ng-scroll-animation-from="{'x':0, 'ease': Linear.easeOut}" ng-scroll-duration="100" ng-scroll-animation-to="{'x': -100, 'ease': Linear.easeNone}" ng-scroll-offset="2000">
 					<figure>
 						<img src="img/cat.png" class="full-image">
 					</figure>
@@ -166,10 +165,10 @@
 						<div class="cont-right">
 							<h4>apps</h4>
 							<p>
-								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+								Apptually speaking, our idea of a love triangle includes UI and U(e)X.
 							</p>
 							<div class="text-center">
-								<button class="btn btn-ouline btn-white">Click Here</button>
+								<button class="btn btn-ouline btn-white" ng-click="showApp();">Click Here</button>
 							</div>
 						</div>
 					</div>
@@ -200,7 +199,7 @@
 		</div>
 	</div>
 </section>
-<section class="black-bg">
+<section class="black-bg section5">
 	<div class="blubs">
 		<div class="bulb-1">
 			<figure>
@@ -212,34 +211,48 @@
 				<img src="img/marketing/bulbon.png" class="full-image">
 			</figure>
 		</div>
-		<div class="bulb-facebook">
-			<img src="img/marketing/FACEBOOK-BULBS.png" class="full-image">
-		</div>
-		<div class="bulb-insta">
-			<img src="img/marketing/INSTA-BULBS.png" class="full-image">
-		</div>
-		<div class="bulb-pinterest">
-			<img src="img/marketing/PINTREST-BULB.png" class="full-image">
-		</div>
-		<div class="bulb-twitter">
-			<img src="img/marketing/TWITTER-BULB.png" class="full-image">
-		</div>
-		<div class="bulb-youtube">
-			<img src="img/marketing/Youtube-BULB.png" class="full-image">
+		<div class="bulb-socialss">
+			<div class="bulb-facebook">
+				<img src="img/marketing/FACEBOOK-BULBS.png" class="full-image">
+			</div>
+			<div class="bulb-insta">
+				<img src="img/marketing/INSTA-BULBS.png" class="full-image">
+			</div>
+			<div class="bulb-pinterest">
+				<img src="img/marketing/PINTREST-BULB.png" class="full-image">
+			</div>
+			<div class="bulb-twitter">
+				<img src="img/marketing/TWITTER-BULB.png" class="full-image">
+			</div>
+			<div class="bulb-youtube">
+				<img src="img/marketing/Youtube-BULB.png" class="full-image">
+			</div>
 		</div>
 		<div class="conts">
 			<div class="cont-center">
 				<h4>digital marketing</h4>
 				<p>
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-				</p>
+					Our Tingdom has surfed and survived quite a few social media sites. From Twitter to Tinder Pinterest our hashtagging skills are #awesome. </p>
+				<div class="text-center margin-bottom">
+					#FollowForFollow #LikeFor2KFollowers #ThisIsNotAScam
+				</div>
 				<div class="text-center">
-					<button class="btn btn-ouline btn-white">Click Here</button>
+					<button class="btn btn-ouline btn-white" ng-click="showMarketing();">Click Here</button>
 				</div>
 			</div>
 		</div>
 	</div>
+</section>
+<section>
 	<div class="musical">
+		<div class="cont-center">
+			<h4>Videos</h4>
+			<p class="text-center">Visual: Animated Ting light bulb dancing across screen. VO: “We’d tell you all about our filter effects and 2D edit skills but #BRBRendering”</p>
+			<p class="text-center">Can't you tell?</p>
+			<div class="text-center">
+				<button class="btn btn-ouline" ng-click="showVideos();">Click Here</button>
+			</div>
+		</div>
 		<div class="text-center yellow-lights">
 			<figure>
 				<img src="img/yellowlights.png">
@@ -256,6 +269,8 @@
 			</figure>
 		</div>
 	</div>
+</section>
+<section>
 	<div class="contact black-bg">
 		<div class="hello">
 			<figure>

@@ -81,6 +81,7 @@ firstapp.directive('ngScrollDuration', function ($compile, $parse) {
 			var animationSceneTo = eval("(" + attrs.ngScrollAnimationTo + ")");
 			var id = attrs.id;
 			var pin = attrs.pin;
+			var toggleClassid = attrs.toggleClassid;
 			if (attrs.ngScrollTrigger) {
 				animation.triggerElement = attrs.ngScrollTrigger;
 			}
@@ -88,10 +89,12 @@ firstapp.directive('ngScrollDuration', function ($compile, $parse) {
 			animation.offset = attrs.ngScrollOffset;
 			// build tween
 			var tween = TweenMax.fromTo($element, 1, animationSceneFrom, animationSceneTo);
+
 			// build scene
 			if (pin) {
 				var scene = new ScrollMagic.Scene(animation)
 					.setTween(tween)
+					.setClassToggle(toggleClassid, "myclass")
 					.setPin(pin, {
 						pushFollowers: false
 					})
@@ -100,6 +103,7 @@ firstapp.directive('ngScrollDuration', function ($compile, $parse) {
 			} else {
 				var scene = new ScrollMagic.Scene(animation)
 					.setTween(tween)
+					.setClassToggle(toggleClassid, "myclass")
 					.addIndicators() // add indicators (requires plugin)
 					.addTo(controller);
 			}
