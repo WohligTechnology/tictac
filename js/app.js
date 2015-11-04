@@ -93,8 +93,8 @@ firstapp.directive('ngScrollDuration', function ($compile, $parse) {
 			// build scene
 			if (pin) {
 				var scene = new ScrollMagic.Scene(animation)
+					.setClassToggle("#id1", "active") // add class toggle
 					.setTween(tween)
-					.setClassToggle(toggleClassid, "myclass")
 					.setPin(pin, {
 						pushFollowers: false
 					})
@@ -111,6 +111,21 @@ firstapp.directive('ngScrollDuration', function ($compile, $parse) {
 	};
 });
 
+//firstapp.directive('ngScrollToggleClass', function ($compile, $parse) {
+//	return {
+//		restrict: 'EA',
+//		replace: false,
+//		link: function ($scope, element, attrs) {
+//			var $element = $(element);
+//			var animation = {};
+//				var scene = new ScrollMagic.Scene({triggerElement: ".section"})
+//					.setTween(toggle)
+//					.setClassToggle(element, "myclass")
+//					.addIndicators() // add indicators (requires plugin)
+//					.addTo(controller);
+//		}
+//	};
+//})
 
 firstapp.filter('serverimage', function () {
 	return function (image) {

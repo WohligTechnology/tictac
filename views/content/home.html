@@ -1,21 +1,23 @@
 <section>
 	<div class="star-bg">
 		<div class="section1">
-			<div class="donut-astronaut pull-right">
-				<div class="donut">
-					<figure>
-						<img src="img/donut.png" alt="donut">
-					</figure>
-				</div>
-				<div class="letgo">
-					<figure>
-						<img src="img/letgo.png" class="" alt="letgo">
-					</figure>
-				</div>
-				<div class="astronaut">
-					<figure>
-						<img src="img/astronaut.png" class="" alt="astronaut">
-					</figure>
+			<div class="animate-astronaut">
+				<div class="donut-astronaut pull-right">
+					<div class="donut">
+						<figure>
+							<img src="img/donut.png" alt="donut">
+						</figure>
+					</div>
+					<div class="letgo">
+						<figure>
+							<img src="img/letgo.png" class="" alt="letgo">
+						</figure>
+					</div>
+					<div class="astronaut">
+						<figure>
+							<img src="img/astronaut.png" class="" alt="astronaut">
+						</figure>
+					</div>
 				</div>
 			</div>
 			<div class="bulb-astroid">
@@ -36,23 +38,23 @@
 <section class="section2">
 	<div class="star-bg">
 		<div class="buildings" id="id1">
-			<div class="building hided" id="id2" ng-scroll-animation-from="{'y':500, 'ease': Bounce.easeOut}" ng-scroll-duration="100" ng-scroll-animation-to="{'y': 0, 'ease': Linear}" ng-scroll-offset="400" element="#id1" toggleClassid="id2">
+			<div class="building" id="id2" pin=".section3">
 				<figure>
 					<img src="img/house1.png" class="full-image" alt="">
 				</figure>
 			</div>
-			<div class="building1" ng-scroll-animation-from="{'y':500, 'ease': Bounce.easeOut}" ng-scroll-duration="200" ng-scroll-animation-to="{'y': 0, 'ease': Linear}" ng-scroll-offset="400" pin="">
+			<div class="building1" pin=".section3">
 				<figure>
 					<img src="img/house2.png" class="full-image" alt="">
 				</figure>
 			</div>
-			<div class="building2" ng-scroll-animation-from="{'y':500, 'ease': Bounce.easeOut}" ng-scroll-duration="300" ng-scroll-animation-to="{'y': 0, 'ease': Linear}" ng-scroll-offset="400" pin="">
+			<div class="building2" pin=".section3">
 				<figure>
 					<img src="img/house3.png" class="full-image" alt="">
 				</figure>
 			</div>
 			<!--			<div class="coutch" ng-scroll-animation-from="{'y':-800, ease':Linear.easeOut}" ng-scroll-duration="300" ng-scroll-animation-to="{'y': 0, 'ease': Linear.easeOut}" ng-scroll-offset="100" pin=".section2">-->
-			<div class="coutch" ng-scroll-animation-from="{'y':-300, 'ease': Bounce.easeOut}" ng-scroll-duration="400" ng-scroll-animation-to="{'y': 0,  'ease': Bounce.easeOut}" ng-scroll-offset="300"  toggleClassid="#id1">
+			<div class="coutch" ng-scroll-duration="400" pin=".section2">
 				<!--			<div class="coutch">-->
 				<figure class="text-center">
 					<img src="img/coutch.png" class="" alt="">
@@ -101,7 +103,8 @@
 				</li>
 			</ul>
 		</div>
-		<div class="taxi taxi2" ng-scroll-animation-from="{'x':150, 'ease': Linear.ease}" ng-scroll-duration="200" ng-scroll-animation-to="{'x': -300, 'ease': Linear.ease}" ng-scroll-offset="900">
+		<!--		<div class="taxi taxi2" ng-scroll-animation-from="{'x':150, 'ease': Linear.ease}" ng-scroll-duration="200" ng-scroll-animation-to="{'x': -300, 'ease': Linear.ease}" ng-scroll-offset="900" pin=".section3">-->
+		<div class="taxi taxi2">
 			<figure>
 				<img src="img/taxi.png">
 			</figure>
@@ -141,12 +144,14 @@
 						<button class="btn btn-ouline" ng-click="showWebsite();">Click Here</button>
 					</div>
 				</div>
-				<div class="rikshaw" ng-scroll-animation-from="{'x':0, 'ease': Linear.easeOut}" ng-scroll-duration="200" ng-scroll-animation-to="{'x': 500, 'ease': Linear.ease}" ng-scroll-offset="1700">
+				<!--				<div class="rikshaw" ng-scroll-animation-from="{'x':0, 'ease': Linear.easeOut}" ng-scroll-duration="200" ng-scroll-animation-to="{'x': 500, 'ease': Linear.ease}" ng-scroll-offset="1700">	-->
+				<div class="rikshaw">
 					<figure>
 						<img src="img/rikshaw.png" class="full-image">
 					</figure>
 				</div>
-				<div class="cat" ng-scroll-animation-from="{'x':0, 'ease': Linear.easeOut}" ng-scroll-duration="100" ng-scroll-animation-to="{'x': -100, 'ease': Linear.easeNone}" ng-scroll-offset="2000">
+				<!--				<div class="cat" ng-scroll-animation-from="{'x':0, 'ease': Linear.easeOut}" ng-scroll-duration="100" ng-scroll-animation-to="{'x': -100, 'ease': Linear.easeNone}" ng-scroll-offset="2000">-->
+				<div class="cat">
 					<figure>
 						<img src="img/cat.png" class="full-image">
 					</figure>
@@ -183,12 +188,12 @@
 			</div>
 			<div class="buregler1">
 				<figure>
-					<img src="img/buregler1.png" class="">
+					<img src="img/gif/Climbing-Buglar.gif" class="">
 				</figure>
 			</div>
 			<div class="buregler2">
 				<figure>
-					<img src="img/buregler2.png" class="">
+					<img src="img/gif/Shaking-Buglar.gif" class="">
 				</figure>
 			</div>
 			<div class="batman">

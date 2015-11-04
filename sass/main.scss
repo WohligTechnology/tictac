@@ -108,7 +108,7 @@ figure {
 //		}
 //	}
 .star-bg {
-	background: url('../img/background/star.jpg') no-repeat;
+	background: url('../img/background/star.jpg') repeat;
 	background-size: 100% 100%;
 	overflow: hidden;
 }
@@ -229,10 +229,37 @@ figure {
 	}
 }
 
-.letgo {
-	@include animation(fadein 20s ease 8s infinite alternate);
+//animation
+.animate-astronaut {
+	@include animation(translate-all-astro 60s linear 0s infinite);
+	.donut-astronaut {
+		@include animation(translate-donut 60s linear 0s infinite alternate);
+	}
+	.astronaut {
+		@include animation(translate-astronaut 20s linear 0s infinite alternate);
+	}
+	.letgo {
+		@include animation(fadein 10s ease 0s infinite alternate);
+	}
 }
 
+.star-bg {
+	@include animation(translate-rotate-bg 80s linear 0s infinite alternate);
+}
+
+@include keyframes (translate-rotate-bg) {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: -250px -100px;
+	}
+	100% {
+		background-position: -500px -200px;
+	}
+}
+
+//fadein
 @include keyframes (fadein) {
 	from {
 		opacity: 0;
@@ -242,35 +269,53 @@ figure {
 	}
 }
 
-////animation
-.donut-astronaut {
-	@include animation(translatesocial 30s linear 0s infinite);
-}
-
-@include keyframes (translatesocial) {
+//astronaut
+@include keyframes (translate-astronaut) {
 	0% {
-		top: 10%;
-		right: -20%;
-	}
-	20% {
-		top: 0%;
-		right: 10%;
-		transform: rotate(-50deg);
-	}
-	65% {
-		top: -20%;
-		right: 60%;
-		transform: rotate(-50deg);
-	}
-	80% {
-		top: 20%;
-		right: 70%;
-		transform: rotate(-90deg);
+		@include transform(translate(-50%));
 	}
 	100% {
-		top: 10%;
-		right: 120%;
-		transform: rotate(-120deg);
+		@include transform( translateY(-0));
+	}
+}
+
+//donut
+@include keyframes (translate-donut) {
+	0% {
+		@include transform(rotate(0deg));
+	}
+	10% {
+		@include transform(rotate(-30deg));
+	}
+	50% {
+		@include transform(rotate(-90deg));
+	}
+	100% {
+		@include transform(rotate(0deg));
+	}
+}
+
+//translate-all-astro
+@include keyframes (translate-all-astro) {
+	0% {
+		@include transform( translate(30%,
+		10%));
+	}
+	20% {
+		@include transform( translate(10%,
+		0%) rotate(-10deg));
+	}
+	40% {
+		@include transform( translate(-15%,
+		10%) rotate(5deg));
+	}
+	60% {
+		@include transform( translate(-40%,
+		20) rotate(5deg));
+	}
+	100% {
+		@include transform( translate(-83%,
+		0) rotate(-20deg));
 	}
 }
 
@@ -492,7 +537,7 @@ figure {
 	.buregler1 {
 		position: absolute;
 		left: 10%;
-		bottom: 17.7%;
+		bottom: 18.1%;
 		width: 9%;
 		img {
 			width: 100%;
@@ -500,9 +545,9 @@ figure {
 	}
 	.buregler2 {
 		position: absolute;
-		left: 20%;
-		bottom: 24%;
-		width: 8%;
+		left: 8%;
+		bottom: 26%;
+		width: 36%;
 		img {
 			width: 100%;
 		}
@@ -591,7 +636,7 @@ figure {
 	position: relative;
 	background-color: #191919;
 	padding: 30px 0;
-//	margin-top: 50px;
+	//	margin-top: 50px;
 	.cont-center {
 		position: absolute;
 		top: 53%;
