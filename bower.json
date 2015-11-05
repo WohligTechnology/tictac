@@ -1,11 +1,11 @@
 {
-  "name": "AngularFrameworkFrontend",
+  "name": "Ting",
   "version": "0.0.1",
-  "homepage": "https://www.wohlig.com",
+  "homepage": "https://www.ting.in",
   "authors": [
     "tushar@wohlig.com"
   ],
-  "description": "Angular Framework Frontend",
+  "description": "Ting Digital",
   "license": "MIT",
   "ignore": [
     "**/.*",
@@ -35,6 +35,7 @@
     "typed.js": "~1.1.1",
     "ngDialog": "~0.4.0",
     "ScrollMagic": "~2.0.5",
-    "gsap": "https://github.com/greensock/GreenSock-JS.git#~1.18.0"
+    "gsap": "https://github.com/greensock/GreenSock-JS.git#~1.18.0",
+    "ng-dialog": "~0.5.5"
   }
 }
