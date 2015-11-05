@@ -81,7 +81,7 @@ firstapp.directive('ngScrollDuration', function ($compile, $parse) {
 			var animationSceneTo = eval("(" + attrs.ngScrollAnimationTo + ")");
 			var id = attrs.id;
 			var pin = attrs.pin;
-			var toggleClassid = attrs.toggleClassid;
+			var toggleClass = attrs.toggleClass;
 			if (attrs.ngScrollTrigger) {
 				animation.triggerElement = attrs.ngScrollTrigger;
 			}
