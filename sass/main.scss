@@ -686,12 +686,20 @@ figure {
 	.hello {
 		width: 60%;
 		margin: 0 auto;
+		.ting-hello {
+			position: relative;
+			margin-bottom: 15px;
+			img.ring {
+				position: absolute;
+				right: -23px;
+				bottom: -15px;
+			}
+		}
 		.link-ting {
 			p {
 				margin: 0;
 				text-align: right;
 				color: #fff;
-				//				padding-right: 279px;
 				a {
 					text-decoration: none;
 					color: $base-color;
