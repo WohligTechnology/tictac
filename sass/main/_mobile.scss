@@ -1,0 +1,180 @@
+
+@media (max-width:1200px) {
+	.letters-bg {
+		.type-writer {
+			position: relative;
+			width: 992px;
+			margin: 0 auto;
+		}
+		figure.hand-outside {
+			position: absolute;
+			top: 0;
+			left: 29%;
+			z-index: 2;
+			img {
+				width: 70px;
+			}
+		}
+		figure.hand-cap {
+			position: absolute;
+			top: -2px;
+			right: 25.7%;
+			z-index: 2;
+			img {
+				width: 75px;
+			}
+		}
+		.app-main {
+			.apps {
+				.typewriter {
+					bottom: 55px !important
+				}
+			}
+		}
+	}
+	.cat {
+		top: 49%!important;
+	}
+}
+
+@media (max-width:992px) {
+	.letters-bg {
+		figure.hand-cap {
+			display: none;
+		}
+		figure.hand-outside {
+			display: none;
+		}
+		.type-writer {
+			width: 100%;
+			.cat {
+				display: none;
+			}
+			.rikshaw {
+				display: none;
+			}
+			.yellow-paper {
+				display: none;
+			}
+			.cont-center {
+				width: 100%;
+				position: inherit;
+				color: #fff;
+				padding: 0px 20px;
+				p {
+					text-align: justify;
+				}
+			}
+			.app-main {
+				.apps {
+					position: initial!important;
+					.typewriter {
+						position: initial;
+						bottom: 0;
+						margin: 0 auto;
+					}
+					.cont-right {
+						width: 100%!important;
+						//							float: inherit!important;
+						margin-top: 0px!important;
+						margin-bottom: 20px!important;
+						margin-right: 0px!important;
+						padding: 0 20px !important;
+					}
+				}
+			}
+			.ios {
+				position: initial;
+				transform: initial;
+				text-align: center;
+				span {
+					color: #fff;
+				}
+			}
+		}
+	}
+	.btn {
+		border: 1px solid #fff;
+	}
+	.black-white-lines {
+		position: relative;
+		//			margin-top: 180px;
+	}
+	.road-bg.onroad {
+		.nav {
+			top: 15%;
+		}
+	}
+}
+
+@media (max-width:780px) {
+	.buildings .coutch {
+		bottom: -40px;
+	}
+	.letters-bg {
+		.type-writer {
+			.app-main {
+				height: auto;
+			}
+			.cont-right {
+				float: none;
+				p {
+					text-align: center!important;
+				}
+			}
+		}
+	}
+	.btn {
+		border-color: #fff;
+	}
+	.blubs {
+		.conts {
+			padding: 50px 20px;
+			.cont-center {
+				position: initial;
+				width: 100%;
+			}
+		}
+	}
+	.section1 {
+		.donut {
+			display: none;
+		}
+		.letgo {
+			display: none;
+		}
+		.astronaut {
+			display: none;
+		}
+	}
+	.road-bg.onroad {
+		.nav {
+			top: 15%;
+		}
+		.pot-holes2 {
+			display: none;
+		}
+	}
+}
+
+@media (max-width:480px) {
+	.buildings .coutch {
+		bottom: -26px;
+	}
+	.road-bg.onroad {
+		min-height: 350px;
+		.nav {
+			top: 10%;
+			ul {
+				li {
+					margin: 5px 0;
+				}
+			}
+		}
+		.taxi {
+			img {
+				width: 75px;
+			}
+		}
+	}
+}

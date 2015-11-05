@@ -5,10 +5,11 @@
 @import "../bower_components/fontawesome/css/font-awesome.min.css";
 @import "../bower_components/bootstrap/dist/css/bootstrap.min.css";
 @include font-face("LW", "../fonts/LINOWRITE_2");
-$base-color:#f6e730;
-$bg-color:#fff;
-$font-family: "LW",
-sans-serif !default;
+
+$base-color: #f6e730;
+$bg-color: #fff;
+$font-family: "LW", sans-serif !default;
+
 img.loading {
 	text-align: center;
 	opacity: 1;
@@ -101,15 +102,10 @@ figure {
 	margin: 0px;
 }
 
-//	@each $bg, $size in (star, 100% 100%),	(road, 100% 100%),	(letters, 100%),	(black, 100% 100%) {
-//		.#{$bg}-bg {
-//			background: url('../img/background/#{$bg}.jpg') no-repeat;
-//			background-size: $size;
-//		}
-//	}
 .star-bg {
-	background: url('../img/background/star.jpg') repeat;
-	background-size: 100% 100%;
+	background-image: url('../img/background/star.jpg');
+	background-repeat: repeat;
+	background-size: auto;
 	overflow: hidden;
 }
 
@@ -229,123 +225,20 @@ figure {
 	}
 }
 
-//animation
-.animate-astronaut {
-	@include animation(translate-all-astro 60s linear 0s infinite);
-	.donut-astronaut {
-		@include animation(translate-donut 60s linear 0s infinite alternate);
-	}
-	.astronaut {
-		@include animation(translate-astronaut 20s linear 0s infinite alternate);
-	}
-	.letgo {
-		@include animation(fadein 10s ease 0s infinite alternate);
-	}
-}
-
-.star-bg {
-	@include animation(translate-rotate-bg 80s linear 0s infinite alternate);
-}
-
-@include keyframes (translate-rotate-bg) {
-	0% {
-		background-position: 0 0;
-	}
-	50% {
-		background-position: -250px -100px;
-	}
-	100% {
-		background-position: -500px -200px;
-	}
-}
-
-//fadein
-@include keyframes (fadein) {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
-}
-
-//astronaut
-@include keyframes (translate-astronaut) {
-	0% {
-		@include transform(translate(-50%));
-	}
-	100% {
-		@include transform( translateY(-0));
-	}
-}
-
-//donut
-@include keyframes (translate-donut) {
-	0% {
-		@include transform(rotate(0deg));
-	}
-	10% {
-		@include transform(rotate(-30deg));
-	}
-	50% {
-		@include transform(rotate(-90deg));
-	}
-	100% {
-		@include transform(rotate(0deg));
-	}
-}
-
-//translate-all-astro
-@include keyframes (translate-all-astro) {
-	0% {
-		@include transform( translate(30%,
-		10%));
-	}
-	20% {
-		@include transform( translate(10%,
-		0%) rotate(-10deg));
-	}
-	40% {
-		@include transform( translate(-15%,
-		10%) rotate(5deg));
-	}
-	60% {
-		@include transform( translate(-40%,
-		20) rotate(5deg));
-	}
-	100% {
-		@include transform( translate(-83%,
-		0) rotate(-20deg));
-	}
-}
-
-.taxi3 {
-	@include animation(taxi 15s linear 3s infinite);
-}
-
-@include keyframes (taxi) {
-	0% {
-		transform: translate(600%, 0%);
-	}
-	100% {
-		transform: translate(-600%, 0%);
-	}
-}
-
 .buildings {
 	position: relative;
 	.building1 {
 		position: absolute;
 		top: 0;
-		z-index: 3;
+		z-index: 1;
 	}
 	.building2 {
 		position: absolute;
 		top: 0;
-		z-index: 1;
+		z-index: 0;
 	}
 	.building {
-		z-index: 0;
+		z-index: 2;
 		position: inherit;
 	}
 	.coutch {
@@ -894,8 +787,7 @@ figure {
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		@include transform(translate(-50%,
-		-50%));
+		@include transform(translate(-50%,-50%));
 		i {
 			font-size: 45px;
 			color: #fff;
@@ -903,187 +795,9 @@ figure {
 	}
 }
 
-@media (max-width:1200px) {
-	.letters-bg {
-		.type-writer {
-			position: relative;
-			width: 992px;
-			margin: 0 auto;
-		}
-		figure.hand-outside {
-			position: absolute;
-			top: 0;
-			left: 29%;
-			z-index: 2;
-			img {
-				width: 70px;
-			}
-		}
-		figure.hand-cap {
-			position: absolute;
-			top: -2px;
-			right: 25.7%;
-			z-index: 2;
-			img {
-				width: 75px;
-			}
-		}
-		.app-main {
-			.apps {
-				.typewriter {
-					bottom: 55px !important
-				}
-			}
-		}
-	}
-	.cat {
-		top: 49%!important;
-	}
+#pin1 {
+    margin-top: 18%;
 }
 
-@media (max-width:992px) {
-	.letters-bg {
-		figure.hand-cap {
-			display: none;
-		}
-		figure.hand-outside {
-			display: none;
-		}
-		.type-writer {
-			width: 100%;
-			.cat {
-				display: none;
-			}
-			.rikshaw {
-				display: none;
-			}
-			.yellow-paper {
-				display: none;
-			}
-			.cont-center {
-				width: 100%;
-				position: inherit;
-				color: #fff;
-				padding: 0px 20px;
-				p {
-					text-align: justify;
-				}
-			}
-			.app-main {
-				.apps {
-					position: initial!important;
-					.typewriter {
-						position: initial;
-						bottom: 0;
-						margin: 0 auto;
-					}
-					.cont-right {
-						width: 100%!important;
-						//							float: inherit!important;
-						margin-top: 0px!important;
-						margin-bottom: 20px!important;
-						margin-right: 0px!important;
-						padding: 0 20px !important;
-					}
-				}
-			}
-			.ios {
-				position: initial;
-				transform: initial;
-				text-align: center;
-				span {
-					color: #fff;
-				}
-			}
-		}
-	}
-	.btn {
-		border: 1px solid #fff;
-	}
-	.black-white-lines {
-		position: relative;
-		//			margin-top: 180px;
-	}
-	.road-bg.onroad {
-		.nav {
-			top: 15%;
-		}
-	}
-}
-
-@media (max-width:780px) {
-	.buildings .coutch {
-		bottom: -40px;
-	}
-	.letters-bg {
-		.type-writer {
-			.app-main {
-				height: auto;
-			}
-			.cont-right {
-				float: none;
-				p {
-					text-align: center!important;
-				}
-			}
-		}
-	}
-	.btn {
-		border-color: #fff;
-	}
-	.blubs {
-		.conts {
-			padding: 50px 20px;
-			.cont-center {
-				position: initial;
-				width: 100%;
-			}
-		}
-	}
-	.section1 {
-		.donut {
-			display: none;
-		}
-		.letgo {
-			display: none;
-		}
-		.astronaut {
-			display: none;
-		}
-	}
-	.road-bg.onroad {
-		.nav {
-			top: 15%;
-		}
-		.pot-holes2 {
-			display: none;
-		}
-	}
-}
-
-@media (max-width:480px) {
-	.buildings .coutch {
-		bottom: -26px;
-	}
-	.road-bg.onroad {
-		min-height: 350px;
-		.nav {
-			top: 10%;
-			ul {
-				li {
-					margin: 5px 0;
-				}
-			}
-		}
-		.taxi {
-			img {
-				width: 75px;
-			}
-		}
-	}
-}
-
-//section.section3 {
-//	margin-top: -200px!important;
-//}
-//type cusor css
+@import "main/animation";
+@import "main/mobile";
