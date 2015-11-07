@@ -110,6 +110,7 @@ firstapp.directive('ngScrollDuration', function ($compile, $parse) {
 });
 
 
+
 firstapp.filter('serverimage', function () {
 	return function (image) {
 		if (image && image != null) {
