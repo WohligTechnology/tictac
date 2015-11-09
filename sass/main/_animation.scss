@@ -1,4 +1,3 @@
-
 //animation
 .animate-astronaut {
 	@include animation(translate-all-astro 100s linear 0s infinite);
@@ -13,8 +12,14 @@
 	}
 }
 
-.star-bg {
-	// @include animation(translate-rotate-bg 700s linear 0s infinite);
+.onroad {
+	.taxi.taxi3 {
+		@include animation(taxi 15s linear 0s infinite);
+	}
+}
+
+.batman {
+	@include animation(translate-batman 15s linear 0s infinite);
 }
 
 @include keyframes (translate-rotate-bg) {
@@ -65,46 +70,56 @@
 //translate-all-astro
 @include keyframes (translate-all-astro) {
 	0% {
-		@include transform( translate(35%,10%));
+		@include transform( translate(35%, 10%));
 	}
 	20% {
-		@include transform( translate(10%,0%) rotate(-10deg));
+		@include transform( translate(10%, 0%) rotate(-10deg));
 	}
 	40% {
-		@include transform( translate(-15%,10%) rotate(5deg));
+		@include transform( translate(-15%, 10%) rotate(5deg));
 	}
 	60% {
-		@include transform( translate(-40%,20) rotate(5deg));
+		@include transform( translate(-40%, 20) rotate(5deg));
 	}
 	100% {
-		@include transform( translate(-100%,0) rotate(-20deg));
+		@include transform( translate(-100%, 0) rotate(-20deg));
 	}
 }
 
-.taxi3 {
-	@include animation(taxi 15s linear 3s infinite);
-}
-
+//taxi linear animation
 @include keyframes (taxi) {
 	0% {
-@include transform( translate(600%,0%));
+		@include transform( translate(600%, 0%));
 	}
 	100% {
 		@include transform(translate(600%, 0%));
 	}
 }
 
-.blub img {
-  @include animation(moving-bulb 10s linear 0s infinite);
-}
-@include keyframes (moving-bulb) {
-  0% {
-    @include transform( translate(0px,0));
+//batman
+@include keyframes (translate-batman) {
+	0% {
+//		@include transform( translate(35%, 10%));
+		top:20;
 	}
-  50% {
-    @include transform( translate(-20px,0));
-	}
-  100% {
-    @include transform( translate(0px,0));
+	100% {
+//		@include transform( translate(30%, 0%) rotate(-10deg));
+		left:-600;
 	}
 }
+
+//.blub img {
+//	@include animation(moving-bulb 10s linear 0s infinite);
+//}
+//
+//@include keyframes (moving-bulb) {
+//	0% {
+//		@include transform( translate(0px, 0));
+//	}
+//	50% {
+//		@include transform( translate(-20px, 0));
+//	}
+//	100% {
+//		@include transform( translate(0px, 0));
+//	}
+//}

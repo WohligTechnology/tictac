@@ -1,61 +1,201 @@
 <section>
-  <div class="star-bg">
-    <div class="section1">
-      <div class="animate-astronaut">
-        <div class="donut-astronaut pull-right">
-          <div class="donut">
-            <figure>
-              <img alt="donut" src="img/donut.png">
-            </figure>
-          </div>
-          <div class="letgo">
-            <figure>
-              <img alt="letgo" class="" src="img/letgo.png">
-            </figure>
-          </div>
-          <div class="astronaut">
-            <figure>
-              <img alt="astronaut" class="" src="img/astronaut.png">
-            </figure>
-          </div>
-        </div>
-      </div>
-      <div class="bulb-astroid">
-        <div class="blub">
-          <figure>
-            <img alt="tingbulb" class="full-image" src="img/bulbs.png">
-          </figure>
-        </div>
-      </div>
-    </div>
-  </section>
+	<div class="star-bg">
+		<div class="section1">
+			<div class="animate-astronaut">
+				<div class="donut-astronaut pull-right">
+					<div class="donut">
+						<figure>
+							<img alt="donut" src="img/donut.png">
+						</figure>
+					</div>
+					<div class="letgo">
+						<figure>
+							<img alt="letgo" class="" src="img/letgo.png">
+						</figure>
+					</div>
+					<div class="astronaut">
+						<figure>
+							<img alt="astronaut" class="" src="img/astronaut.png">
+						</figure>
+					</div>
+				</div>
+			</div>
+			<div class="bulb-astroid">
+				<div class="blub">
+					<figure>
+						<img alt="tingbulb" class="full-image" src="img/bulbs.png">
+					</figure>
+				</div>
+			</div>
+		</div>
+</section>
 
-  <div class="clearfix"></div>
+<div class="clearfix"></div>
 
-  <section class="section2">
+<section class="section2">
 
-    <img class="img-responsive road-sofa" ng-scroll-animation-from="{'y':0, 'ease': Linear.easeOut}" ng-scroll-animation-to="{'y': 0, 'ease': Linear.ease}" ng-scroll-duration="900" ng-scroll-offset="200" pin=".road-sofa" src="img/section2/road-sofa.jpg"/>
+	<img class="img-responsive road-sofa" ng-scroll-animation-from="{'y':0, 'ease': Linear.easeOut}" ng-scroll-animation-to="{'y': 0, 'ease': Linear.ease}" ng-scroll-duration="900" ng-scroll-offset="200" pin=".road-sofa" src="img/section2/road-sofa.jpg" />
 
-    <div class="buildings">
-      <div class="building" ng-scroll-animation-from="{'y':-200, 'ease': Linear.easeOut}" ng-scroll-animation-to="{'y':230, 'ease': Linear.ease}" ng-scroll-duration="900" ng-scroll-offset="200">
-        <img class="full-image" src="img/house1.png">
-      </div>
-      <div class="building1" ng-scroll-animation-from="{'y':0, 'ease': Linear.easeOut}" ng-scroll-animation-to="{'y':230, 'ease': Linear.ease}" ng-scroll-duration="900" ng-scroll-offset="200">
-        <img class="full-image" src="img/house2.png">
-      </div>
-      <div class="building2" ng-scroll-animation-from="{'y':400, 'ease': Linear.easeOut}" ng-scroll-animation-to="{'y': 230, 'ease': Linear.ease}" ng-scroll-duration="900" ng-scroll-offset="200">
-        <img class="full-image" src="img/house3.png">
-      </div>
-    </div>
+	<div class="buildings">
+		<div class="building" ng-scroll-animation-from="{'y':400, 'ease': Linear.easeOut}" ng-scroll-animation-to="{'y': 230, 'ease': Linear.ease}" ng-scroll-duration="900" ng-scroll-offset="200">
+			<img class="full-image" src="img/house1.png">
+		</div>
+		<div class="building1" ng-scroll-animation-from="{'y':0, 'ease': Linear.easeOut}" ng-scroll-animation-to="{'y':230, 'ease': Linear.ease}" ng-scroll-duration="900" ng-scroll-offset="200">
+			<img class="full-image" src="img/house2.png">
+		</div>
+		<div class="building2" ng-scroll-animation-from="{'y':400, 'ease': Linear.easeOut}" ng-scroll-animation-to="{'y': 230, 'ease': Linear.ease}" ng-scroll-duration="900" ng-scroll-offset="200">
+			<img class="full-image" src="img/house3.png">
+		</div>
+	</div>
+	<div class="coutch" ng-scroll-animation-from="{'y': -4500, 'ease': Linear.easeOut}" ng-scroll-animation-to="{'y': 0, 'ease': Linear.ease}" ng-scroll-duration="900" ng-scroll-offset="200">
+		<figure class="text-center">
+			<img class="" src="img/coutch.png">
+		</figure>
+	</div>
+</section>
 
-    <div class="coutch" ng-scroll-animation-from="{'y': -4500, 'ease': Linear.easeOut}" ng-scroll-animation-to="{'y': 0, 'ease': Linear.ease}" ng-scroll-duration="900" ng-scroll-offset="200">
-      <figure class="text-center">
-        <img class="" src="img/coutch.png">
-      </figure>
-    </div>
+<section class="section3" style="margin-top: 112px;">
+	<div class="road-bg onroad">
+		<img class="full-image" src="img/section2/after-road.jpg" ng-scroll-animation-from="{'y':0, 'ease': Linear.easeOut}" ng-scroll-animation-to="{'y': 0, 'ease': Linear.ease}" ng-scroll-duration="300" ng-scroll-offset="1800" pin=".road-sofa" />
+		<div class="taxi taxi1">
+			<figure>
+				<img src="img/taxi.png">
+			</figure>
+		</div>
+		<div class="nav">
+			<ul>
+				<li>
+					<a ng-click="showWebsite();">websites</a>
+				</li>
 
-  </section>
+				<li>
+					<a ng-click="showApp();">apps</a>
+				</li>
 
-  <section class="section3">
-    <img class="full-image" src="img/section2/after-road.jpg"/>
-  </section>
+				<li>
+					<a ng-click="showMarketing();">digital marketing</a>
+				</li>
+
+				<li>
+					<a ng-click="showVideos();">videos</a>
+				</li>
+
+				<li>
+					<a href="#">hello</a>
+				</li>
+			</ul>
+		</div>
+		<div class="taxi taxi2" ng-scroll-animation-from="{'x':300, 'ease': Linear.easeOut}" ng-scroll-duration="250" ng-scroll-animation-to="{'x': -370, 'ease': Linear.easeOut}" ng-scroll-offset="1400">
+			<div class="taxi taxi2" ng-scroll-animation-from="{'x':-375, 'ease': Linear.SlowMo}" ng-scroll-duration="100" ng-scroll-animation-to="{'x': -375, 'ease': Linear.SlowMo,'scale':0,'opacity':0,'rotation':-120}" ng-scroll-offset="1650">
+				<figure>
+					<img src="img/taxi.png">
+				</figure>
+			</div>
+		</div>
+		<div class="taxi taxi3">
+			<figure>
+				<img src="img/taxi.png">
+			</figure>
+		</div>
+	</div>
+</section>
+<section class="section4" style="z-index:1;position:relative;">
+	<div class="black-white-lines">
+		<div class="lines" ng-scroll-animation-from="{'y':0, 'ease': Linear.ease}" ng-scroll-duration="1200" ng-scroll-animation-to="{'y': 0, 'ease': Linear.ease}" ng-scroll-offset="2200">
+			<figure>
+				<img src="img/section5/lines-top.jpg" class="full-image">
+			</figure>
+		</div>
+		<div class="buregler1">
+			<figure>
+				<img src="img/gif/Climbing-Buglar.gif" class="">
+			</figure>
+		</div>
+		<div class="buregler2">
+			<figure>
+				<img src="img/gif/Shaking-Buglar.gif" class="">
+			</figure>
+		</div>
+		<div class="batman-animation">
+			<div class="batman" ng-scroll-animation-from="{'x':0, 'ease': Linear.ease}" ng-scroll-duration="200" ng-scroll-animation-to="{'x': -804,'y':-132, 'ease': Linear.ease}" ng-scroll-offset="2350">
+				<figure>
+					<img src="img/batman.png" class="">
+				</figure>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="black-bg section5">
+	<figure>
+		<img src="img/section5/lines-bottom.jpg" class="full-image line-pin">
+	</figure>
+	<div class="blubs">
+		<div class="bulb-1" ng-scroll-animation-from="{'y':-500, 'ease': Linear.ease}" ng-scroll-duration="180" ng-scroll-animation-to="{'y':0, 'ease': Linear.ease}" ng-scroll-offset="3300">
+			<figure>
+				<img src="img/marketing/bulbs-all.png" class="full-image">
+			</figure>
+		</div>
+		<div class="bulb-2" ng-scroll-animation-from="{'y':-1000, 'ease': Linear.ease}" ng-scroll-duration="380" ng-scroll-animation-to="{'y':0, 'ease': Linear.ease}" ng-scroll-offset="3700">
+			<figure>
+				<img src="img/marketing/bulbon.png" class="full-image">
+			</figure>
+		</div>
+		<div class="bulb-socialss" style="position:absolute;top:0;width: 100%;" ng-scroll-animation-from="{'y':-800, 'ease': Linear.ease}" ng-scroll-duration="280" ng-scroll-animation-to="{'y':0, 'ease': Linear.ease}" ng-scroll-offset="3500">
+			<div class="bulb-facebook">
+				<img src="img/marketing/FACEBOOK-BULBS.png" class="full-image">
+			</div>
+			<div class="bulb-insta">
+				<img src="img/marketing/INSTA-BULBS.png" class="full-image">
+			</div>
+			<div class="bulb-pinterest">
+				<img src="img/marketing/PINTREST-BULB.png" class="full-image">
+			</div>
+			<div class="bulb-twitter">
+				<img src="img/marketing/TWITTER-BULB.png" class="full-image">
+			</div>
+			<div class="bulb-youtube">
+				<img src="img/marketing/Youtube-BULB.png" class="full-image">
+			</div>
+		</div>
+		<div class="conts">
+			<div class="cont-center">
+				<h4>digital marketing</h4>
+				<p>
+					Our Tingdom has surfed and survived quite a few social media sites. From Twitter to Tinder Pinterest our hashtagging skills are #awesome. </p>
+				<div class="text-center margin-bottom">
+					#FollowForFollow #LikeFor2KFollowers #ThisIsNotAScam
+				</div>
+				<div class="text-center">
+					<button class="btn btn-ouline btn-white" ng-click="showMarketing();">Click Here</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section>
+	<div class="musical">
+		<div class="cont-center">
+			<h4>Videos</h4>
+			<p class="text-center">Visual: Animated Ting light bulb dancing across screen. VO: “We’d tell you all about our filter effects and 2D edit skills but #BRBRendering”</p>
+			<p class="text-center">Can't you tell?</p>
+			<div class="text-center">
+				<button class="btn btn-ouline" ng-click="showVideos();">Click Here</button>
+			</div>
+		</div>
+		<div class="text-center yellow-lights" ng-scroll-animation-from="{'y':-300, 'ease': Linear.ease,'scale':0}" ng-scroll-duration="500" ng-scroll-animation-to="{'y':0, 'ease': Linear.ease,'scale':1}" ng-scroll-offset="4500">
+			<figure>
+				<img src="img/yellowlights.png">
+			</figure>
+		</div>
+		<div class="text-center pianoo">
+			<figure>
+				<img src="img/pianoo.png">
+			</figure>
+		</div>
+		<div class="tvs">
+			<figure>
+				<img src="img/tvs1.png" alt="music" class="full-image">
+			</figure>
+		</div>
+	</div>
+</section>
