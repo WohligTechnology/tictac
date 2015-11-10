@@ -121,8 +121,7 @@ figure {
 }
 
 .black-bg {
-	background: url("../img/background/black.jpg") no-repeat;
-	background-size: 100% 100%;
+	background: #000;
 	min-height: 400px;
 }
 
@@ -557,7 +556,7 @@ figure {
 
 .musical {
 	position: relative;
-	background-color: #191919;
+	background-color: #000;
 	padding: 30px 0;
 	//	margin-top: 50px;
 	.cont-center {
@@ -615,10 +614,14 @@ figure {
 			img.ring {
 				position: absolute;
 				right: -18px;
-				bottom: -25px;
+				bottom: -30px;
+				width: 100px;
+				z-index: 0;
 			}
 		}
 		.link-ting {
+			z-index: 4;
+			position: relative;
 			p {
 				margin: 0;
 				margin-top: 10px;
