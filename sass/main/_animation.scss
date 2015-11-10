@@ -12,15 +12,15 @@
 	}
 }
 
-.onroad {
-	.taxi.taxi3 {
-		@include animation(taxi 15s linear 0s infinite);
-	}
-}
-
-.batman {
-	@include animation(translate-batman 15s linear 0s infinite);
-}
+//.onroad {
+//	.taxi.taxi3 {
+//		@include animation(taxi 15s linear 0s infinite);
+//	}
+//}
+//
+//.batman {
+//	@include animation(translate-batman 15s linear 0s infinite);
+//}
 
 @include keyframes (translate-rotate-bg) {
 	from {

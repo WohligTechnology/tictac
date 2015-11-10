@@ -44,7 +44,10 @@
 			<img class="full-image" src="img/house2.png">
 		</div>
 		<div class="building2" ng-scroll-animation-from="{'y':400, 'ease': Linear.easeOut}" ng-scroll-animation-to="{'y': 230, 'ease': Linear.ease}" ng-scroll-duration="900" ng-scroll-offset="200">
-			<img class="full-image" src="img/house3.png">
+			<img class="full-image" src="img/house4.png">
+		</div>
+		<div class="building3" ng-scroll-animation-from="{'y':400, 'ease': Linear.easeOut}" ng-scroll-animation-to="{'y': 230, 'ease': Linear.ease}" ng-scroll-duration="900" ng-scroll-offset="200">
+			<img class="full-image" src="img/house31.png">
 		</div>
 	</div>
 	<div class="coutch" ng-scroll-animation-from="{'y': -4500, 'ease': Linear.easeOut}" ng-scroll-animation-to="{'y': 0, 'ease': Linear.ease}" ng-scroll-duration="900" ng-scroll-offset="200">
@@ -54,7 +57,7 @@
 	</div>
 </section>
 
-<section class="section3" style="margin-top: 112px;">
+<section class="section3" style="margin-top: 107px;">
 	<div class="road-bg onroad">
 		<img class="full-image" src="img/section2/after-road.jpg" ng-scroll-animation-from="{'y':0, 'ease': Linear.easeOut}" ng-scroll-animation-to="{'y': 0, 'ease': Linear.ease}" ng-scroll-duration="300" ng-scroll-offset="1800" pin=".road-sofa" />
 		<div class="taxi taxi1">
@@ -85,8 +88,8 @@
 				</li>
 			</ul>
 		</div>
-		<div class="taxi taxi2" ng-scroll-animation-from="{'x':300, 'ease': Linear.easeOut}" ng-scroll-duration="250" ng-scroll-animation-to="{'x': -370, 'ease': Linear.easeOut}" ng-scroll-offset="1400">
-			<div class="taxi taxi2" ng-scroll-animation-from="{'x':-375, 'ease': Linear.SlowMo}" ng-scroll-duration="100" ng-scroll-animation-to="{'x': -375, 'ease': Linear.SlowMo,'scale':0,'opacity':0,'rotation':-120}" ng-scroll-offset="1650">
+		<div class="taxi taxi2" ng-scroll-animation-from="{'x':300, 'ease': Linear.easeOut}" ng-scroll-duration="300" ng-scroll-animation-to="{'x': -450, 'ease': Linear.easeOut}" ng-scroll-offset="1450">
+			<div class="taxi taxi2" ng-scroll-animation-from="{'x':-450, 'ease': Linear.SlowMo}" ng-scroll-duration="100" ng-scroll-animation-to="{'x': -450, 'ease': Linear.SlowMo,'scale':0,'opacity':0,'rotation':-120}" ng-scroll-offset="1650">
 				<figure>
 					<img src="img/taxi.png">
 				</figure>
@@ -99,9 +102,72 @@
 		</div>
 	</div>
 </section>
-<section class="section4" style="z-index:1;position:relative;">
+<section class="section4">
+	<div class="letters-bg">
+		<div class="hands">
+			<figure class="hands-main">
+				<img src="img/hands.png">
+			</figure>
+			<figure class="hand-outside">
+				<img src="img/hand-outside.png">
+			</figure>
+			<figure class="hand-cap">
+				<img src="img/hand-cap.png">
+			</figure>
+		</div>
+		<div class="">
+			<div class="type-writer">
+				<div class="yellow-paper">
+					<figure>
+						<img src="img/paper-yellow.png">
+					</figure>
+				</div>
+				<div class="cont-center">
+					<h4>websites</h4>
+					<p>We love making websites. We love making websites .We love making Websites. We love making websites. We love making websites. We love making websites .We love making Websites. We love making websites. We love making websites. We love making websites .We love making Websites. We love making websites.................... websites. </p>
+					<p class="text-center">Can't you tell?</p>
+					<div>
+						<button class="btn btn-ouline" ng-click="showWebsite();">Click Here</button>
+					</div>
+				</div>
+				<div class="rikshaw" ng-scroll-animation-from="{'x':0, 'ease': Linear.easeOut}" ng-scroll-duration="300" ng-scroll-animation-to="{'x': 500, 'ease': Linear.ease}" ng-scroll-offset="2300">
+					<figure>
+						<img src="img/rikshaw.png" class="full-image">
+					</figure>
+				</div>
+				<div class="cat" ng-scroll-animation-from="{'x':0, 'ease': Linear.easeOut}" ng-scroll-duration="200" ng-scroll-animation-to="{'x': -140,'y':0, 'ease': Linear.easeNone}" ng-scroll-offset="2600">
+					<figure>
+						<img src="img/cat.png" class="full-image">
+					</figure>
+				</div>
+
+				<div class="ios">
+					<h3> <span typed-js></span></h3>
+				</div>
+				<div class="app-main">
+					<div class="apps">
+						<div class="typewriter">
+							<figure>
+								<img src="img/typewriter.png">
+							</figure>
+						</div>
+						<div class="cont-right">
+							<h4>apps</h4>
+							<p>
+								Apptually speaking, our idea of a love triangle includes UI and U(e)X.
+							</p>
+							<div class="text-center">
+								<button class="btn btn-ouline btn-white" ng-click="showApp();">Click Here</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</section>
+<section class="section5" style="z-index:1;position:relative;">
 	<div class="black-white-lines">
-		<div class="lines" ng-scroll-animation-from="{'y':0, 'ease': Linear.ease}" ng-scroll-duration="1200" ng-scroll-animation-to="{'y': 0, 'ease': Linear.ease}" ng-scroll-offset="2200">
+		<div class="lines" ng-scroll-animation-from="{'y':0, 'ease': Linear.ease}" ng-scroll-duration="1200" ng-scroll-animation-to="{'y': 0, 'ease': Linear.ease}" ng-scroll-offset="3200">
 			<figure>
 				<img src="img/section5/lines-top.jpg" class="full-image">
 			</figure>
@@ -117,7 +183,7 @@
 			</figure>
 		</div>
 		<div class="batman-animation">
-			<div class="batman" ng-scroll-animation-from="{'x':0, 'ease': Linear.ease}" ng-scroll-duration="200" ng-scroll-animation-to="{'x': -804,'y':-132, 'ease': Linear.ease}" ng-scroll-offset="2350">
+			<div class="batman" ng-scroll-animation-from="{'x':0, 'ease': Linear.ease}" ng-scroll-duration="450" ng-scroll-animation-to="{'x': -804,'y':-71, 'ease': Linear.ease}" ng-scroll-offset="3750">
 				<figure>
 					<img src="img/batman.png" class="">
 				</figure>
@@ -125,22 +191,22 @@
 		</div>
 	</div>
 </section>
-<section class="black-bg section5">
+<section class="black-bg section6">
 	<figure>
 		<img src="img/section5/lines-bottom.jpg" class="full-image line-pin">
 	</figure>
 	<div class="blubs">
-		<div class="bulb-1" ng-scroll-animation-from="{'y':-500, 'ease': Linear.ease}" ng-scroll-duration="180" ng-scroll-animation-to="{'y':0, 'ease': Linear.ease}" ng-scroll-offset="3300">
+		<div class="bulb-1" ng-scroll-animation-from="{'y':-500, 'ease': Linear.ease}" ng-scroll-duration="220" ng-scroll-animation-to="{'y':0, 'ease': Linear.ease}" ng-scroll-offset="4650">
 			<figure>
 				<img src="img/marketing/bulbs-all.png" class="full-image">
 			</figure>
 		</div>
-		<div class="bulb-2" ng-scroll-animation-from="{'y':-1000, 'ease': Linear.ease}" ng-scroll-duration="380" ng-scroll-animation-to="{'y':0, 'ease': Linear.ease}" ng-scroll-offset="3700">
+		<div class="bulb-2" ng-scroll-animation-from="{'y':-1000, 'ease': Linear.ease}" ng-scroll-duration="380" ng-scroll-animation-to="{'y':0, 'ease': Linear.ease}" ng-scroll-offset="4900">
 			<figure>
 				<img src="img/marketing/bulbon.png" class="full-image">
 			</figure>
 		</div>
-		<div class="bulb-socialss" style="position:absolute;top:0;width: 100%;" ng-scroll-animation-from="{'y':-800, 'ease': Linear.ease}" ng-scroll-duration="280" ng-scroll-animation-to="{'y':0, 'ease': Linear.ease}" ng-scroll-offset="3500">
+		<div class="bulb-socialss" style="position:absolute;top:0;width: 100%;" ng-scroll-animation-from="{'y':-800, 'ease': Linear.ease}" ng-scroll-duration="280" ng-scroll-animation-to="{'y':0, 'ease': Linear.ease}" ng-scroll-offset="4800">
 			<div class="bulb-facebook">
 				<img src="img/marketing/FACEBOOK-BULBS.png" class="full-image">
 			</div>
@@ -172,7 +238,7 @@
 		</div>
 	</div>
 </section>
-<section>
+<section class="section7">
 	<div class="musical">
 		<div class="cont-center">
 			<h4>Videos</h4>
@@ -182,7 +248,7 @@
 				<button class="btn btn-ouline" ng-click="showVideos();">Click Here</button>
 			</div>
 		</div>
-		<div class="text-center yellow-lights" ng-scroll-animation-from="{'y':-300, 'ease': Linear.ease,'scale':0}" ng-scroll-duration="500" ng-scroll-animation-to="{'y':0, 'ease': Linear.ease,'scale':1}" ng-scroll-offset="4500">
+		<div class="text-center yellow-lights" ng-scroll-animation-from="{'y':-840,x:-180, 'ease': Linear.ease,'scale':0}" ng-scroll-duration="1000" ng-scroll-animation-to="{'y':0,x:0, 'ease': Linear.ease,'scale':1}" ng-scroll-offset="5300">
 			<figure>
 				<img src="img/yellowlights.png">
 			</figure>
@@ -194,8 +260,52 @@
 		</div>
 		<div class="tvs">
 			<figure>
-				<img src="img/tvs1.png" alt="music" class="full-image">
+				<img src="img/section7/Tv-Left.gif" alt="music" class="">
+				<img src="img/section7/Tv-Right.gif" alt="music" class="pull-right">
 			</figure>
+		</div>
+	</div>
+</section>
+<section class="section8">
+	<div class="contact black-bg">
+		<div class="hello">
+			<div class="ting-hello">
+					<img src="img/hello.png" class="full-image" alt="">
+					<img src="img/gif/phone.gif" class="ring" alt="">
+			</div>
+			<div class="link-ting">
+				<p>go back to <a href="#">ting.in</a></p>
+			</div>
+			<div class="address">
+				<ul>
+					<li>
+						<h4>Mumbai</h4>
+						<p>
+							1308 Panchratna Building,
+							<br> Opera House,
+							<br> Next to Roxy Cinema,
+							<br> Charni Road,
+							<br> Mumbai- 400 004
+						</p>
+						<p>
+							+91 98675 97223
+							<br> +91 98202 82644
+						</p>
+					</li>
+					<li>
+						<h4>Chennai</h4>
+						<p>
+							16, 3rd Main Road,
+							<br> Seethammal Colony,
+							<br> Alwarpet,
+							<br> Chennai 600 018.
+						</p>
+						<p>
+							+91 98404 88224
+						</p>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </section>
