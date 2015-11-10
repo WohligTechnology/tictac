@@ -152,7 +152,7 @@ figure {
 	position: absolute;
 	width: 100%;
 	z-index: 2;
-} 
+}
 
 .ngdialog-close {
 	position: absolute;
@@ -561,11 +561,11 @@ figure {
 	//	margin-top: 50px;
 	.cont-center {
 		position: absolute;
-		top: 53%;
+		top: 49%;
 		width: 30%;
 		z-index: 12;
 		left: 43%;
-		transform: translate(-43%, -53%);
+		transform: translate(-43%, -50%);
 		h4 {
 			text-align: center;
 			font-size: 36px;
@@ -620,6 +620,7 @@ figure {
 		.link-ting {
 			p {
 				margin: 0;
+				margin-top: 10px;
 				text-align: right;
 				color: #fff;
 				a {
@@ -629,13 +630,13 @@ figure {
 			}
 		}
 		.address {
-			//			padding-left: 17%;
 			ul {
-				display: block;
+				display: flex;
 				padding-left: 0;
 				margin-bottom: 0;
+				margin-top: 20px;
+				list-style: none;
 				li {
-					display: inline-block;
 					color: #fff;
 					padding-right: 25px;
 					font-family: $font-family;
@@ -659,50 +660,6 @@ figure {
 		img {
 			margin-bottom: -3px;
 		}
-	}
-}
-
-//type cusor css
-.typed-cursor {
-	opacity: 1;
-	-webkit-animation: blink 0.7s infinite;
-	-moz-animation: blink 0.7s infinite;
-	animation: blink 0.7s infinite;
-}
-
-@keyframes blink {
-	0% {
-		opacity: 1;
-	}
-	50% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
-@-webkit-keyframes blink {
-	0% {
-		opacity: 1;
-	}
-	50% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
-@-moz-keyframes blink {
-	0% {
-		opacity: 1;
-	}
-	50% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
 	}
 }
 

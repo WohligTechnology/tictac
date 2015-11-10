@@ -120,3 +120,21 @@
 		@include transform(translate(-500%, 0%));
 	}
 }
+
+//type cusor css
+.typed-cursor {
+	opacity: 1;
+	@include animation(blink 0.7s infinite);
+}
+
+@include keyframes (blink) {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
