@@ -32,6 +32,7 @@
     "typed.js": "~1.1.1",
     "ScrollMagic": "~2.0.5",
     "gsap": "https://github.com/greensock/GreenSock-JS.git#~1.18.0",
-    "ng-dialog": "~0.5.5"
+    "ng-dialog": "~0.5.5",
+    "jquery.smoothwheel": "https://github.com/fatlinesofcode/jquery.smoothwheel.git"
   }
 }

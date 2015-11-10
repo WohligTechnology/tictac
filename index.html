@@ -19,6 +19,7 @@
 	<script src="bower_components/ScrollMagic/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
 	<script src="bower_components/ScrollMagic/scrollmagic/minified/plugins/animation.velocity.min.js"></script>
 	<script src="bower_components/ScrollMagic/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+	<script src="bower_components/jquery.smoothwheel/src/jquery.smoothwheel.js"></script>
 	<script src="bower_components/flexslider/jquery.flexslider-min.js"></script>
 	<script src="bower_components/angular/angular.js"></script>
 	<script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
@@ -35,6 +36,17 @@
         <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
+	<script>
+		$(document).ready(function () {
+			$(".section1").smoothWheel()
+			$(".section2").smoothWheel()
+			$(".section3").smoothWheel()
+			$(".section4").smoothWheel()
+			$(".section5").smoothWheel()
+			$(".section6").smoothWheel()
+			$(".section7").smoothWheel()
+		});
+	</script>
 </head>
 
 <body style="background:#000;">
