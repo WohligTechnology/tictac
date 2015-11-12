@@ -95,7 +95,7 @@
 
 //taxi linear animation
 .taxi3 {
-	@include animation(moving-taxi 20s linear 1s infinite);
+	@include animation(moving-taxi 20s linear 0s infinite);
 }
 
 @include keyframes (moving-taxi) {
@@ -108,16 +108,15 @@
 }
 
 .taxi1 {
-	@include animation(moving-taxi-1 25s linear 0s infinite);
+	@include animation(moving-taxi-1 20s linear 0s infinite);
 }
-
 
 @include keyframes (moving-taxi-1) {
 	0% {
-		@include transform(translate(900%, 0%));
+		@include transform(translate(-500%, 0%));
 	}
 	100% {
-		@include transform(translate(-500%, 0%));
+		@include transform(translate(900%, 0%));
 	}
 }
 
