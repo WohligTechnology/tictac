@@ -1,180 +1,307 @@
-
-@media (max-width:1200px) {
-	.letters-bg {
-		.type-writer {
-			position: relative;
-			width: 992px;
-			margin: 0 auto;
-		}
-		figure.hand-outside {
-			position: absolute;
-			top: 0;
-			left: 29%;
-			z-index: 2;
-			img {
-				width: 70px;
+	@media (max-width:1250px) {
+		.letters-bg {
+			.type-writer {
+				position: relative;
+				width: 992px;
+				margin: 0 auto;
 			}
-		}
-		figure.hand-cap {
-			position: absolute;
-			top: -2px;
-			right: 25.7%;
-			z-index: 2;
-			img {
-				width: 75px;
-			}
-		}
-		.app-main {
-			.apps {
-				.typewriter {
-					bottom: 55px !important
+			figure.hand-outside {
+				position: absolute;
+				top: 0;
+				left: 29%;
+				z-index: 2;
+				img {
+					width: 70px;
 				}
 			}
-		}
-	}
-	.cat {
-		top: 49%!important;
-	}
-}
-
-@media (max-width:992px) {
-	.letters-bg {
-		figure.hand-cap {
-			display: none;
-		}
-		figure.hand-outside {
-			display: none;
-		}
-		.type-writer {
-			width: 100%;
-			.cat {
-				display: none;
-			}
-			.rikshaw {
-				display: none;
-			}
-			.yellow-paper {
-				display: none;
-			}
-			.cont-center {
-				width: 100%;
-				position: inherit;
-				color: #fff;
-				padding: 0px 20px;
-				p {
-					text-align: justify;
+			figure.hand-cap {
+				position: absolute;
+				top: -2px;
+				right: 25.7%;
+				z-index: 2;
+				img {
+					width: 75px;
 				}
 			}
 			.app-main {
 				.apps {
-					position: initial!important;
 					.typewriter {
-						position: initial;
-						bottom: 0;
-						margin: 0 auto;
-					}
-					.cont-right {
-						width: 100%!important;
-						//							float: inherit!important;
-						margin-top: 0px!important;
-						margin-bottom: 20px!important;
-						margin-right: 0px!important;
-						padding: 0 20px !important;
+						bottom: 55px !important
 					}
 				}
 			}
-			.ios {
-				position: initial;
-				transform: initial;
-				text-align: center;
-				span {
-					color: #fff;
+		}
+		.buildings {
+			.building {
+				bottom: 38%;
+			}
+			.building1 {
+				bottom: 38%;
+			}
+			.building2 {
+				bottom: 38%;
+			}
+			.building3 {
+				bottom: 38%;
+			}
+		}
+		.cat {
+			top: 49%!important;
+		}
+		.section2 {
+			position: relative;
+			margin-top: 80px;
+			.coutch {
+				position: absolute;
+				bottom: 20%;
+				img {
+					width: 24%;
+				}
+			}
+			img.road-sofa {
+				position: absolute;
+				bottom: 0;
+			}
+		}
+		.section3 {
+			margin-top: 0px;
+			.road-bg.onroad {
+				.taxi2 {
+					display: none;
 				}
 			}
 		}
-	}
-	.btn {
-		border: 1px solid #fff;
-	}
-	.black-white-lines {
-		position: relative;
-		//			margin-top: 180px;
-	}
-	.road-bg.onroad {
-		.nav {
-			top: 15%;
+		.tvs img {
+			width: 40%;
 		}
 	}
-}
-
-@media (max-width:780px) {
-	.buildings .coutch {
-		bottom: -40px;
-	}
-	.letters-bg {
-		.type-writer {
-			.app-main {
-				height: auto;
+	
+	@media (max-width:992px) {
+		.letters-bg {
+			figure.hand-cap {
+				display: none;
 			}
-			.cont-right {
-				float: none;
-				p {
-					text-align: center!important;
-				}
+			figure.hand-outside {
+				display: none;
 			}
-		}
-	}
-	.btn {
-		border-color: #fff;
-	}
-	.blubs {
-		.conts {
-			padding: 50px 20px;
-			.cont-center {
-				position: initial;
+			.type-writer {
 				width: 100%;
-			}
-		}
-	}
-	.section1 {
-		.donut {
-			display: none;
-		}
-		.letgo {
-			display: none;
-		}
-		.astronaut {
-			display: none;
-		}
-	}
-	.road-bg.onroad {
-		.nav {
-			top: 15%;
-		}
-		.pot-holes2 {
-			display: none;
-		}
-	}
-}
-
-@media (max-width:480px) {
-	.buildings .coutch {
-		bottom: -26px;
-	}
-	.road-bg.onroad {
-		min-height: 350px;
-		.nav {
-			top: 10%;
-			ul {
-				li {
-					margin: 5px 0;
+				.cat {
+					display: none;
+				}
+				.rikshaw {
+					display: none;
+				}
+				.yellow-paper {
+					display: none;
+				}
+				.cont-center {
+					width: 100%;
+					position: inherit;
+					color: #fff;
+					padding: 0px 20px;
+					p {
+						text-align: justify;
+					}
+				}
+				.app-main {
+					.apps {
+						position: initial!important;
+						.typewriter {
+							position: initial;
+							bottom: 0;
+							margin: 0 auto;
+						}
+						.cont-right {
+							width: 100%!important;
+							margin-top: 0px!important;
+							margin-bottom: 20px!important;
+							margin-right: 0px!important;
+							padding: 0 20px !important;
+							z-index: 2!important;
+							position: relative!important;
+							h4 {
+								font-size: 28px;
+							}
+						}
+						p {
+							text-align: center!important;
+						}
+					}
+				}
+				.ios {
+					position: initial;
+					transform: initial;
+					text-align: center;
+					span {
+						color: #fff;
+					}
 				}
 			}
 		}
-		.taxi {
-			img {
-				width: 75px;
+		.btn {
+			border: 1px solid #fff;
+		}
+		.black-white-lines {
+			position: relative;
+			overflow: visible;
+		}
+		.road-bg.onroad {
+			.nav {
+				top: 15%;
+			}
+		}
+		.contact .hello .ting-hello img.ring {
+			right: -30px;
+		}
+	}
+	
+	@media (max-width:767px) {
+		.buildings .coutch {
+			bottom: -40px;
+		}
+		.cont-center h4 {
+			font-size: 28px !important;
+		}
+		.letters-bg {
+			.type-writer {
+				.app-main {
+					height: auto;
+				}
+				.cont-right {
+					float: none;
+				}
+			}
+		}
+		.btn {
+			border-color: #fff;
+		}
+		.blubs {
+			.conts {
+				padding: 50px 20px 20px 20px;
+				height: auto;
+				.cont-center {
+					position: initial;
+					width: 100%;
+				}
+			}
+		}
+		.section1 {
+			.donut {
+				img {
+					width: 50px;
+				}
+			}
+			.astronaut {
+				img {
+					width: 75px
+				}
+			}
+			.letgo {
+				margin-top: 55px;
+			}
+		}
+		.road-bg.onroad {
+			.nav {
+				top: 15%;
+			}
+			.pot-holes2 {
+				display: none;
+			}
+		}
+		.musical {
+			position: relative;
+			.cont-center {
+				position: static;
+				width: 100%;
+				transform: none;
+				text-align: center;
+				color: #fff;
+				margin-bottom: 20px;
+			}
+			.tvs {
+				bottom: 30px;
+				z-index: 0;
+			}
+		}
+		.contact .hello {
+			width: 90%;
+			margin: 0 auto;
+		}
+		.contact {
+			.hello {
+				.ting-hello {
+					img.ring {
+						right: -28px;
+						bottom: -20px;
+					}
+				}
+			}
+			.address {
+				ul {
+					li {
+						padding-right: 0px!important;
+					}
+				}
+			}
+		}
+		.contact {
+			min-height: 400px;
+			padding: 50px 0;
+		}
+	}
+	
+	@media (max-width:480px) {
+		.buildings .coutch {
+			bottom: -26px;
+		}
+		.road-bg.onroad {
+			min-height: 350px;
+			.nav {
+				top: 10%;
+				ul {
+					li {
+						margin: 5px 0;
+					}
+				}
+			}
+			.taxi {
+				img {
+					width: 75px;
+				}
+			}
+		}
+		.head {
+			h2 {
+				float: none;
+			}
+			.radio-website input[type="radio"] {
+				margin-left: 0;
+			}
+		}
+		.contact {
+			.hello {
+				.ting-hello {
+					img.ring {
+						right: -15px;
+						bottom: -20px;
+					}
+				}
+			}
+		}
+		.section1 {
+			.donut {
+				img {
+					width: 30px;
+				}
+			}
+			.astronaut {
+				img {
+					width: 45px
+				}
+			}
+			.letgo {
+				margin-top: 35px;
 			}
 		}
 	}
-}

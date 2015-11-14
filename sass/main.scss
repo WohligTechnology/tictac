@@ -15,7 +15,6 @@ img.loading {
 	width: 32px !important;
 	height: auto;
 }
-
 img {
 	opacity: 0;
 }
@@ -137,14 +136,6 @@ figure {
 	padding: 20px;
 }
 
-//	.ngdialog-content {
-//		background: url("../img/background/paper-repeat.jpg") no-repeat;
-//		background-size: cover;
-//		position: absolute;
-//		top: 50%;
-//		width: 100%;
-//		@include transform(translateY(-50%));
-//	}
 .paper-bg {
 	background: url("../img/background/paper-repeat.jpg") no-repeat;
 	background-size: cover;
@@ -204,7 +195,7 @@ figure {
 	}
 	.donut {
 		position: absolute;
-		right: 125px;
+		right: 70%;
 	}
 	.blub {
 		text-align: center;
@@ -263,54 +254,57 @@ figure {
 	}
 }
 
-.road-bg.onroad {
-	position: relative;
-	overflow: hidden;
-	.pot-holes2 {
-		position: absolute;
-		right: 40%;
-		bottom: 30%;
-	}
-	.pot-holes1 {
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
-	.nav {
-		position: absolute;
-		top: -15px;
-		left: 26%;
-		z-index: 2;
-		ul {
-			list-style: none;
-			li {
-				margin: 12px 0;
-				text-align: right;
-				a {
-					color: #000;
-					text-decoration: none;
-					font-size: 20px;
-					font-family: $font-family;
-					font-weight: 600;
-					cursor: pointer;
+.section3 {
+	margin-top: 107px;
+	.road-bg.onroad {
+		position: relative;
+		overflow: hidden;
+		.pot-holes2 {
+			position: absolute;
+			right: 38%;
+			bottom: 30%;
+		}
+		.pot-holes1 {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.nav {
+			position: absolute;
+			top: -15px;
+			left: 26%;
+			z-index: 2;
+			ul {
+				list-style: none;
+				li {
+					margin: 12px 0;
+					text-align: right;
+					a {
+						color: #000;
+						text-decoration: none;
+						font-size: 20px;
+						font-family: $font-family;
+						font-weight: 600;
+						cursor: pointer;
+					}
 				}
 			}
 		}
-	}
-	.taxi {
-		position: absolute;
-	}
-	.taxi1 {
-		bottom: 40%;
-		left: 10%;
-	}
-	.taxi2 {
-		right: -15%;
-		bottom: 66%;
-	}
-	.taxi.taxi3 {
-		bottom: 20%;
-		left: 40%;
+		.taxi {
+			position: absolute;
+		}
+		.taxi1 {
+			bottom: 40%;
+			left: 10%;
+		}
+		.taxi2 {
+			right: -15%;
+			bottom: 66%;
+		}
+		.taxi.taxi3 {
+			bottom: 20%;
+			left: 40%;
+		}
 	}
 }
 
@@ -455,8 +449,8 @@ figure {
 			width: 100%;
 		}
 	}
+
 	.batman-animation {
-		@include animation(translate-batman 15s linear 0s infinite);
 		.batman {
 			position: absolute;
 			right: 4%;
@@ -466,17 +460,6 @@ figure {
 				width: 100%;
 			}
 		}
-	}
-}
-
-@include keyframes (translate-batman) {
-	0% {
-		//		@include transform( translate(35%, 10%));
-		left: 20;
-	}
-	100% {
-		//		@include transform( translate(30%, 0%) rotate(-10deg));
-		left: -600;
 	}
 }
 
@@ -611,11 +594,15 @@ figure {
 		.ting-hello {
 			position: relative;
 			margin-bottom: 15px;
+			img.hello-img {
+				position: relative;
+				z-index: 4;
+			}
 			img.ring {
 				position: absolute;
-				right: -18px;
+				right: -35px;
 				bottom: -30px;
-				width: 100px;
+				width: 15%;
 				z-index: 0;
 			}
 		}
@@ -768,7 +755,6 @@ figure {
 		}
 	}
 }
-
 .box {
 	position: relative;
 	cursor: pointer;
