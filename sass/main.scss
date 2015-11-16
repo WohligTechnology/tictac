@@ -15,6 +15,7 @@ img.loading {
 	width: 32px !important;
 	height: auto;
 }
+
 img {
 	opacity: 0;
 }
@@ -449,7 +450,6 @@ figure {
 			width: 100%;
 		}
 	}
-
 	.batman-animation {
 		.batman {
 			position: absolute;
@@ -709,11 +709,22 @@ figure {
 	}
 }
 
-.main {
-	h4 {
-		font-size: 16px;
-		font-family: $font-family;
-		font-weight: 600;
+a {
+	color: #000;
+	.main {
+		h4 {
+			font-size: 16px;
+			font-family: $font-family;
+			font-weight: 600;
+		}
+	}
+	&:hover {
+		text-decoration: none;
+		color: #000;
+	}	
+	&:focus {
+		text-decoration: none;
+		color: #000;
 	}
 }
 
@@ -755,6 +766,7 @@ figure {
 		}
 	}
 }
+
 .box {
 	position: relative;
 	cursor: pointer;

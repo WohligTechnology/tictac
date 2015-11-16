@@ -14,12 +14,15 @@
         <div class="row" ng-repeat="website in allwebsites">
             <div class="col-md-3 col-sm-6" ng-repeat="items in website">
                 <div class="projects">
-                    <div class="box">
-                        <img src="{{items.image | serverimage}}" class="img-responsive">
-                    </div>
-                    <div class="main">
-                        <h4 class="text-center">{{items.title}}</h4>
-                    </div>
+                   <a href="{{items.link}}" target="_blank">
+						<div class="box">
+							<img src="{{items.image | serverimage}}" class="img-responsive">
+						</div>
+						<div class="main">
+							<h4 class="text-center">{{items.title}}</h4>
+						</div>
+                   </a>
+                    
                 </div>
             </div>
         </div>
