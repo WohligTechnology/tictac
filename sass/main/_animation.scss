@@ -4,11 +4,14 @@
 	.donut-astronaut {
 		@include animation(translate-donut 80s linear 0s infinite alternate);
 	}
-	.astronaut {
+	.magic-astro {
 		@include animation(translate-astronaut 40s linear 0s infinite alternate);
 	}
 	.letgo {
-		@include animation(fadein 10s ease 0s infinite alternate);
+		@include animation(fadein 20s ease 0s infinite alternate);
+	}
+	.donut {
+		@include animation(rotate-donut 10s ease 0s infinite alternate);
 	}
 }
 
@@ -34,7 +37,17 @@
 //astronaut
 @include keyframes (translate-astronaut) {
 	0% {
-		@include transform(translate(-50%));
+		@include transform(translate(100%));
+	}
+	100% {
+		@include transform( translateY(-120));
+	}
+}
+
+//astronaut
+@include keyframes (rotate-donut) {
+	0% {
+		@include transform(translate(-100%));
 	}
 	100% {
 		@include transform( translateY(-0));

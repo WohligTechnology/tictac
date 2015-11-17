@@ -120,6 +120,14 @@ figure {
 	min-height: 400px;
 }
 
+.paper-inner-bg {
+	background: url("../img/background/Inside-popup-page-texture.jpg");
+	position: relative;
+	width: 100%;
+	z-index: 2;
+	min-height: 660px;
+}
+
 .black-bg {
 	background: #000;
 	min-height: 400px;
@@ -193,6 +201,7 @@ figure {
 	}
 	.astronaut {
 		width: 100%;
+		margin-left: -20px;
 	}
 	.donut {
 		position: absolute;
@@ -238,11 +247,11 @@ figure {
 	.building {
 		position: absolute;
 		bottom: 40px;
-		z-index: -1;
+		z-index: 3;
 	}
 	.building3 {
 		position: absolute;
-		bottom: 40px;
+		bottom: 20px;
 		z-index: 1;
 	}
 }
@@ -252,6 +261,7 @@ figure {
 	width: 100%;
 	img {
 		max-width: 100%;
+		margin-left: -50px;
 	}
 }
 
@@ -324,7 +334,7 @@ figure {
 	figure.hand-outside {
 		position: absolute;
 		top: 0;
-		left: 29.2%;
+		left: 23.1%;
 		z-index: 2;
 	}
 	figure.hand-cap {
@@ -376,10 +386,10 @@ figure {
 		}
 		.cat {
 			position: absolute;
-			top: 51.5%;
-			right: 44%;
+			top: 51%;
+			right: 34%;
 			z-index: 2;
-			width: 8%;
+			width: 25%;
 		}
 		.app-main {
 			height: 210px;
@@ -434,9 +444,9 @@ figure {
 	overflow: hidden;
 	.buregler1 {
 		position: absolute;
-		left: 10%;
-		bottom: 23%;
-		width: 9%;
+		left: 5%;
+		bottom: 19%;
+		width: 12%;
 		img {
 			width: 100%;
 		}
@@ -517,7 +527,8 @@ figure {
 	.conts {
 		color: #fff;
 		position: relative;
-		height: 310px;
+		height: 275px;
+		z-index: 10;
 		.cont-center {
 			position: absolute;
 			width: 360px;
@@ -544,7 +555,7 @@ figure {
 	//	margin-top: 50px;
 	.cont-center {
 		position: absolute;
-		top: 49%;
+		top: 35%;
 		width: 30%;
 		z-index: 12;
 		left: 43%;
@@ -566,6 +577,7 @@ figure {
 		position: relative;
 		img {
 			width: 75%;
+			margin-top: -220px;
 		}
 	}
 	.pianoo {
@@ -721,7 +733,7 @@ a {
 	&:hover {
 		text-decoration: none;
 		color: #000;
-	}	
+	}
 	&:focus {
 		text-decoration: none;
 		color: #000;
