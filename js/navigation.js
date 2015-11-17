@@ -39,22 +39,22 @@ var navigationservice = angular.module('navigationservice', [])
             return menuname;
         },
         getallapps: function(pageno, callback, err) {
-            return $http.get(adminurl + 'getallapps?pageno=' + pageno + '&maxrow=' + 4, {
+            return $http.get(adminurl + 'getallapps?pageno=' + pageno + '&maxrow=' + 100, {
                 withCredentials: true
             }).success(callback).error(err);
         },
         getalldigitalmarketing: function(pageno, callback, err) {
-            return $http.get(adminurl + 'getalldigitalmarketing?pageno=' + pageno + '&maxrow=' + 8, {
+            return $http.get(adminurl + 'getalldigitalmarketing?pageno=' + pageno + '&maxrow=' + 100, {
                 withCredentials: false
             }).success(callback).error(err);
         },
         getallvideo: function(pageno, callback, err) {
-            return $http.get(adminurl + 'getallvideo?pageno=' + pageno + '&maxrow=' + 6, {
+            return $http.get(adminurl + 'getallvideo?pageno=' + pageno + '&maxrow=' + 100, {
                 withCredentials: false
             }).success(callback).error(err);
         },
         getallwebsite: function(id, pageno, callback, err) {
-            return $http.get(adminurl + 'getallwebsite?id=' + id + '&pageno=' + pageno + '&maxrow=' + 8, {
+            return $http.get(adminurl + 'getallwebsite?id=' + id + '&pageno=' + pageno + '&maxrow=' + 100, {
                 withCredentials: false
             }).success(callback).error(err);
         }

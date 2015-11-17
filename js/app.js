@@ -122,6 +122,19 @@ firstapp.filter('serverimage', function () {
 	};
 });
 
+
+firstapp.filter('extlink', function () {
+	return function (link) {
+    var link2 = link.substring(0, 4);
+		if (link2 == "http") {
+			return link
+		} else {
+			return "http://"+link;
+		}
+
+	};
+});
+
 firstapp.directive('youtube', function ($sce) {
 	return {
 		restrict: 'A',

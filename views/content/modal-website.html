@@ -14,22 +14,22 @@
         <div class="row" ng-repeat="website in allwebsites">
             <div class="col-md-3 col-sm-6" ng-repeat="items in website">
                 <div class="projects">
-                   <a href="{{items.link}}" target="_blank">
-						<div class="box">
-							<img src="{{items.image | serverimage}}" class="img-responsive">
-						</div>
-						<div class="main">
-							<h4 class="text-center">{{items.title}}</h4>
-						</div>
+                   <a href="{{items.link|extlink}}" target="_blank">
+          						<div class="box">
+          							<img src="{{items.image | serverimage}}" class="img-responsive">
+          						</div>
+          						<div class="main">
+          							<h4 class="text-center">{{items.title}}</h4>
+          						</div>
                    </a>
-                    
+
                 </div>
             </div>
         </div>
-        <div class="col-md-12">
+        <!-- <div class="col-md-12">
             <div class="arrow-down pull-right" ng-click="getMoreWebsites(filterid);">
                 <i class="fa fa-angle-down"></i>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>

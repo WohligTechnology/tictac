@@ -208,7 +208,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             scope: $scope,
             template: 'views/content/modal-website.html'
         });
-        $scope.filterWebsites(7);
     };
 
 })
