@@ -1,4 +1,6 @@
 // JavaScript Document
+var ZoomValue = 1;
+var HeightChange  = 1;
 var controller = new ScrollMagic.Controller();
 var firstapp = angular.module('firstapp', [
     'ui.router',
@@ -85,8 +87,8 @@ firstapp.directive('ngScrollDuration', function ($compile, $parse) {
 			if (attrs.ngScrollTrigger) {
 				animation.triggerElement = attrs.ngScrollTrigger;
 			}
-			animation.duration = attrs.ngScrollDuration;
-			animation.offset = attrs.ngScrollOffset;
+			animation.duration = attrs.ngScrollDuration * ZoomValue;
+			animation.offset = attrs.ngScrollOffset * ZoomValue;
 			// build tween
 			var tween = TweenMax.fromTo($element, 1, animationSceneFrom, animationSceneTo);
 
@@ -97,12 +99,12 @@ firstapp.directive('ngScrollDuration', function ($compile, $parse) {
 					.setPin(pin, {
 						pushFollowers: false
 					})
-//					.addIndicators() // add indicators (requires plugin)
+					.addIndicators() // add indicators (requires plugin)
 					.addTo(controller);
 			} else {
 				var scene = new ScrollMagic.Scene(animation)
 					.setTween(tween)
-//					.addIndicators() // add indicators (requires plugin)
+					.addIndicators() // add indicators (requires plugin)
 					.addTo(controller);
 			}
 		}
@@ -157,8 +159,11 @@ firstapp.directive('youtube', function ($sce) {
 
 function changeZoom() {
   var newwidth = $(window).width();
-  var newZoom = newwidth/1349;
-  $("body").css("zoom",newZoom);
+  ZoomValue= newwidth/1349;
+  //ZoomValue  = 1;
+  $("body").css("zoom",ZoomValue);
+  HeightChange = $(window).height()/667;
+
 }
 $(document).ready(function() {
   changeZoom();
