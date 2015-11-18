@@ -2,6 +2,9 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 .controller('HomeCtrl', function ($scope, TemplateService, NavigationService, $timeout, ngDialog, $location, $anchorScroll) {
 	//Used to name the .html file
+
+
+	$scope.sec8css = {height:Section8Height};
 	$scope.template = TemplateService.changecontent("home");
 	$scope.menutitle = NavigationService.makeactive("Home");
 	TemplateService.title = $scope.menutitle;
