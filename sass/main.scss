@@ -100,7 +100,7 @@ figure {
   min-height: 500px;
 }
 .letters-bg {
-  background: url(../img/background/letters.jpg) no-repeat;
+  background: url(../img/background/letters.jpg) repeat;
   background-size: cover;
   min-height: 400px;
 }
@@ -200,7 +200,7 @@ figure {
   position: relative;
 }
 .road-sofa {
-  margin-top: 100px;
+  z-index: -1;
 }
 .buildings {
   z-index: -1;
@@ -234,7 +234,7 @@ figure {
   }
 }
 .section3 {
-  margin-top: 90px;
+  margin-top: -90px;
   .road-bg.onroad {
     position: relative;
     overflow: hidden;
@@ -521,11 +521,10 @@ figure {
   //	margin-top: 50px;
   .cont-center {
     position: absolute;
-    top: 35%;
+    top: 30%;
     width: 30%;
     z-index: 12;
-    left: 43%;
-    transform: translate(-43%, -50%);
+    left: 28%;
     h4 {
       text-align: center;
       font-size: 36px;
@@ -534,7 +533,7 @@ figure {
       font-family: $font-family;
     }
     p {
-      margin: 20px 0;
+      margin: 10px 0;
       font-family: $font-family;
     }
   }
