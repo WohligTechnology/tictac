@@ -152,3 +152,17 @@ firstapp.directive('youtube', function ($sce) {
 		}
 	};
 });
+
+
+
+function changeZoom() {
+  var newwidth = $(window).width();
+  var newZoom = newwidth/1349;
+  $("body").css("zoom",newZoom);
+}
+$(document).ready(function() {
+  changeZoom();
+  $(window).resize(function() {
+    changeZoom();
+  });
+});
