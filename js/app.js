@@ -99,12 +99,12 @@ firstapp.directive('ngScrollDuration', function ($compile, $parse) {
 					.setPin(pin, {
 						pushFollowers: false
 					})
-					.addIndicators() // add indicators (requires plugin)
+					// .addIndicators() // add indicators (requires plugin)
 					.addTo(controller);
 			} else {
 				var scene = new ScrollMagic.Scene(animation)
 					.setTween(tween)
-					.addIndicators() // add indicators (requires plugin)
+					// .addIndicators() // add indicators (requires plugin)
 					.addTo(controller);
 			}
 		}
