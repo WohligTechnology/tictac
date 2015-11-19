@@ -4,7 +4,7 @@
             <h2>digital marketing<h2>
 		</div>
 		<div class="row" ng-repeat="market in allmarket">
-			<div class="col-md-3 col-sm-6 min-height" ng-repeat="items in market">
+			<div class="col-md-3 col-xs-6 min-height" ng-repeat="items in market">
 				<div class="box">
 					<img ng-src="{{items.image | serverimage}}" class="img-responsive">
 				</div>
@@ -33,7 +33,6 @@
 				</div>
 			</div>
 		</div>
-
 		<!-- <div class="col-md-12">
 			<div class="arrow-down pull-right" ng-click="getMoreDM();">
 				<i class="fa fa-angle-down"></i>

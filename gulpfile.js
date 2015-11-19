@@ -31,7 +31,7 @@ var ftpdetails = {
     host: 'wohlig.co.in',
     user: 'enter your username',
     pass: 'enter your password',
-    remotePath: "public_html/tingdigital/test2"
+    remotePath: "public_html/tingdigital/testing"
 };
 
 //Do not change anything below
