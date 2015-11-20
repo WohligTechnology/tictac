@@ -3,11 +3,11 @@
 		<div class="head">
 			<h2>apps</h2>
 		</div>
-		<div class="row" ng-repeat="apps in allapps">
-			<div class="col-md-3 col-xs-6" ng-repeat="items in apps">
+		<div class="row">
+			<div class="col-sm-3 col-xs-6" ng-repeat="items in apps">
 				<div class="flex-box">
 					<div class="boxs">
-						<img ng-src="{{items.image | serverimage}}" class="img-responsive">
+						<img ng-src="{{items.image | serverimage}}" class="full-image">
 					</div>
 					<div class="main">
 						<h4 class="text-center">{{items.title}}</h4>

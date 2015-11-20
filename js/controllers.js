@@ -46,7 +46,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 			_.each(data.queryresult, function (n) {
 				$scope.market.push(n);
 			});
-			$scope.allmarket = _.chunk($scope.market, 4);
+			// $scope.allmarket = _.chunk($scope.market, 4);
 		}, function (err) {
 			if (err)
 				console.log(err)
@@ -64,7 +64,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 			_.each(data.queryresult, function (n) {
 				$scope.videos.push(n);
 			});
-			$scope.allvideos = _.chunk($scope.videos, 3);
+			// $scope.allvideos = _.chunk($scope.videos, 3);
 		}, function (err) {
 			if (err)
 				console.log(err)
@@ -81,7 +81,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 		NavigationService.getallwebsite(id, 1, function (data, status) {
 			console.log(data);
 			$scope.website = data.queryresult;
-			$scope.allwebsites = _.chunk(data.queryresult, 4);
+			// $scope.allwebsites = _.chunk(data.queryresult, 4);
 		}, function (err) {
 			if (err)
 				console.log(err)
@@ -95,7 +95,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 			_.each(data.queryresult, function (n) {
 				$scope.website.push(n);
 			});
-			$scope.allwebsites = _.chunk($scope.website, 4);
+			// $scope.allwebsites = _.chunk($scope.website, 4);
 			console.log($scope.allwebsites);
 		}, function (err) {
 			if (err)

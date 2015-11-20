@@ -1,28 +1,22 @@
 <div class="paper-inner-bg">
-    <div class="website container">
-        <div class="head">
-            <h2>videos<h2>
-		</div>
-		<div class="row" ng-repeat="videos in allvideos">
-			<div class="col-md-4 col-sm-6" ng-repeat="items in videos">
-				<div class="projects">
-					<div class="box">
-						<!-- <img src="{{items.img}}" class="img-responsive">
-							<div class="play">
-						<i class="fa fa-youtube-play"></i>
-							</div> -->
-						<div youtube code="items.videourl"></div>
-					</div>
-					<div class="main">
-						<h4 class="text-center">{{items.title}}</h4>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- <div class="col-md-12" ng-click="getMoreVideos();">
-			<div class="arrow-down pull-right">
-				<i class="fa fa-angle-down"></i>
-			</div>
-		</div> -->
-	</div>
+  <div class="website container">
+    <div class="head">
+      <h2>videos
+        <h2>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 col-xs-6" ng-repeat="items in videos">
+        <div class="flex-box">
+          <div class="projects">
+            <div class="box">
+              <div youtube code="items.videourl"></div>
+            </div>
+            <div class="main">
+              <h4 class="text-center">{{items.title}}</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
