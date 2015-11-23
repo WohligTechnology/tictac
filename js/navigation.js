@@ -8,16 +8,35 @@ var navigationservice = angular.module('navigationservice', [])
 
 .factory('NavigationService', function($http) {
     var navigation = [{
-        name: "Home",
+        name: "website",
         classis: "active",
-        link: "#/home",
-        subnav: [{
-            name: "Subnav1",
-            classis: "active",
-            link: "#/home"
-        }]
+        link: "#/Website",
     }, {
-        name: "Features",
+        name: "apps",
+        active: "",
+        link: "#/feature",
+        classis: "active",
+        subnav: []
+    }, {
+        name: "digital marketing",
+        active: "",
+        link: "#/feature",
+        classis: "active",
+        subnav: []
+    }, {
+        name: "videos",
+        active: "",
+        link: "#/feature",
+        classis: "active",
+        subnav: []
+    }, {
+        name: "hello",
+        active: "",
+        link: "#/feature",
+        classis: "active",
+        subnav: []
+    }, {
+        name: "go back",
         active: "",
         link: "#/feature",
         classis: "active",

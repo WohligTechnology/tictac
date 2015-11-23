@@ -174,8 +174,6 @@ function changeZoom() {
  console.log(ZoomValue);
  console.log(mainHeight/ZoomValue);
  Section8Height = mainHeight/ZoomValue;
-
-
 }
 $(document).ready(function() {
   changeZoom();

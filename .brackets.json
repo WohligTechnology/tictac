@@ -1,0 +1,6 @@
+{
+    "jscodehints.detectedExclusions": [
+        "C:/xampp/htdocs/tictac/bower_components/jquery/src/event.js",
+        "C:/xampp/htdocs/tictac/js/app.js"
+    ]
+}
