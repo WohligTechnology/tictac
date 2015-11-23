@@ -1,127 +1,130 @@
 @media (max-width:992px) {
-	.projects {
-		margin: 20px 0;
-	}
-	.box {
-		margin: 0 auto;
-		img {
-			width: 100%;
-		}
-	}
+  .projects {
+    margin: 20px 0;
+  }
+  .box {
+    margin: 0 auto;
+    img {
+      width: 100%;
+    }
+  }
 }
-
 @media (max-width:767px) {
-	.section8 {
-		position: relative;
-		.contact {
-			position: relative;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-		}
-	}
-	.blubs .conts .cont-center {
-		position: absolute;
-		width: 48%;
-		left: 48%;
-	}
-	.section3 .road-bg.onroad .nav {
-		ul {
-			padding: 0;
-			li {
-				a {
-					font-size: 12px;
-				}
-			}
-		}
-	}
-	.cont-center {
-		h4 {
-			font-size: 16px !important;
-			margin-bottom: 10px !important;
-		}
-	}
-	p {
-		font-size: 10px !important;
-		margin-bottom: 5px !important;
-	}
-	.btn {
-		padding: 3px 12px !important;
-	}
-	.letters-bg .type-writer .ios {
-		font-size: 14px;
-		h3 {
-			font-size: 14px!important;
-		}
-	}
-	.letters-bg .type-writer {
-		.cont-center p {
-			margin: 10px 0 !important;
-		}
-		.app-main .apps .cont-right {
-			width: 35%;
-			color: #fff;
-			float: left;
-			margin-top: 0;
-			margin-bottom: 0;
-			padding-right: 0;
-			h4 {
-				text-align: center;
-				font-size: 16px;
-				margin-bottom: 10px;
-			}
-		}
-	}
-	.musical .cont-center {
-		top: 15%;
-	}
+  footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+  }
+  .section8 {
+    position: relative;
+    .contact {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .blubs .conts .cont-center {
+    position: absolute;
+    width: 48%;
+    left: 48%;
+  }
+  .section3 .road-bg.onroad .nav {
+    ul {
+      padding: 0;
+      li {
+        a {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .cont-center {
+    h4 {
+      font-size: 16px !important;
+      margin-bottom: 10px !important;
+    }
+  }
+  p {
+    font-size: 10px !important;
+    margin-bottom: 5px !important;
+  }
+  .btn {
+    padding: 3px 12px !important;
+  }
+  .letters-bg .type-writer .ios {
+    font-size: 14px;
+    h3 {
+      font-size: 14px!important;
+    }
+  }
+  .letters-bg .type-writer {
+    .cont-center p {
+      margin: 10px 0 !important;
+    }
+    .app-main .apps .cont-right {
+      width: 35%;
+      color: #fff;
+      float: left;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-right: 0;
+      h4 {
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .musical .cont-center {
+    top: 15%;
+  }
 }
-
 @media (max-width:448px) {
-	p {
-		font-size: 6px !important;
-	}
-	.letters-bg .type-writer {
-		.cont-center {
-			width: 80%;
-		}
-	}
-	.section3 .road-bg.onroad .nav {
-		ul li {
-			margin: 5px 0;
-			text-align: right;
-			a {
-				font-size: 8px;
-			}
-		}
-		left: 15%;
-	}
-	.letters-bg .type-writer .cont-center p {
-		margin: 0px 0 !important;
-		font-size: 6px !important;
-		line-height: 1;
-	}
-	.letters-bg .type-writer .ios {
-		h3 {
-			font-size: 8px!important;
-		}
-	}
-	.cont-center h4 {
-		font-size: 12px !important;
-		margin: 0px !important;
-	}
-	.btn {
-		padding: 2px 10px !important;
-		font-size: 8px;
-	}
-	.blubs .conts .cont-center {
-		position: absolute;
-		width: 48%;
-		left: 50%;
-	}
-	.musical .cont-center {
-		h4 {
-			font-size: 8px!important;
-		}
-	}
+  p {
+    font-size: 6px !important;
+  }
+  .letters-bg .type-writer {
+    .cont-center {
+      width: 80%;
+    }
+  }
+  .section3 .road-bg.onroad .nav {
+    ul li {
+      margin: 5px 0;
+      text-align: right;
+      a {
+        font-size: 8px;
+      }
+    }
+    left: 15%;
+  }
+  .letters-bg .type-writer .cont-center p {
+    margin: 0 !important;
+    font-size: 6px !important;
+    line-height: 1;
+  }
+  .letters-bg .type-writer .ios {
+    h3 {
+      font-size: 8px!important;
+    }
+  }
+  .cont-center h4 {
+    font-size: 12px !important;
+    margin: 0 !important;
+  }
+  .btn {
+    padding: 2px 10px !important;
+    font-size: 8px;
+  }
+  .blubs .conts .cont-center {
+    position: absolute;
+    width: 48%;
+    left: 50%;
+  }
+  .musical .cont-center {
+    h4 {
+      font-size: 8px!important;
+    }
+  }
 }

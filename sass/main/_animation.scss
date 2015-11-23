@@ -1,6 +1,6 @@
 //animation
 .animate-astronaut {
-	@include animation(translate-all-astro 100s linear 0s infinite);
+	@include animation(translate-all-astro 80s linear 0s infinite);
 	.donut-astronaut {
 		@include animation(translate-donut 80s linear 0s infinite alternate);
 	}

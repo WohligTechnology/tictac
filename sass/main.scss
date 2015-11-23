@@ -110,14 +110,13 @@ figure {
 }
 .paper-inner-bg {
   background: url(../img/background/Inside-popup-page-texture.jpg);
-  position:absolute;
+  position: absolute;
   width: 100%;
   z-index: 2;
-	background-size: 100% 100%;
+  background-size: 100% 100%;
   min-height: 667px;
 }
 .black-bg {
-  background: #000;
   min-height: 400px;
 }
 .pull-right {
@@ -155,9 +154,10 @@ figure {
   }
 }
 
+.section8 {
+  overflow: hidden;
+}
 .ngdialog-overlay {
-
-  // background: url(../img/background/paper-repeat.jpg) no-repeat;
   background: transparent;
   z-index: 1;
 }
@@ -212,13 +212,13 @@ figure {
 }
 .section2 {
   position: relative;
-	.ting-logo {
-	    position: absolute;
-	    bottom: 39px;
-	    right: 29%;
-	    z-index: 64;
-	    width: 12%;
-	}
+  .ting-logo {
+    position: absolute;
+    bottom: 39px;
+    right: 29%;
+    z-index: 64;
+    width: 12%;
+  }
 }
 .buildings {
   z-index: -1;
@@ -439,11 +439,11 @@ figure {
       width: 100%;
     }
   }
-	.buregler2 {
-	    position: absolute;
-	    left: 34%;
-	    bottom: 52%;
-	    width: 30%;
+  .buregler2 {
+    position: absolute;
+    left: 34%;
+    bottom: 52%;
+    width: 30%;
     img {
       width: 100%;
     }
@@ -537,7 +537,6 @@ figure {
 }
 .musical {
   position: relative;
-  background-color: #000;
   padding: 30px 0;
 
   //	margin-top: 50px;
