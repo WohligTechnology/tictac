@@ -146,9 +146,20 @@ figure {
 }    &:focus {
     background-color:transparent;
 }
-
+}
+header.stickyheader {
+    position:fixed;
+    top:-100px;
+    width:100%;
+    z-index: 99;
+    @include transition(all 1s)
+    &.active {
+      top:0px;
+    }
 }
 .navbar-fixed-top.nav-bg {
+    position:relative;
+    width:100%;
     background: $base-color;
     border: 0px;
     .logo {
@@ -224,6 +235,7 @@ border-left: 2px solid #e3aa00;
 
 .section8 {
     overflow: hidden;
+    position: relative;
 }
 
 .ngdialog-overlay {
@@ -667,12 +679,17 @@ border-left: 2px solid #e3aa00;
         z-index: 0;
     }
 }
-
+.section8{
+  position: relative;
 .contact {
     padding: 130px 0;
     .hello {
-        width: 60%;
-        margin: 0 auto;
+      width: 60%;
+    margin: 0 auto;
+    @include transform( translate(-50%,-50%));
+    top: 50%;
+    position: absolute;
+    left: 50%;
         .ting-hello {
             position: relative;
             margin-bottom: 15px;
@@ -727,7 +744,7 @@ border-left: 2px solid #e3aa00;
         }
     }
 }
-
+}
 .footer-bg {
     .paper-crush {
         img {
@@ -872,6 +889,9 @@ a {
     background: $base-color;
     padding: 10px 0;
     font-weight: 800;
+    position: absolute;
+width: 100%;
+bottom: 0px;
 }
 
 @import "main/animation";

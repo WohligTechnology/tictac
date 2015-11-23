@@ -97,7 +97,20 @@ li+li{
 }
 }
 }
+@media (max-width:550px) {
+.rotateMobile {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  bottom: 0;
+  background: #171717;
+  right: 0;
+  left: 0;
+      text-align: center;
+}
+}
 @media (max-width:448px) {
+
   p {
     font-size: 6px !important;
   }

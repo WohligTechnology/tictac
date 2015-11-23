@@ -33,7 +33,6 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider) {
 
 });
 
-
 firstapp.directive('typedJs', function ($document) {
 	return {
 		restrict: 'EA',
@@ -114,6 +113,53 @@ firstapp.directive('ngScrollDuration', function ($compile, $parse) {
 
 
 
+firstapp.directive('toggleClass', function ($compile, $parse) {
+	return {
+		restrict: 'EA',
+		replace: false,
+		link: function ($scope, element, attrs) {
+
+      console.log(attrs);
+
+			var $element = $(element);
+			var triggerElement = attrs.triggerElement;
+      console.log(triggerElement);
+      new ScrollMagic.Scene({triggerElement: triggerElement})
+					.setClassToggle(attrs.toggleElement, attrs.toggleClass) // add class toggle
+      //    .addIndicators()
+					.addTo(controller);
+
+		}
+	};
+});
+
+var taxiAni = true;
+firstapp.directive('taxiAnimation', function ($compile, $parse) {
+	return {
+		restrict: 'EA',
+		replace: false,
+		link: function ($scope, element, attrs) {
+      new ScrollMagic.Scene({triggerElement: ".taxiAnimation", duration: 200})
+                .addTo(controller)
+                .addIndicators() // add indicators (requires plugin)
+                .on("enter", function (e) {
+                  console.log("Taxi Enter");
+                  setTimeout(function() {
+                    taxiAni = true;
+                  }, 6000);
+                  if(taxiAni == true)
+                  {
+                    $(".taxiAnimation").attr("src","img/gif/taxianimation.gif");
+                  }
+                  taxiAni = false;
+
+
+                })
+		}
+	};
+});
+
+
 firstapp.filter('serverimage', function () {
 	return function (image) {
 		if (image && image != null) {
@@ -169,10 +215,6 @@ function changeZoom() {
     var mainHeight = $(window).height();
     section8Height  = $(".section8").height() * ZoomValue;
     var lastHeightDiff = mainHeight - section8Height;
-    console.log("HEIGHT");
-    console.log(mainHeight);
-    console.log(ZoomValue);
-    console.log(mainHeight/ZoomValue);
     Section8Height = mainHeight/ZoomValue;
 }
 changeZoom();

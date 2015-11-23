@@ -39,22 +39,39 @@
 </head>
 
 <body style="background:#161616;">
-	<div class="loader">
-<img src="img/gif/Cat-Hanging.gif">
-<img src="img/gif/Climbing-Buglar.gif">
-<img src="img/gif/phone.gif">
-<img src="img/gif/Shaking-Buglar.gif">
-<img src="img/gif/taxianimation.gif">
+	<div class="loader" style="background:#161616;z-index=999;text-align: center;position:fixed;top:0;left:0;bottom:0;right:0">
+			<img src="img/gif/loading.gif" alt="" style="width: 200px;height: auto;opacity: 1;position: absolute ;top: 50%;left:50%;transform: translate(-50%,-50%);">
 	</div>
 
-	<div class="rotateMobile">
-
+	<div class="rotateMobile" style="display:none;">
+		<img src="img/gif/cell-phone.gif">
+		<div class="btn-mobile">
+			<button class="btn btn-danger continue">Continue</button>
+		</div>
 	</div>
 
 	<div class="hidden">
-		<img src="">
+		<img src="img/gif/Cat-Hanging.gif">
+		<img src="img/gif/Climbing-Buglar.gif">
+		<img src="img/gif/phone.gif">
+		<img src="img/gif/Shaking-Buglar.gif">
+		<img src="img/gif/taxianimation.gif">
+		<img src="img/section1/astronaut.png">
+		<img src="img/section1/bulbs.png">
+		<img src="img/section1/coutch.png">
+		<img src="img/section1/donut.png">
+		<img src="img/section1/letgo.png">
+		<img src="img/section2/road-sofa.png">
+		<img src="img/section2/TING-LOGO.png">
+		<img src="img/section4/paper-yellow.png">
+		<img src="img/section4/rikshaw.png">
+		<img src="img/section6/big-bulbs.png">
+		<img src="img/section7/YELLOW-LIGHT.png">
+		<img src="img/section7/Tv-Left.gif">
+		<img src="img/section7/Tv-Right.gif">
+		<img src="img/section7/hello.png">
 	</div>
-	<div class="repeated-item loadedContent" ui-view></div>
+	<div class="repeated-item loadedContent" style="display:none;" ui-view></div>
 
 
 	<script>
