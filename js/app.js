@@ -2,7 +2,7 @@
 var ZoomValue = 1;
 var HeightChange  = 1;
 var controller = new ScrollMagic.Controller();
-var Section8Height = 0;
+var Section8Height = 800;
 var firstapp = angular.module('firstapp', [
     'ui.router',
     'phonecatControllers',
@@ -159,22 +159,23 @@ firstapp.directive('youtube', function ($sce) {
 
 
 function changeZoom() {
-  var newwidth = $(window).width();
-  ZoomValue= newwidth/1349;
-  //ZoomValue  = 1;
-  $("body").css("zoom",ZoomValue);
-  HeightChange = $(window).height()/667;
+    var newwidth = $(window).width();
+    ZoomValue= newwidth/1349;
+    //ZoomValue  = 1;
+    $("body").css("zoom",ZoomValue);
+    HeightChange = $(window).height()/667;
 
 
- var mainHeight = $(window).height();
- var section8Height  = $(".section8").height() * ZoomValue;
- var lastHeightDiff = mainHeight - section8Height;
- console.log("HEIGHT");
- console.log(mainHeight);
- console.log(ZoomValue);
- console.log(mainHeight/ZoomValue);
- Section8Height = mainHeight/ZoomValue;
+    var mainHeight = $(window).height();
+    section8Height  = $(".section8").height() * ZoomValue;
+    var lastHeightDiff = mainHeight - section8Height;
+    console.log("HEIGHT");
+    console.log(mainHeight);
+    console.log(ZoomValue);
+    console.log(mainHeight/ZoomValue);
+    Section8Height = mainHeight/ZoomValue;
 }
+changeZoom();
 $(document).ready(function() {
   changeZoom();
   $(window).resize(function() {

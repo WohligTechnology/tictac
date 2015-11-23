@@ -69,7 +69,9 @@ h6 {
         color: lighten(#000, 30%)!important;
     }
 }
-
+.navbar-default .navbar-collapse{
+    border-color: transparent;
+}
 .btn.active,
 .btn:active {
     outline: 0;
@@ -133,22 +135,54 @@ figure {
     background-size: 100% 100%;
     min-height: 667px;
 }
-
-.navbar-fixed-top.nav-bg {
-    background: $base-color;
-    .logo {
-        width: 200px;
-        img {
-            float: left;
-            margin-right: 10px;
-        }
+.navbar-default .navbar-toggle {
+    border-color: #e3aa00;
+    margin-right: 45px;
+    .icon-bar {
+        background-color: #e3aa00;
     }
+    &:hover {
+    background-color:transparent;
+}    &:focus {
+    background-color:transparent;
 }
 
+}
+.navbar-fixed-top.nav-bg {
+    background: $base-color;
+    border: 0px;
+    .logo {
+      width: 300px;
+      font-size: 26px;
+      color: #191919;
+      padding: 20px 20px 0 30px;
+      margin: 5px 0;
+        img {
+          float: left;
+margin-right: 10px;
+margin-top: -10px;
+width: 28px;
+padding-left: 0px;
+        }
+    }
+      .navbar-nav > li > a {
+      color: #191919;
+      font-size: 16px;
+      border-right: 2px solid #e3aa00;
+      margin: 5px 0;
+      cursor: pointer;
+      &:hover{
+        color: darken(#191919, 20%);
+      }
+}
+li:first-child { a{
+border-left: 2px solid #e3aa00;
+}
+}
+}
 .black-bg {
     min-height: 400px;
 }
-
 .pull-right {
     float: right;
 }
@@ -613,7 +647,7 @@ figure {
         img {
             width: 75%;
             margin-top: -290px;
-            margin-left: -50px;
+            margin-left: 0px;
             opacity: 0.8;
         }
     }
@@ -635,7 +669,7 @@ figure {
 }
 
 .contact {
-    padding: 150px 0;
+    padding: 130px 0;
     .hello {
         width: 60%;
         margin: 0 auto;

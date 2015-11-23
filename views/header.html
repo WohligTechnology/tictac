@@ -1,6 +1,6 @@
 <header>
     <nav class="navbar navbar-default navbar-fixed-top nav-bg">
-        <div class="container">
+        <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
@@ -9,11 +9,11 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand logo" href="#/home">
-                     <img src="img/logo.png" alt="logo"> 
+                     <img src="img/logo.png" alt="logo">
                    ting
                 </a>
             </div>
-            <div class="collapse navbar-collapse" id="nav-collapse">
+            <div class="collapse navbar-collapse" id="nav-collapse" ng-controller="HomeCtrl">
                 <div ng-include="template.menu" class="template menu"></div>
             </div>
         </div>

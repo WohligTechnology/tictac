@@ -79,6 +79,23 @@
   .musical .cont-center {
     top: 15%;
   }
+  .navbar-fixed-top.nav-bg{
+  .navbar-nav { li > a {
+  border-right: 0px!important;
+  text-align: center;
+  &:hover{
+    color: darken(#191919, 20%);
+  }
+li:first-child { a{
+border-left: 0px!important;
+}
+}
+}
+li+li{
+  border-top: 1px solid #e3aa00;
+}
+}
+}
 }
 @media (max-width:448px) {
   p {

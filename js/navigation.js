@@ -4,43 +4,61 @@ var adminimage = adminbase + "uploads/";
 var adminhauth = adminbase + "index.php/hauth/";
 var imgpath = adminimage + "image?name=";
 
-var navigationservice = angular.module('navigationservice', [])
+var navigationservice = angular.module('navigationservice', ['ngDialog'])
 
-.factory('NavigationService', function($http) {
+.factory('NavigationService', function($http,ngDialog, $location,$anchorScroll) {
     var navigation = [{
         name: "website",
         classis: "active",
-        link: "#/Website",
+        function: function() {
+            ngDialog.open({
+                template: 'views/content/modal-website.html'
+            });
+        }
     }, {
         name: "apps",
         active: "",
-        link: "#/feature",
         classis: "active",
-        subnav: []
+        function: function() {
+            ngDialog.open({
+                template: 'views/content/modal-app.html'
+            });
+        }
     }, {
         name: "digital marketing",
         active: "",
-        link: "#/feature",
         classis: "active",
-        subnav: []
+        function: function() {
+            ngDialog.open({
+                template: 'views/content/modal-digitalmarketing.html'
+            });
+        }
     }, {
         name: "videos",
         active: "",
-        link: "#/feature",
         classis: "active",
-        subnav: []
+        function: function() {
+            ngDialog.open({
+                template: 'views/content/modal-videos.html'
+            });
+        }
     }, {
         name: "hello",
         active: "",
-        link: "#/feature",
         classis: "active",
-        subnav: []
+        function:function () {
+          // set the location.hash to the id of
+          // the element you wish to scroll to.
+          $location.hash('hello');
+
+          // call $anchorScroll()
+          $anchorScroll();
+        }
     }, {
         name: "go back",
         active: "",
-        link: "#/feature",
+        link: "http://ting.in/",
         classis: "active",
-        subnav: []
     }];
 
     return {

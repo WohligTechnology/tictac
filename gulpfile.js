@@ -10,7 +10,7 @@ var jsArray = [
     './bower_components/angular/angular.min.js',
     './bower_components/angular-sanitize/angular-sanitize.min.js',
     './bower_components/ui-router/release/angular-ui-router.min.js',
-
+    './bower_components/bootstrap/dist/js/bootstrap.js',
     './bower_components/lodash/lodash.min.js',
     './bower_components/typed.js/dist/typed.min.js',
     './bower_components/ng-dialog/js/ngDialog.min.js',
@@ -31,7 +31,7 @@ var ftpdetails = {
     host: 'wohlig.co.in',
     user: 'enter your username',
     pass: 'enter your password',
-    remotePath: "public_html/tingdigital/test2"
+    remotePath: "public_html/tingdigital/testing"
 };
 
 //Do not change anything below
@@ -287,4 +287,4 @@ gulp.task('minifyhtml', ["minify:indexHTML", "minify:views", "templatecache"]);
 gulp.task('copy', ["copy:img", "copy:fonts"]);
 
 
-gulp.task('production', gulpSequence(["copy:img", "copy:fonts", "sass:production", "minify:indexproduction", "minify:views"], 'clean:tmp', ["minify:css", "templatecache"],'clean:tmp', "concat:js", 'clean:tmp', "uglify:js", 'clean:tmp', "inlinesource", 'clean:tmp', "gzipfile", 'clean:tmp', 'clean:tmp', "zip"));
+gulp.task('production', gulpSequence(["sass:production", "minify:indexproduction", "minify:views"], 'clean:tmp', ["minify:css", "templatecache"],'clean:tmp', "concat:js", 'clean:tmp', "uglify:js", 'clean:tmp', "inlinesource", 'clean:tmp', "gzipfile", 'clean:tmp', 'clean:tmp', "zip"));
