@@ -1,4 +1,5 @@
 /*Start writing sass here*/
+
 @import "../bower_components/ng-dialog/css/ngDialog.css";
 @import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
 @import "../bower_components/fontawesome/css/font-awesome.min.css";
@@ -6,776 +7,838 @@
 @include font-face("LW", "../fonts/LINOWRITE_2");
 $base-color: #f6e730;
 $bg-color: #fff;
-$font-family: "LW", sans-serif !default;
+$font-family: "LW",
+sans-serif !default;
 img.loading {
-  text-align: center;
-  opacity: 1;
-  width: 32px !important;
-  height: auto;
+    text-align: center;
+    opacity: 1;
+    width: 32px !important;
+    height: auto;
 }
+
 img {
-  opacity: 0;
+    opacity: 0;
 }
+
 img.doneLoading {
-  opacity: 1;
+    opacity: 1;
 }
+
 p {
-  font-size: 14px;
-  font-family: $font-family;
+    font-size: 14px;
+    font-family: $font-family;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: $font-family;
-  font-weight: 600;
+    font-family: $font-family;
+    font-weight: 600;
 }
+
 .btn {
-  display: inline-block;
-  padding: 6px 12px;
-  margin-bottom: 0;
-  font-family: $font-family;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.42857143;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  -ms-touch-action: manipulation;
-  touch-action: manipulation;
-  cursor: pointer;
-  background-image: none;
-  border-radius: 0;
-  border: 1px solid #000;
-  text-transform: lowercase;
-  background-color: transparent;
-  &:focus {
-    border-color: inherit;
-    color: inherit;
-    outline: 0;
-    outline-offset: 0;
-  }
-  &:hover {
-    border-color: lighten(#000, 30%)!important;
-    color: lighten(#000, 30%)!important;
-  }
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-family: $font-family;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border-radius: 0;
+    border: 1px solid #000;
+    text-transform: lowercase;
+    background-color: transparent;
+    &:focus {
+        border-color: inherit;
+        color: inherit;
+        outline: 0;
+        outline-offset: 0;
+    }
+    &:hover {
+        border-color: lighten(#000, 30%)!important;
+        color: lighten(#000, 30%)!important;
+    }
 }
+
 .btn.active,
 .btn:active {
-  outline: 0;
-  box-shadow: none;
+    outline: 0;
+    box-shadow: none;
 }
+
 .btn:active:focus,
- {
-  outline: 0;
-  outline: 0 auto -webkit-focus-ring-color;
-  outline-offset: 0;
+{
+    outline: 0;
+    outline: 0 auto -webkit-focus-ring-color;
+    outline-offset: 0;
 }
+
 .btn.btn-white {
-  color: #fff;
-  border-color: #fff;
-  &:hover {
-    border-color: darken(#fff, 15%)!important;
-    color: darken(#fff, 15%)!important;
-  }
+    color: #fff;
+    border-color: #fff;
+    &:hover {
+        border-color: darken(#fff, 15%)!important;
+        color: darken(#fff, 15%)!important;
+    }
 }
+
 body {
-  margin: 0;
-  font-family: $font-family;
+    margin: 0;
+    font-family: $font-family;
 }
+
 figure {
-  margin: 0;
+    margin: 0;
 }
+
 .star-bg {
-  background-image: url(../img/background/star.jpg);
-  background-repeat: repeat;
-  background-size: auto;
-  overflow: hidden;
+    background-image: url(../img/background/star.jpg);
+    background-repeat: repeat;
+    background-size: auto;
+    overflow: hidden;
 }
+
 .halfstar-bg {
-  background-image: url(../img/background/halfstar.jpg);
-  background-repeat: repeat;
+    background-image: url(../img/background/halfstar.jpg);
+    background-repeat: repeat;
 }
+
 .road-bg {
-  background: url(../img/background/paper-road.png) no-repeat;
-  background-size: 100% 100%;
-  min-height: 500px;
+    background: url(../img/background/paper-road.png) no-repeat;
+    background-size: 100% 100%;
+    min-height: 500px;
 }
+
 .letters-bg {
-  background: url(../img/background/letters.jpg) repeat;
-  background-size: cover;
-  min-height: 400px;
+    background: url(../img/background/letters.jpg) repeat;
+    background-size: cover;
+    min-height: 400px;
 }
+
 .paper-inner-bg {
-  background: url(../img/background/Inside-popup-page-texture.jpg);
-  position: absolute;
-  width: 100%;
-  z-index: 2;
-  background-size: 100% 100%;
-  min-height: 667px;
+    background: url(../img/background/Inside-popup-page-texture.jpg);
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    background-size: 100% 100%;
+    min-height: 667px;
 }
+
+.navbar-fixed-top.nav-bg {
+    background: $base-color;
+    .logo {
+        width: 200px;
+        img {
+            float: left;
+            margin-right: 10px;
+        }
+    }
+}
+
 .black-bg {
-  min-height: 400px;
+    min-height: 400px;
 }
+
 .pull-right {
-  float: right;
+    float: right;
 }
+
 .full-image {
-  width: 100%;
+    width: 100%;
 }
+
 .padding {
-  padding: 20px;
+    padding: 20px;
 }
+
 .paper-bg {
-  background: url(../img/background/paper-repeat.jpg) no-repeat;
-  background-size: cover;
-  position: absolute;
-  width: 100%;
-  z-index: 2;
+    background: url(../img/background/paper-repeat.jpg) no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
 }
+
 .ngdialog-close {
-  position: absolute;
-  top: 15px;
-  right: 20px;
-  color: #ddd;
-  font-size: 30px;
-  background: #000;
-  border-radius: 100%;
-  height: 30px;
-  width: 30px;
-  padding: 0 6px;
-  line-height: 1;
-  z-index: 2;
-  &:hover {
-    background: lighten(#000, 10%);
-    color: darken(#ddd, 10%);
-  }
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: #ddd;
+    font-size: 30px;
+    background: #000;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    padding: 0 6px;
+    line-height: 1;
+    z-index: 2;
+    &:hover {
+        background: lighten(#000, 10%);
+        color: darken(#ddd, 10%);
+    }
 }
 
 .section8 {
-  overflow: hidden;
+    overflow: hidden;
 }
+
 .ngdialog-overlay {
-  background: transparent;
-  z-index: 1;
+    background: transparent;
+    z-index: 1;
 }
+
 .text-center {
-  text-align: center;
-}
-.margin-auto {
-  margin: 0 auto;
-}
-.margin-bottom {
-  margin-bottom: 10px;
-}
-.section1 {
-  padding-top: 80px;
-  position: relative;
-  overflow: hidden;
-  .donut-astronaut {
-    position: absolute;
-    right: 15%;
-    top: 17%;
-    width: 10%;
-  }
-  .astronaut {
-    width: 100%;
-    margin-left: -20px;
-  }
-  .donut {
-    position: absolute;
-    right: 70%;
-  }
-  .blub {
     text-align: center;
-    z-index: 1;
-    position: relative;
-    img {
-      width: 70%;
-    }
-  }
-  .letgo {
-    margin-top: 100px;
-  }
-  .astrioid {
-    position: absolute;
-    bottom: 0;
-  }
 }
-.relative {
-  position: relative;
+
+.margin-auto {
+    margin: 0 auto;
 }
-.road-sofa {
-  z-index: -1;
+
+.margin-bottom {
+    margin-bottom: 10px;
 }
-.section2 {
-  position: relative;
-  .ting-logo {
-    position: absolute;
-    bottom: 39px;
-    right: 29%;
-    z-index: 64;
-    width: 12%;
-  }
-}
-.buildings {
-  z-index: -1;
-  position: relative;
-  width: 100%;
-  .building1 {
-    position: absolute;
-    bottom: 40px;
-    z-index: 2;
-  }
-  .building2 {
-    z-index: 0;
-  }
-  .building {
-    position: absolute;
-    bottom: 40px;
-    z-index: 3;
-  }
-  .building3 {
-    position: absolute;
-    bottom: 20px;
-    z-index: 1;
-  }
-}
-.coutch {
-  z-index: 14;
-  width: 100%;
-  img {
-    max-width: 100%;
-    margin-left: -50px;
-  }
-}
-.section3 {
-  margin-top: -95px;
-  position: relative;
-  .taxi2 {
-    position: absolute;
-    bottom: 38%;
-    right: 0;
-    width: 55%;
-  }
-  .road-bg.onroad {
+
+.section1 {
+    padding-top: 80px;
     position: relative;
     overflow: hidden;
-    .pot-holes2 {
-      position: absolute;
-      right: 38%;
-      bottom: 30%;
+    .donut-astronaut {
+        position: absolute;
+        right: 15%;
+        top: 17%;
+        width: 10%;
     }
-    .pot-holes1 {
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-    .nav {
-      position: absolute;
-      top: -15px;
-      left: 26%;
-      z-index: 2;
-      ul {
-        list-style: none;
-        li {
-          margin: 12px 0;
-          text-align: right;
-          a {
-            color: #000;
-            text-decoration: none;
-            font-size: 20px;
-            font-family: $font-family;
-            font-weight: 600;
-            cursor: pointer;
-          }
-        }
-      }
-    }
-    .taxi {
-      position: absolute;
-    }
-    .taxi1 {
-      bottom: 40%;
-      left: 10%;
-    }
-    .taxi2 {
-      right: -15%;
-      bottom: 67%;
-    }
-    .taxi.taxi3 {
-      bottom: 20%;
-      left: 40%;
-    }
-  }
-}
-.letters-bg {
-  position: relative;
-  .hands {
-    figure {
-      text-align: center;
-    }
-  }
-  figure.hands-main {
-    img {
-      width: 95%;
-    }
-  }
-  figure.hand-outside {
-    position: absolute;
-    top: -2px;
-    left: 23.1%;
-    z-index: 2;
-  }
-  figure.hand-cap {
-    position: absolute;
-    top: 0;
-    right: 25.6%;
-    z-index: 2;
-  }
-  .type-writer {
-    position: relative;
-    width: 1250px;
-    margin: 0 auto;
-    .yellow-paper {
-      text-align: center;
-      margin-top: -68px;
-      z-index: 1;
-      position: inherit;
-      img {
+    .astronaut {
         width: 100%;
-      }
+        margin-left: -20px;
     }
-    .cont-center {
-      width: 50%;
-      position: absolute;
-      top: 3.5%;
-      left: 50%;
-      @include transform(translateX(-50%));
-      text-align: center;
-      z-index: 2;
-      h4 {
+    .donut {
+        position: absolute;
+        right: 70%;
+    }
+    .blub {
         text-align: center;
-        font-size: 36px;
-        margin-bottom: 20px;
-        margin-top: 10px;
-        font-family: $font-family;
-      }
-      p {
-        text-align: center;
-        margin: 20px 0;
-        font-family: $font-family;
-      }
-    }
-    .rikshaw {
-      position: absolute;
-      top: 25%;
-      left: 25%;
-      z-index: 2;
-      width: 15%;
-    }
-    .cat {
-      position: absolute;
-      top: 51%;
-      right: 34%;
-      z-index: 2;
-      width: 25%;
-    }
-    .app-main {
-      height: 210px;
-      position: relative;
-      .apps {
-        .typewriter {
-          position: absolute;
-          left: 34.4%;
-          bottom: 20px;
-          width: 29.5%;
-          img {
-            width: 100%;
-          }
+        z-index: 1;
+        position: relative;
+        img {
+            width: 70%;
         }
-        .cont-right {
-          width: 355px;
-          color: #fff;
-          position: absolute;
-          right: 0;
-          h4 {
+    }
+    .letgo {
+        margin-top: 100px;
+    }
+    .astrioid {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+.relative {
+    position: relative;
+}
+
+.road-sofa {
+    z-index: -1;
+}
+
+.section2 {
+    position: relative;
+    .ting-logo {
+        position: absolute;
+        bottom: 39px;
+        right: 29%;
+        z-index: 64;
+        width: 12%;
+    }
+}
+
+.buildings {
+    z-index: -1;
+    position: relative;
+    width: 100%;
+    .building1 {
+        position: absolute;
+        bottom: 40px;
+        z-index: 2;
+    }
+    .building2 {
+        z-index: 0;
+    }
+    .building {
+        position: absolute;
+        bottom: 40px;
+        z-index: 3;
+    }
+    .building3 {
+        position: absolute;
+        bottom: 20px;
+        z-index: 1;
+    }
+}
+
+.coutch {
+    z-index: 14;
+    width: 100%;
+    img {
+        max-width: 100%;
+        margin-left: -50px;
+    }
+}
+
+.section3 {
+    margin-top: -95px;
+    position: relative;
+    .taxi2 {
+        position: absolute;
+        bottom: 38%;
+        right: 0;
+        width: 55%;
+    }
+    .road-bg.onroad {
+        position: relative;
+        overflow: hidden;
+        .pot-holes2 {
+            position: absolute;
+            right: 38%;
+            bottom: 30%;
+        }
+        .pot-holes1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .nav {
+            position: absolute;
+            top: -15px;
+            left: 26%;
+            z-index: 2;
+            ul {
+                list-style: none;
+                li {
+                    margin: 12px 0;
+                    text-align: right;
+                    a {
+                        color: #000;
+                        text-decoration: none;
+                        font-size: 20px;
+                        font-family: $font-family;
+                        font-weight: 600;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .taxi {
+            position: absolute;
+        }
+        .taxi1 {
+            bottom: 40%;
+            left: 10%;
+        }
+        .taxi2 {
+            right: -15%;
+            bottom: 67%;
+        }
+        .taxi.taxi3 {
+            bottom: 20%;
+            left: 40%;
+        }
+    }
+}
+
+.letters-bg {
+    position: relative;
+    .hands {
+        figure {
+            text-align: center;
+        }
+    }
+    figure.hands-main {
+        img {
+            width: 95%;
+        }
+    }
+    figure.hand-outside {
+        position: absolute;
+        top: -2px;
+        left: 23.1%;
+        z-index: 2;
+    }
+    figure.hand-cap {
+        position: absolute;
+        top: 0;
+        right: 25.6%;
+        z-index: 2;
+    }
+    .type-writer {
+        position: relative;
+        width: 1250px;
+        margin: 0 auto;
+        .yellow-paper {
+            text-align: center;
+            margin-top: -68px;
+            z-index: 1;
+            position: inherit;
+            img {
+                width: 100%;
+            }
+        }
+        .cont-center {
+            width: 50%;
+            position: absolute;
+            top: 3.5%;
+            left: 50%;
+            @include transform(translateX(-50%));
+            text-align: center;
+            z-index: 2;
+            h4 {
+                text-align: center;
+                font-size: 36px;
+                margin-bottom: 20px;
+                margin-top: 10px;
+                font-family: $font-family;
+            }
+            p {
+                text-align: center;
+                margin: 20px 0;
+                font-family: $font-family;
+            }
+        }
+        .rikshaw {
+            position: absolute;
+            top: 25%;
+            left: 25%;
+            z-index: 2;
+            width: 15%;
+        }
+        .cat {
+            position: absolute;
+            top: 51%;
+            right: 34%;
+            z-index: 2;
+            width: 25%;
+        }
+        .app-main {
+            height: 210px;
+            position: relative;
+            .apps {
+                .typewriter {
+                    position: absolute;
+                    left: 34.4%;
+                    bottom: 20px;
+                    width: 29.5%;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .cont-right {
+                    width: 355px;
+                    color: #fff;
+                    position: absolute;
+                    right: 0;
+                    h4 {
+                        text-align: center;
+                        font-size: 36px;
+                        margin-bottom: 20px;
+                        margin-top: 0;
+                        font-family: $font-family;
+                        font-weight: 400;
+                    }
+                    p {
+                        text-align: justify;
+                        font-family: $font-family;
+                    }
+                }
+            }
+        }
+        .ios {
+            position: absolute;
+            bottom: 215px;
+            left: 50%;
+            @include transform(translateX(-50%));
+            z-index: 1;
+            text-transform: lowercase;
+            font-size: 26px;
+        }
+    }
+}
+
+.black-white-lines {
+    position: relative;
+    overflow: hidden;
+    .buregler1 {
+        position: absolute;
+        left: 36%;
+        bottom: 0;
+        width: 12%;
+        img {
+            width: 100%;
+        }
+    }
+    .buregler2 {
+        position: absolute;
+        left: 34%;
+        bottom: 52%;
+        width: 30%;
+        img {
+            width: 100%;
+        }
+    }
+    .batman-animation {
+        .batman {
+            position: absolute;
+            right: 4%;
+            bottom: 14%;
+            width: 53%;
+            z-index: 4;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.line-pin {
+    position: relative;
+    z-index: 2;
+    margin-top: -2px;
+}
+
+.blubs {
+    position: relative;
+    .bulb-2 {
+        position: absolute;
+        top: 0;
+        left: 31.7%;
+        width: 10%;
+    }
+    .bulb-1 {
+        text-align: center;
+        img {
+            max-width: 100%;
+            margin: 0 auto;
+            width: auto!important;
+        }
+    }
+    .bulb-facebook {
+        position: absolute;
+        top: 0;
+        left: 32.6%;
+        width: 4%;
+    }
+    .bulb-insta {
+        position: absolute;
+        top: 0;
+        left: 28%;
+        width: 4%;
+    }
+    .bulb-pinterest {
+        position: absolute;
+        top: 0;
+        right: 33.2%;
+        width: 4%;
+    }
+    .bulb-twitter {
+        position: absolute;
+        top: 0;
+        left: 37.3%;
+        width: 4%;
+    }
+    .bulb-youtube {
+        position: absolute;
+        top: 0;
+        right: 27%;
+        width: 4%;
+    }
+    .conts {
+        color: #fff;
+        position: relative;
+        height: 275px;
+        z-index: 10;
+        .cont-center {
+            position: absolute;
+            width: 360px;
+            left: 44%;
+            h4 {
+                text-align: center;
+                font-size: 36px;
+                margin-bottom: 20px;
+                margin-top: 0;
+                font-family: $font-family;
+                font-weight: 400;
+            }
+            p {
+                text-align: justify;
+            }
+        }
+    }
+}
+
+.musical {
+    position: relative;
+    padding: 30px 0;
+    //	margin-top: 50px;
+    .cont-center {
+        position: absolute;
+        top: 30%;
+        width: 30%;
+        z-index: 12;
+        left: 28%;
+        h4 {
             text-align: center;
             font-size: 36px;
             margin-bottom: 20px;
-            margin-top: 0;
+            margin-top: 10px;
             font-family: $font-family;
-            font-weight: 400;
-          }
-          p {
-            text-align: justify;
-            font-family: $font-family;
-          }
         }
-      }
+        p {
+            margin: 10px 0;
+            font-family: $font-family;
+        }
     }
-    .ios {
-      position: absolute;
-      bottom: 215px;
-      left: 50%;
-      @include transform(translateX(-50%));
-      z-index: 1;
-      text-transform: lowercase;
-      font-size: 26px;
-    }
-  }
-}
-.black-white-lines {
-  position: relative;
-  overflow: hidden;
-  .buregler1 {
-    position: absolute;
-    left: 36%;
-    bottom: 0;
-    width: 12%;
-    img {
-      width: 100%;
-    }
-  }
-  .buregler2 {
-    position: absolute;
-    left: 34%;
-    bottom: 52%;
-    width: 30%;
-    img {
-      width: 100%;
-    }
-  }
-  .batman-animation {
-    .batman {
-      position: absolute;
-      right: 4%;
-      bottom: 14%;
-      width: 53%;
-      z-index: 4;
-      img {
-        width: 100%;
-      }
-    }
-  }
-}
-.line-pin {
-  position: relative;
-  z-index: 2;
-  margin-top: -2px;
-}
-.blubs {
-  position: relative;
-  .bulb-2 {
-    position: absolute;
-    top: 0;
-    left: 31.7%;
-    width: 10%;
-  }
-  .bulb-1 {
-    text-align: center;
-    img {
-      max-width: 100%;
-      margin: 0 auto;
-      width: auto!important;
-    }
-  }
-  .bulb-facebook {
-    position: absolute;
-    top: 0;
-    left: 32.6%;
-    width: 4%;
-  }
-  .bulb-insta {
-    position: absolute;
-    top: 0;
-    left: 28%;
-    width: 4%;
-  }
-  .bulb-pinterest {
-    position: absolute;
-    top: 0;
-    right: 33.2%;
-    width: 4%;
-  }
-  .bulb-twitter {
-    position: absolute;
-    top: 0;
-    left: 37.3%;
-    width: 4%;
-  }
-  .bulb-youtube {
-    position: absolute;
-    top: 0;
-    right: 27%;
-    width: 4%;
-  }
-  .conts {
-    color: #fff;
-    position: relative;
-    height: 275px;
-    z-index: 10;
-    .cont-center {
-      position: absolute;
-      width: 360px;
-      left: 44%;
-      h4 {
-        text-align: center;
-        font-size: 36px;
-        margin-bottom: 20px;
-        margin-top: 0;
-        font-family: $font-family;
-        font-weight: 400;
-      }
-      p {
-        text-align: justify;
-      }
-    }
-  }
-}
-.musical {
-  position: relative;
-  padding: 30px 0;
-
-  //	margin-top: 50px;
-  .cont-center {
-    position: absolute;
-    top: 30%;
-    width: 30%;
-    z-index: 12;
-    left: 28%;
-    h4 {
-      text-align: center;
-      font-size: 36px;
-      margin-bottom: 20px;
-      margin-top: 10px;
-      font-family: $font-family;
-    }
-    p {
-      margin: 10px 0;
-      font-family: $font-family;
-    }
-  }
-  .yellow-lights {
-    z-index: 5;
-    position: relative;
-    img {
-      width: 75%;
-      margin-top: -290px;
-      margin-left: -50px;
-      opacity: 0.8;
-    }
-  }
-  .pianoo {
-    position: absolute;
-    width: 100%;
-    bottom: 20px;
-    z-index: 5;
-    img {
-      width: 40%;
-    }
-  }
-  .tvs {
-    position: absolute;
-    width: 100%;
-    bottom: 80px;
-    z-index: 0;
-  }
-}
-.contact {
-  padding: 150px 0;
-  .hello {
-    width: 60%;
-    margin: 0 auto;
-    .ting-hello {
-      position: relative;
-      margin-bottom: 15px;
-      img.hello-img {
+    .yellow-lights {
+        z-index: 5;
         position: relative;
-        z-index: 4;
-      }
-      img.ring {
+        img {
+            width: 75%;
+            margin-top: -290px;
+            margin-left: -50px;
+            opacity: 0.8;
+        }
+    }
+    .pianoo {
         position: absolute;
-        right: -35px;
-        bottom: -30px;
-        width: 15%;
+        width: 100%;
+        bottom: 20px;
+        z-index: 5;
+        img {
+            width: 40%;
+        }
+    }
+    .tvs {
+        position: absolute;
+        width: 100%;
+        bottom: 80px;
         z-index: 0;
-      }
     }
-    .link-ting {
-      z-index: 4;
-      position: relative;
-      p {
-        margin: 0;
-        margin-top: 10px;
-        text-align: right;
-        color: #fff;
-        a {
-          text-decoration: none;
-          color: $base-color;
-        }
-      }
-    }
-    .address {
-      ul {
-        display: flex;
-        padding-left: 0;
-        margin-bottom: 0;
-        margin-top: 20px;
-        list-style: none;
-        li {
-          color: #fff;
-          padding-right: 25px;
-          font-family: $font-family;
-        }
-      }
-      h4 {
-        margin: 0;
-        color: $base-color;
-        font-family: $font-family;
-        font-weight: 400;
-      }
-      p {
-        margin-top: 5px;
-      }
-    }
-  }
 }
+
+.contact {
+    padding: 150px 0;
+    .hello {
+        width: 60%;
+        margin: 0 auto;
+        .ting-hello {
+            position: relative;
+            margin-bottom: 15px;
+            img.hello-img {
+                position: relative;
+                z-index: 4;
+            }
+            img.ring {
+                position: absolute;
+                right: -35px;
+                bottom: -30px;
+                width: 15%;
+                z-index: 0;
+            }
+        }
+        .link-ting {
+            z-index: 4;
+            position: relative;
+            p {
+                margin: 0;
+                margin-top: 10px;
+                text-align: right;
+                color: #fff;
+                a {
+                    text-decoration: none;
+                    color: $base-color;
+                }
+            }
+        }
+        .address {
+            ul {
+                display: flex;
+                padding-left: 0;
+                margin-bottom: 0;
+                margin-top: 20px;
+                list-style: none;
+                li {
+                    color: #fff;
+                    padding-right: 25px;
+                    font-family: $font-family;
+                }
+            }
+            h4 {
+                margin: 0;
+                color: $base-color;
+                font-family: $font-family;
+                font-weight: 400;
+            }
+            p {
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
 .footer-bg {
-  .paper-crush {
-    img {
-      margin-bottom: -3px;
+    .paper-crush {
+        img {
+            margin-bottom: -3px;
+        }
     }
-  }
 }
+
 .row-flex {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
 }
+
 .flex-box {
-  padding: 0 20px;
+    padding: 0 20px;
 }
+
 .col-flex {
-  -webkit-box-flex: 1;
-  -moz-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
 }
+
 .min-height {
-  min-height: 210px !important;
+    min-height: 210px !important;
 }
+
 .projects {
-  margin-bottom: 25px;
-  .main {
-    min-height: 50px;
-  }
+    margin-bottom: 25px;
+    .main {
+        min-height: 50px;
+    }
 }
+
 .head {
-  min-height: 45px;
-  margin: 30px 0;
-  h2.margin-less {
-    margin-top: 6px;
-  }
-  h2 {
-    float: left;
-    padding-right: 10px;
-    font-size: 36px;
-    font-family: "LW", sans-serif;
-    text-transform: lowercase;
-    font-weight: 500;
-  }
-  .radio-website {
-    padding: 17px 0;
-    input[type="radio"] {
-      margin-left: 20px;
-      &:focus {
-        outline: thin dotted;
-        outline: 0 auto -webkit-focus-ring-color;
-        outline-offset: 0;
-      }
+    min-height: 45px;
+    margin: 30px 0;
+    h2.margin-less {
+        margin-top: 6px;
     }
-  }
+    h2 {
+        float: left;
+        padding-right: 10px;
+        font-size: 36px;
+        font-family: "LW", sans-serif;
+        text-transform: lowercase;
+        font-weight: 500;
+    }
+    .radio-website {
+        padding: 17px 0;
+        input[type="radio"] {
+            margin-left: 20px;
+            &:focus {
+                outline: thin dotted;
+                outline: 0 auto -webkit-focus-ring-color;
+                outline-offset: 0;
+            }
+        }
+    }
 }
+
 a {
-  color: #000;
-  .main {
-    h4 {
-      font-size: 16px;
-      font-family: $font-family;
-      font-weight: 600;
+    color: #000;
+    .main {
+        h4 {
+            font-size: 16px;
+            font-family: $font-family;
+            font-weight: 600;
+        }
     }
-  }
-  &:hover {
-    text-decoration: none;
-    color: #000;
-  }
-  &:focus {
-    text-decoration: none;
-    color: #000;
-  }
+    &:hover {
+        text-decoration: none;
+        color: #000;
+    }
+    &:focus {
+        text-decoration: none;
+        color: #000;
+    }
 }
+
 .arrow-down {
-  border: 1px solid #000;
-  height: 30px;
-  width: 30px;
-  border-radius: 100%;
-  padding: 2px 6px;
-  margin: 30px 0;
-  @include transition(all ease 300ms);
-  cursor: pointer;
-  &:hover {
-    border-color: lighten(#000, 15%);
-  }
-  i {
-    font-size: 26px;
-  }
-}
-.social-icons {
-  margin: 5px 0 10px;
-  i {
-    background-color: $base-color;
+    border: 1px solid #000;
     height: 30px;
     width: 30px;
-    border: 1px solid $base-color;
-    border-radius: 50%;
-    font-size: 16px;
-    text-align: center;
-    line-height: 1.8;
-    margin-right: 2px;
-    cursor: pointer;
-    color: #000;
+    border-radius: 100%;
+    padding: 2px 6px;
+    margin: 30px 0;
     @include transition(all ease 300ms);
+    cursor: pointer;
     &:hover {
-      background: darken($base-color, 15%);
-      color: lighten(#000, 15%);
+        border-color: lighten(#000, 15%);
     }
-  }
-}
-.box {
-  position: relative;
-  cursor: pointer;
-  box-shadow: -6px -1px 4px -3px rgba(0, 0, 0, 0.6);
-  .play {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    @include transform(translate(-50%, -50%));
     i {
-      font-size: 45px;
-      color: #fff;
+        font-size: 26px;
     }
-  }
 }
+
+.social-icons {
+    margin: 5px 0 10px;
+    i {
+        background-color: $base-color;
+        height: 30px;
+        width: 30px;
+        border: 1px solid $base-color;
+        border-radius: 50%;
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.8;
+        margin-right: 2px;
+        cursor: pointer;
+        color: #000;
+        @include transition(all ease 300ms);
+        &:hover {
+            background: darken($base-color, 15%);
+            color: lighten(#000, 15%);
+        }
+    }
+}
+
+.box {
+    position: relative;
+    cursor: pointer;
+    box-shadow: -6px -1px 4px -3px rgba(0, 0, 0, 0.6);
+    .play {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include transform(translate(-50%, -50%));
+        i {
+            font-size: 45px;
+            color: #fff;
+        }
+    }
+}
+
 .footer-yellow {
-  background: $base-color;
-  padding: 10px 0;
-  font-weight: 800;
+    background: $base-color;
+    padding: 10px 0;
+    font-weight: 800;
 }
+
 @import "main/animation";
 @import "main/mobile";
