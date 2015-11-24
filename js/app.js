@@ -204,6 +204,9 @@ firstapp.directive('youtube', function ($sce) {
 
 
 
+
+
+
 function changeZoom() {
     var newwidth = $(window).width();
     ZoomValue= newwidth/1349;
@@ -219,9 +222,9 @@ function changeZoom() {
 }
 changeZoom();
 $(document).ready(function() {
+
   changeZoom();
   $(window).resize(function() {
-    // window.location.reload();
     changeZoom();
   });
 });

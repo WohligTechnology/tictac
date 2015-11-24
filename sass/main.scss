@@ -9,6 +9,9 @@ $base-color: #f6e730;
 $bg-color: #fff;
 $font-family: "LW",
 sans-serif !default;
+a {
+  cursor: pointer;
+}
 img.loading {
     text-align: center;
     opacity: 1;
@@ -166,7 +169,7 @@ header.stickyheader {
       width: 300px;
       font-size: 26px;
       color: #191919;
-      padding: 20px 20px 0 30px;
+      padding: 17px 20px 0 30px;
       margin: 5px 0;
         img {
           float: left;

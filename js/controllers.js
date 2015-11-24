@@ -214,12 +214,19 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 	};
 
 	$scope.gotoBottom = function () {
-		// set the location.hash to the id of
-		// the element you wish to scroll to.
-		$location.hash('hello');
 
-		// call $anchorScroll()
-		$anchorScroll();
+		var targetTo = $("#hello").offset().top
+		$('html,body').animate({
+			scrollTop: targetTo
+		}, 1000);
+
+	};
+	$scope.gotoTop = function () {
+
+		$('html,body').animate({
+			scrollTop: 0
+		}, 1000);
+
 	};
 
 })
