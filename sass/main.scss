@@ -350,10 +350,12 @@ border-left: 2px solid #e3aa00;
         bottom: 38%;
         right: 0;
         width: 55%;
+        z-index: 7;
     }
     .road-bg.onroad {
         position: relative;
         overflow: hidden;
+        z-index: 5;
         .pot-holes2 {
             position: absolute;
             right: 38%;

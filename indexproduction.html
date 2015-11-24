@@ -12,8 +12,7 @@
     <title ng-bind="'Ting Digital - '+template.title">Ting Digital</title>
 
     <link rel="shortcut icon" href="img/favicon.png" />
-    <link rel="stylesheet" type="text" href="w.css" />
-    <script src="w.js"></script>
+
 
     <!--[if IE]>
         <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -22,7 +21,58 @@
 </head>
 
 <body style="background:#161616;">
-    <div class="repeated-item" ui-view></div>
+    <div class="repeated-item loadedContent" ui-view style = "display:none;"></div>
+
+		<div class="loader" style="background:#161616;z-index:999;text-align: center;position:fixed;top:0;left:0;bottom:0;right:0">
+				<img src="img/gif/loading.gif" alt="" style="width: 100px;height: auto;opacity: 1;position: absolute ;top: 50%;left:50%;transform: translate(-50%,-50%);">
+		</div>
+
+		<div class="rotateMobile" style="display:none;">
+			<img src="img/gif/cell-phone.gif">
+			<div class="btn-mobile">
+				<button class="btn btn-warning continue" style="padding: 10px 25px!important;font-size: 18px;background: #F6E730;color: #000;">Continue</button>
+			</div>
+		</div>
+
+		<div class="hidden">
+			<img src="img/gif/Cat-Hanging.gif">
+			<img src="img/gif/Climbing-Buglar.gif">
+			<img src="img/gif/phone.gif">
+			<img src="img/gif/Shaking-Buglar.gif">
+			<img src="img/gif/taxianimation.gif">
+			<img src="img/gif/taxianimation.png">
+			<img src="img/section1/astronaut.png">
+			<img src="img/section1/bulbs.png">
+			<img src="img/section1/coutch.png">
+			<img src="img/section1/donut.png">
+			<img src="img/section1/letgo.png">
+			<img src="img/section2/road-sofa.jpg">
+			<img src="img/section2/TING-LOGO.png">
+			<img src="img/section4/paper-yellow.png">
+			<img src="img/section4/rikshaw.png">
+			<img src="img/section6/big-bulbs.png">
+			<img src="img/section7/YELLOW-LIGHT.png">
+			<img src="img/section7/Tv-Left.gif">
+			<img src="img/section7/Tv-Right.gif">
+			<img src="img/section8/hello.png">
+		</div>
+
+
+		<link rel="stylesheet" type="text" href="w.css" />
+    <script src="w.js"></script>
+		<script>
+			$(window).load(function() {
+				console.log("Loaded");
+				$("body > .loader").hide();
+				$("body > .loadedContent").fadeIn(1000);
+				if (window.matchMedia("(orientation: portrait)").matches) {
+					$("body > .rotateMobile").fadeIn(1000);
+	 			}
+				$("body > .rotateMobile .continue").click(function() {
+						$("body > .rotateMobile").fadeOut(1000);
+				});
+			});
+		</script>
 </body>
 
 </html>

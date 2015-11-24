@@ -141,7 +141,7 @@ firstapp.directive('taxiAnimation', function ($compile, $parse) {
 		link: function ($scope, element, attrs) {
       new ScrollMagic.Scene({triggerElement: ".taxiAnimation", duration: 200})
                 .addTo(controller)
-                .addIndicators() // add indicators (requires plugin)
+                //.addIndicators() // add indicators (requires plugin)
                 .on("enter", function (e) {
                   console.log("Taxi Enter");
                   setTimeout(function() {
@@ -221,6 +221,7 @@ changeZoom();
 $(document).ready(function() {
   changeZoom();
   $(window).resize(function() {
+    window.location.reload();
     changeZoom();
   });
 });
