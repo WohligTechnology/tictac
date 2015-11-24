@@ -152,7 +152,7 @@ header.stickyheader {
     top:-100px;
     width:100%;
     z-index: 99;
-    @include transition(all 1s)
+    @include transition(all 1s);
     &.active {
       top:0px;
     }

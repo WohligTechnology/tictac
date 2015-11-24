@@ -221,7 +221,7 @@ changeZoom();
 $(document).ready(function() {
   changeZoom();
   $(window).resize(function() {
-    window.location.reload();
+    // window.location.reload();
     changeZoom();
   });
 });

@@ -36,6 +36,7 @@
 
 		<div class="hidden">
 			<img src="img/gif/Cat-Hanging.gif">
+			<img src="img/gif/cell-phone.gif">
 			<img src="img/gif/Climbing-Buglar.gif">
 			<img src="img/gif/phone.gif">
 			<img src="img/gif/Shaking-Buglar.gif">
@@ -67,6 +68,14 @@
 				$("body > .loadedContent").fadeIn(1000);
 				if (window.matchMedia("(orientation: portrait)").matches) {
 					$("body > .rotateMobile").fadeIn(1000);
+
+					setInterval(function() {
+						console.log("Check");
+						if (window.matchMedia("(orientation: landscape)").matches) {
+							window.location.reload();
+						}
+					}, 500);
+
 	 			}
 				$("body > .rotateMobile .continue").click(function() {
 						$("body > .rotateMobile").fadeOut(1000);

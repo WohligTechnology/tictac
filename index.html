@@ -43,11 +43,11 @@
 
 
 	<div class="loader" style="background:#161616;z-index:999;text-align: center;position:fixed;top:0;left:0;bottom:0;right:0">
-		<img src="img/gif/loading.gif" alt="" style="width: 100px;height: auto;opacity: 1;position: absolute ;top: 50%;left:50%;transform: translate(-50%,-50%);">
+		<img src="img/gif/loading.gif" noloading = "true"  alt="" style="width: 100px;height: auto;opacity: 1;position: absolute ;top: 50%;left:50%;transform: translate(-50%,-50%);">
 	</div>
 
 	<div class="rotateMobile" style="display:none;">
-		<img src="img/gif/cell-phone.gif">
+		<img src="img/gif/cell-phone.gif" noloading = "true" >
 		<div class="btn-mobile">
 			<button class="btn btn-warning continue" style="padding: 10px 25px!important;font-size: 18px;background: #F6E730;color: #000;">Continue</button>
 		</div>
@@ -55,6 +55,8 @@
 
 	<div class="hidden">
 		<img src="img/gif/Cat-Hanging.gif">
+		<img src="img/gif/cell-phone.gif">
+
 		<img src="img/gif/Climbing-Buglar.gif">
 		<img src="img/gif/phone.gif">
 		<img src="img/gif/Shaking-Buglar.gif">
@@ -84,6 +86,15 @@
 			if (window.matchMedia("(orientation: portrait)").matches) {
 				$("body > .rotateMobile").fadeIn(1000);
 				console.log("portrait");
+
+				setInterval(function() {
+					console.log("Check");
+					if (window.matchMedia("(orientation: landscape)").matches) {
+						window.location.reload();
+					}
+				}, 500);
+
+
 			}
 			$("body > .rotateMobile .continue").click(function() {
 				$("body > .rotateMobile").fadeOut(1000);
