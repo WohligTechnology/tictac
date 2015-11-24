@@ -25,13 +25,13 @@ var jsArray = [
     './w/js/templates.js',
 ];
 var replacehostFrom = "http://localhost/demo/";
-var replacehostTo = "http://wohlig.co.in/demo2/";
+var replacehostTo = "http://tingdigital.in/";
 
 var ftpdetails = {
-    host: 'wohlig.co.in',
-    user: 'enter your username',
-    pass: 'enter your password',
-    remotePath: "public_html/tingdigital/testing"
+    host: 'tingworks.in',
+    user: 'tingdigital@tingworks.in',
+    pass: '111',
+    remotePath: ""
 };
 
 //Do not change anything below
@@ -83,17 +83,12 @@ gulp.task('imagemin', function() {
 
 gulp.task('deploy', function() {
     return gulp.src('./index.html')
-        .pipe(prompt.prompt([{
-            type: 'input',
-            name: 'username',
-            message: 'Enter FTP username:'
-        }, {
+        .pipe(prompt.prompt([ {
             type: 'password',
             name: 'password',
             message: 'Enter FTP password:'
         }], function(res) {
 
-            ftpdetails.user = res.username;
             ftpdetails.pass = res.password;
 
             gulp.start('ftp');
@@ -287,4 +282,4 @@ gulp.task('minifyhtml', ["minify:indexHTML", "minify:views", "templatecache"]);
 gulp.task('copy', ["copy:img", "copy:fonts"]);
 
 
-gulp.task('production', gulpSequence(["sass:production", "minify:indexproduction", "minify:views"], 'clean:tmp', ["minify:css", "templatecache"],'clean:tmp', "concat:js", 'clean:tmp', "uglify:js", 'clean:tmp', "inlinesource", 'clean:tmp', "gzipfile", 'clean:tmp', 'clean:tmp', "zip"));
+gulp.task('production', gulpSequence('copy:img','copy:fonts',["sass:production", "minify:indexproduction", "minify:views"], 'clean:tmp', ["minify:css", "templatecache"],'clean:tmp', "concat:js", 'clean:tmp', "uglify:js", 'clean:tmp', "inlinesource", 'clean:tmp', "gzipfile", 'clean:tmp', 'clean:tmp', "zip"));
