@@ -10,13 +10,27 @@
   }
 }
 @media (max-width:767px) {
-    .navbar {
-    height: auto !important;
+  .navbar-fixed-top.nav-bg {
+    height: auto;
+    .template.menu .navbar-nav {
+        display: block;
+    li {
+      a {
+        &:hover {
+
+        }
+        span {
+          border-right: 0;
+        }
+      }
     }
+  }
+}
+
   footer {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
   .section8 {
     position: relative;
@@ -82,38 +96,39 @@
   .musical .cont-center {
     top: 15%;
   }
-  .navbar-fixed-top.nav-bg{
-  .navbar-nav { li > a {
-  border-right: 0px!important;
-  text-align: center;
-  &:hover{
-    color: darken(#191919, 20%);
+  .navbar-fixed-top.nav-bg {
+    .navbar-nav {
+      li > a {
+        border-right: 0px!important;
+        text-align: center;
+        &:hover {
+          color: darken(#191919, 20%);
+        }
+        li:first-child {
+          a {
+            border-left: 0px!important;
+          }
+        }
+      }
+      li+li {
+        border-top: 1px solid #e3aa00;
+      }
+    }
   }
-li:first-child { a{
-border-left: 0px!important;
-}
-}
-}
-li+li{
-  border-top: 1px solid #e3aa00;
-}
-}
-}
 }
 @media (max-width:550px) {
-.rotateMobile {
-  position: fixed;
-  z-index: 101;
-  top: 0;
-  bottom: 0;
-  background: #171717;
-  right: 0;
-  left: 0;
-      text-align: center;
-}
+  .rotateMobile {
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    bottom: 0;
+    background: #171717;
+    right: 0;
+    left: 0;
+    text-align: center;
+  }
 }
 @media (max-width:448px) {
-
   p {
     font-size: 6px !important;
   }
