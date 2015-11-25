@@ -51,6 +51,23 @@ firstapp.directive('typedJs', function ($document) {
 	}
 });
 
+firstapp.directive('loadingText', function ($document) {
+	return {
+		restrict: 'EA',
+		replace: false,
+		link: function ($scope, element, attrs) {
+			var $element = $(element);
+			dem = $element;
+			$element.typed({
+				strings: ["loading...", "we're almost there...", "don't dig your nose...", "don't bounce away...","almost there..."],
+				startDelay: 20,
+				typeSpeed: 100,
+				loop: true
+			});
+		}
+	}
+});
+
 firstapp.directive('img', function ($compile, $parse) {
 	return {
 		restrict: 'E',

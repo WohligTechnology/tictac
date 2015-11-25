@@ -4,14 +4,16 @@
 @import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
 @import "../bower_components/fontawesome/css/font-awesome.min.css";
 @import "../bower_components/bootstrap/dist/css/bootstrap.min.css";
-@include font-face("LW", "../fonts/LINOWRITE_2");
+@include font-face("LW",
+"../fonts/LINOWRITE_2");
 $base-color: #f6e730;
 $bg-color: #fff;
 $font-family: "LW",
 sans-serif !default;
 a {
-  cursor: pointer;
+    cursor: pointer;
 }
+
 img.loading {
     text-align: center;
     opacity: 1;
@@ -72,9 +74,11 @@ h6 {
         color: lighten(#000, 30%)!important;
     }
 }
-.navbar-default .navbar-collapse{
+
+.navbar-default .navbar-collapse {
     border-color: transparent;
 }
+
 .btn.active,
 .btn:active {
     outline: 0;
@@ -138,6 +142,7 @@ figure {
     background-size: 100% 100%;
     min-height: 667px;
 }
+
 .navbar-default .navbar-toggle {
     border-color: #e3aa00;
     margin-right: 45px;
@@ -145,58 +150,79 @@ figure {
         background-color: #e3aa00;
     }
     &:hover {
-    background-color:transparent;
-}    &:focus {
-    background-color:transparent;
+        background-color: transparent;
+    }
+    &:focus {
+        background-color: transparent;
+    }
 }
-}
+
 header.stickyheader {
-    position:fixed;
-    top:-100px;
-    width:100%;
+    position: fixed;
+    top: -100px;
+    width: 100%;
     z-index: 99;
     @include transition(all 1s);
     &.active {
-      top:0px;
+        top: 0px;
     }
 }
+
 .navbar-fixed-top.nav-bg {
-    position:relative;
-    width:100%;
+    position: relative;
+    width: 100%;
     background: $base-color;
     border: 0px;
+    height: 40px;
     .logo {
-      width: 300px;
-      font-size: 26px;
-      color: #191919;
-      padding: 17px 20px 0 30px;
-      margin: 5px 0;
+        width: 300px;
+        font-size: 26px;
+        color: #191919;
+        padding: 10px 0px 0 30px;
         img {
-          float: left;
-margin-right: 10px;
-margin-top: -10px;
-width: 28px;
-padding-left: 0px;
+            float: left;
+            margin-right: 10px;
+            margin-top: -5px;
+            width: 25px;
+            padding-left: 0px;
         }
     }
-      .navbar-nav > li > a {
-      color: #191919;
-      font-size: 16px;
-      border-right: 2px solid #e3aa00;
-      margin: 5px 0;
-      cursor: pointer;
-      &:hover{
-        color: darken(#191919, 20%);
-      }
+    .navbar-nav > li > a {
+        color: #191919;
+        font-size: 16px;
+        cursor: pointer;
+        position: relative;
+        padding: 10px 0px;
+        &:hover {
+            color: darken(#191919, 20%);
+        }
+        span {
+            padding: 0px 15px;
+            border-right: 1px solid #191919;
+            &:after {
+                content: " ";
+                width: 0;
+                height: 1px;
+                display: block;
+                position: absolute;
+                background: #191919;
+                bottom: 20px;
+                left: 50%;
+                @include transition(all 800ms linear);
+            }
+            &:hover:after {
+                width: 100%;
+                left: 0;
+                @include transition(all 800ms linear);
+            }
+        }
+    }
 }
-li:first-child { a{
-border-left: 2px solid #e3aa00;
-}
-}
-}
+
 .black-bg {
     min-height: 400px;
 }
+
 .pull-right {
     float: right;
 }
@@ -234,11 +260,6 @@ border-left: 2px solid #e3aa00;
         background: lighten(#000, 10%);
         color: darken(#ddd, 10%);
     }
-}
-
-.section8 {
-    overflow: hidden;
-    position: relative;
 }
 
 .ngdialog-overlay {
@@ -352,7 +373,7 @@ border-left: 2px solid #e3aa00;
         position: absolute;
         bottom: 38%;
         right: 0;
-        width: 55%;
+        width: 50%;
         z-index: 7;
     }
     .road-bg.onroad {
@@ -684,76 +705,90 @@ border-left: 2px solid #e3aa00;
         z-index: 0;
     }
 }
-.section8{
-  position: relative;
-.contact {
-    padding: 130px 0;
-    .hello {
-      width: 60%;
-    margin: 0 auto;
-    @include transform( translate(-50%,-50%));
-    top: 50%;
-    position: absolute;
-    left: 50%;
-        .ting-hello {
-            position: relative;
-            margin-bottom: 15px;
-            img.hello-img {
+
+.section8 {
+    position: relative;
+    .contact {
+        padding: 130px 0;
+        .hello {
+            width: 60%;
+            margin: 0 auto;
+            @include transform( translate(-50%, -50%));
+            top: 50%;
+            position: absolute;
+            left: 50%;
+            .ting-hello {
                 position: relative;
+                margin-bottom: 15px;
+                img.hello-img {
+                    position: relative;
+                    z-index: 4;
+                }
+                img.ring {
+                    position: absolute;
+                    right: -35px;
+                    bottom: -30px;
+                    width: 15%;
+                    z-index: 0;
+                }
+            }
+            .link-ting {
                 z-index: 4;
-            }
-            img.ring {
-                position: absolute;
-                right: -35px;
-                bottom: -30px;
-                width: 15%;
-                z-index: 0;
-            }
-        }
-        .link-ting {
-            z-index: 4;
-            position: relative;
-            p {
-                margin: 0;
-                margin-top: 10px;
-                text-align: right;
-                color: #fff;
-                a {
-                    text-decoration: none;
-                    color: $base-color;
-                }
-            }
-        }
-        .address {
-            ul {
-                display: flex;
-                padding-left: 0;
-                margin-bottom: 0;
-                margin-top: 20px;
-                list-style: none;
-                li {
+                position: relative;
+                p {
+                    margin: 0;
+                    margin-top: 10px;
+                    text-align: right;
                     color: #fff;
-                    padding-right: 25px;
-                    font-family: $font-family;
+                    a {
+                        text-decoration: none;
+                        color: $base-color;
+                    }
                 }
             }
-            h4 {
-                margin: 0;
-                color: $base-color;
-                font-family: $font-family;
-                font-weight: 400;
-            }
-            p {
-                margin-top: 5px;
+            .address {
+                ul {
+                    display: flex;
+                    padding-left: 0;
+                    margin-bottom: 0;
+                    margin-top: 20px;
+                    list-style: none;
+                    li {
+                        color: #fff;
+                        padding-right: 25px;
+                        font-family: $font-family;
+                    }
+                    a {
+                        color: #fff;
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+                h4 {
+                    margin: 0;
+                    color: $base-color;
+                    font-family: $font-family;
+                    font-weight: 400;
+                }
+                p {
+                    margin-top: 5px;
+                }
             }
         }
     }
 }
-}
+
 .footer-bg {
     .paper-crush {
         img {
             margin-bottom: -3px;
+        }
+    }
+    a {
+        color: #000;
+        &:hover {
+            text-decoration: none;
         }
     }
 }
@@ -895,8 +930,8 @@ a {
     padding: 10px 0;
     font-weight: 800;
     position: absolute;
-width: 100%;
-bottom: 0px;
+    width: 100%;
+    bottom: 0px;
 }
 
 @import "main/animation";

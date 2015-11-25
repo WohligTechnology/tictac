@@ -43,7 +43,11 @@
 
 
 	<div class="loader" style="background:#161616;z-index:999;text-align: center;position:fixed;top:0;left:0;bottom:0;right:0">
-		<img src="img/gif/loading.gif" noloading = "true"  alt="" style="width: 100px;height: auto;opacity: 1;position: absolute ;top: 50%;left:50%;transform: translate(-50%,-50%);">
+<!--		<img src="img/gif/loading.gif" noloading = "true"  alt="" style="width: 100px;height: auto;opacity: 1;position: absolute ;top: 50%;left:50%;transform: translate(-50%,-50%);">-->
+
+					<h3 noloading = "true" style="position: absolute ;top: 50%;left:50%;transform: translate(-50%,-50%);color:#f6e730;">
+						<span loading-text></span>
+					</h3>
 	</div>
 
 	<div class="rotateMobile" style="display:none;">
@@ -56,7 +60,6 @@
 	<div class="hidden">
 		<img src="img/gif/Cat-Hanging.gif">
 		<img src="img/gif/cell-phone.gif">
-
 		<img src="img/gif/Climbing-Buglar.gif">
 		<img src="img/gif/phone.gif">
 		<img src="img/gif/Shaking-Buglar.gif">
@@ -93,17 +96,12 @@
 						window.location.reload();
 					}
 				}, 500);
-
-
 			}
 			$("body > .rotateMobile .continue").click(function() {
 				$("body > .rotateMobile").fadeOut(1000);
 			});
 		});
-
 	</script>
-
-
 </body>
 
 

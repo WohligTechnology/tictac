@@ -10,6 +10,9 @@
   }
 }
 @media (max-width:767px) {
+    .navbar {
+    height: auto !important;
+    }
   footer {
       position: absolute;
       bottom: 0;
