@@ -83,6 +83,14 @@
 					}, 500);
 
 	 			}
+				if (window.matchMedia("(orientation: landscape)").matches) {
+					setInterval(function() {
+						console.log("Check");
+						if (window.matchMedia("(orientation: portrait)").matches) {
+							window.location.reload();
+						}
+					}, 500);
+				}
 				$("body > .rotateMobile .continue").click(function() {
 						$("body > .rotateMobile").fadeOut(1000);
 				});
