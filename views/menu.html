@@ -1,6 +1,7 @@
-<ul class="nav navbar-nav">
+<ul class="nav navbar-nav navbar-center">
     <li ng-repeat="menu in navigation" class="{{menu.classis}}">
-        <a href="{{menu.link}}">{{menu.name}}</a>
+        <a ng-href="{{menu.link}}" target="_blank" ng-if="menu.link"><span>{{menu.name}}</span></a>
+        <a ng-click="menu.function();" ng-if="menu.function"><span> {{menu.name}}</span></a>
         <ul class="dropdown-menu" ng-if="menu.subnav!='';">
             <li ng-repeat="submenu in menu.subnav">
                 <a href="{{submenu.link}}">{{submenu.name}}</a>

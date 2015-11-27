@@ -19,8 +19,9 @@
 	<script src="bower_components/ScrollMagic/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
 	<script src="bower_components/ScrollMagic/scrollmagic/minified/plugins/animation.velocity.min.js"></script>
 	<script src="bower_components/ScrollMagic/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
-	<script src="bower_components/flexslider/jquery.flexslider-min.js"></script>
+	<script src="bower_components/jquery.smoothwheel/src/jquery.smoothwheel.js"></script>
 	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 	<script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
 	<script src="bower_components/ui-router/release/angular-ui-router.min.js"></script>
 	<script src="bower_components/lodash/lodash.min.js"></script>
@@ -37,10 +38,91 @@
         <![endif]-->
 </head>
 
-<body style="background:#000;">
+<body style="background:#191919;">
+	<div class="repeated-item loadedContent" style="display:none;" ui-view></div>
 
-	<div class="repeated-item" ui-view></div>
 
+	<div class="loader" style="background:#161616;z-index:999;text-align: center;position:fixed;top:0;left:0;bottom:0;right:0">
+	<div style="position: absolute ;top: 50%;left:50%;transform: translate(-50%,-50%);">
+		<!-- <img src="img/loading.png" noloading = "true"  alt="" style="opacity: 1"> -->
+					<h2 noloading = "true" style="color:#f6e730;">
+						<span loading-text></span>
+					</h2>
+				</div>
+	</div>
+
+	<div class="rotateMobile" style="display:none;">
+		<img src="img/gif/cell-phone.gif" noloading = "true" >
+<!--
+		<div class="btn-mobile">
+			<button class="btn btn-warning continue" style="padding: 10px 25px!important;font-size: 18px;background: #F6E730;color: #000;">Continue</button>
+		</div>
+-->
+	</div>
+
+	<div class="hidden">
+		<img src="img/gif/Cat-Hanging.gif">
+		<img src="img/gif/cell-phone.gif">
+		<img src="img/gif/Climbing-Buglar.gif">
+		<img src="img/gif/phone.gif">
+		<img src="img/gif/Shaking-Buglar.gif">
+		<img src="img/gif/taxianimation.gif">
+		<img src="img/gif/taxianimation.png">
+		<img src="img/section1/astronaut.png">
+		<img src="img/section1/bulbs.png">
+		<img src="img/section1/coutch.png">
+		<img src="img/section1/donut.png">
+		<img src="img/section1/letgo.png">
+		<img src="img/section2/road-sofa.jpg">
+		<img src="img/section2/TING-LOGO.png">
+		<img src="img/section4/paper-yellow.png">
+		<img src="img/section4/rikshaw.png">
+		<img src="img/section6/big-bulbs.png">
+		<img src="img/section7/YELLOW-LIGHT.png">
+		<img src="img/section7/Tv-Left.gif">
+		<img src="img/section7/Tv-Right.gif">
+		<img src="img/section8/hello.png">
+	</div>
+
+	<script>
+		$(window).load(function() {
+			console.log("Loaded");
+			$("body > .loader").hide();
+			$("body > .loadedContent").fadeIn(1000);
+			if (window.matchMedia("(orientation: portrait)").matches) {
+				$("body > .rotateMobile").fadeIn(1000);
+
+				setInterval(function() {
+					console.log("Check");
+					if (window.matchMedia("(orientation: landscape)").matches) {
+						window.location.reload();
+					}
+				}, 500);
+
+			}
+			if (window.matchMedia("(orientation: landscape)").matches) {
+				setInterval(function() {
+					console.log("Check");
+					if (window.matchMedia("(orientation: portrait)").matches) {
+						window.location.reload();
+					}
+				}, 500);
+			}
+			$("body > .rotateMobile .continue").click(function() {
+					$("body > .rotateMobile").fadeOut(1000);
+			});
+		});
+	</script>
+
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-70662091-1', 'auto');
+  ga('send', 'pageview');
+</script>
 </body>
+
 
 </html>

@@ -1,4 +1,4 @@
-<div class="paper-bg padding">
+<div class="paper-inner-bg padding" ng-controller="HomeCtrl">
     <div class="website container">
         <div class="head">
             <h2 class="margin-less">Website</h2>
@@ -11,22 +11,24 @@
                 <input type="radio" name="type" value="5" ng-model="filterid" ng-click="filterWebsites(5)"> responsive
             </form>
         </div>
-        <div class="row" ng-repeat="website in allwebsites">
-            <div class="col-md-3 col-sm-6" ng-repeat="items in website">
+        <div class="row">
+            <div class="col-sm-3 col-xs-6" ng-repeat="items in website">
                 <div class="projects">
-                    <div class="box">
-                        <img src="{{items.image | serverimage}}" class="img-responsive">
-                    </div>
-                    <div class="main">
-                        <h4 class="text-center">{{items.title}}</h4>
-                    </div>
+                   <a href="{{items.link|extlink}}" target="_blank">
+          						<div class="box">
+          							<img src="{{items.image | serverimage}}" class="full-image">
+          						</div>
+          						<div class="main">
+          							<h4 class="text-center">{{items.title}}</h4>
+          						</div>
+                   </a>
                 </div>
             </div>
         </div>
-        <div class="col-md-12">
+        <!-- <div class="col-md-12">
             <div class="arrow-down pull-right" ng-click="getMoreWebsites(filterid);">
                 <i class="fa fa-angle-down"></i>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>

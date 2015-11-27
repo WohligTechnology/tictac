@@ -1,24 +1,25 @@
-<div class="paper-bg">
-    <div class="website container">
-        <div class="head">
-            <h2>apps</h2>
-        </div>
-        <div class="row" ng-repeat="apps in allapps">
-            <div class="col-md-3" ng-repeat="items in apps">
-                <div class="flex-box">
-                    <div class="boxs">
-                        <img ng-src="{{items.image | serverimage}}" class="img-responsive">
-                    </div>
-                    <div class="main">
-                        <h4 class="text-center">{{items.title}}</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-12">
-            <div class="arrow-down pull-right" ng-click="getMoreApps();">
-                <i class="fa fa-angle-down"></i>
-            </div>
-        </div>
-    </div>
+<div class="paper-inner-bg" ng-controller="HomeCtrl">
+	<div class="website container">
+		<div class="head">
+			<h2>apps</h2>
+		</div>
+		<div class="row">
+			<div class="col-sm-3 col-xs-6" ng-repeat="items in app">
+				<div class="flex-box">
+					<div class="boxs">
+						<img ng-src="{{items.image | serverimage}}" class="full-image">
+					</div>
+					<div class="main">
+						<h4 class="text-center">{{items.title}}</h4>
+					</div>
+					<div class="col-xs-6" ng-if="items.android">
+						<a  href="{{items.android|extlink}}" target="_blank" > <img class="full-image" src="img/ANDROID.png"></a>
+					</div>
+					<div class="col-xs-6" ng-if="items.ios">
+						<a  href="{{items.ios|extlink}}" target="_blank"> <img class="full-image" src="img/IOS.png"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
