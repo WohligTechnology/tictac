@@ -81,16 +81,43 @@
 	}
 }
 
+// .taxi3 {
+// 	@include animation(taxi 15s linear 3s infinite);
+// }
+//
+// @include keyframes (taxi) {
+// 	0% {
+// @include transform( translate(600%,0%));
+// 	}
+// 	100% {
+// 		@include transform(translate(600%, 0%));
+// 	}
+// }
+
+//taxi linear animation
 .taxi3 {
-	@include animation(taxi 15s linear 3s infinite);
+	@include animation(moving-taxi 20s linear 0s infinite);
 }
 
-@include keyframes (taxi) {
+@include keyframes (moving-taxi) {
 	0% {
-@include transform( translate(600%,0%));
+		@include transform(translate(700%, 0%));
 	}
 	100% {
-		@include transform(translate(600%, 0%));
+		@include transform(translate(-700%, 0%));
+	}
+}
+
+.taxi1 {
+	@include animation(moving-taxi-1 20s linear 0s infinite);
+}
+
+@include keyframes (moving-taxi-1) {
+	0% {
+		@include transform(translate(-500%, 0%));
+	}
+	100% {
+		@include transform(translate(900%, 0%));
 	}
 }
 
