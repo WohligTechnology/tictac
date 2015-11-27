@@ -13,21 +13,20 @@
   .navbar-fixed-top.nav-bg {
     height: auto;
     .template.menu .navbar-nav {
-        display: block;
-        margin: 0px;
-    li {
-      a {
-        &:hover {
+      display: block;
+      margin: 0;
+      li {
+        a {
+          &:hover {
 
-        }
-        span {
-          border-right: 0;
+          }
+          span {
+            border-right: 0;
+          }
         }
       }
     }
   }
-}
-
   footer {
     position: absolute;
     bottom: 0;
@@ -86,7 +85,7 @@
   }
   .musical .cont-center {
     top: 33%;
-		left: 40%;
+    left: 40%;
   }
   .navbar-fixed-top.nav-bg {
     .navbar-nav {
