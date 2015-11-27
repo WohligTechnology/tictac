@@ -89,23 +89,18 @@ figure {
   margin: 0;
 }
 .star-bg {
-  background-image: url("../img/background/star.jpg");
+  background-image: url(../img/background/star.jpg);
   background-repeat: repeat;
   background-size: auto;
   overflow: hidden;
 }
 .road-bg {
-  background: url("../img/background/paper-road.png") no-repeat;
+  background: url(../img/background/paper-road.png) no-repeat;
   background-size: 100% 100%;
   min-height: 700px;
 }
 .letters-bg {
-  background: url("../img/background/letters.jpg") no-repeat;
-  background-size: 100% 100%;
-  min-height: 400px;
-}
-.black-bg {
-  background: url("../img/background/black.jpg") no-repeat;
+  background: url(../img/background/letters.jpg) no-repeat;
   background-size: 100% 100%;
   min-height: 400px;
 }
@@ -128,7 +123,7 @@ figure {
 //		@include transform(translateY(-50%));
 //	}
 .paper-bg {
-  background: url("../img/background/paper-repeat.jpg") no-repeat;
+  background: url(../img/background/paper-repeat.jpg) no-repeat;
   background-size: cover;
   position: absolute;
   width: 100%;
@@ -152,9 +147,15 @@ figure {
     color: darken(#ddd, 10%);
   }
 }
+.ngdialog-content {
+    background: 0 0;
+    z-index: 2;
+    position: relative;
+}
 .ngdialog-overlay {
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 1;
+    background: url(../img/background/Inside-popup-page-texture.jpg) no-repeat;
+    background-size: cover;
+    z-index: 1;
 }
 .text-center {
   text-align: center;
@@ -202,35 +203,23 @@ figure {
   position: relative;
 }
 .road-sofa {
-margin-top: 100px;
+  margin-top: 100px;
 }
 .buildings {
-  z-index: -1;
-	position: relative;
+  z-index: 2;
+  position: relative;
   width: 100%;
-  .building1 {
-		position: absolute;
-		bottom: 0;
-    z-index: 1;
-  }
-  .building2 {
-    z-index: 0;
-  }
-  .building {
-		position: absolute;
-		bottom: 0;
-    z-index: 2;
+  .coutch {
+    z-index: 14;
+    width: 100%;
+    position: absolute;
+    bottom: -75px;
+    left: -15px;
+    img {
+      max-width: 100%;
+    }
   }
 }
-
-.coutch {
-	z-index: 14;
-	width: 100%;
-	img {
-		max-width: 100%;
-	}
-}
-
 .road-bg.onroad {
   position: relative;
   overflow: hidden;
@@ -268,8 +257,9 @@ margin-top: 100px;
     left: 10%;
   }
   .taxi2 {
-    right: -15%;
-    bottom: 10%;
+    right: 0;
+    bottom: 38%;
+    width: 38%;
   }
   .taxi.taxi3 {
     bottom: 10%;
@@ -402,16 +392,16 @@ margin-top: 100px;
     position: absolute;
     left: 10%;
     bottom: 18.1%;
-    width: 9%;
+    width: 13%;
     img {
       width: 100%;
     }
   }
   .buregler2 {
     position: absolute;
-    left: 8%;
+    left: 25%;
     bottom: 26%;
-    width: 36%;
+    width: 10%;
     img {
       width: 100%;
     }
@@ -524,7 +514,7 @@ margin-top: 100px;
     position: relative;
     img {
       width: 75%;
-      margin-top: -320px;
+      margin-top: -311px;
       margin-left: -20px;
       opacity: 0.8;
     }
@@ -556,7 +546,7 @@ margin-top: 100px;
       margin-bottom: 15px;
       img.ring {
         position: absolute;
-        right: -23px;
+        right: -10px;
         bottom: -15px;
       }
     }
@@ -572,6 +562,7 @@ margin-top: 100px;
       }
     }
     .address {
+
       //			padding-left: 17%;
       ul {
         display: block;
@@ -757,23 +748,23 @@ margin-top: 100px;
     }
   }
 }
-.section8{
+.section8 {
   position: relative;
-.footer-yellow {
-  background: $base-color;
-  padding: 10px 0;
-  font-weight: 800;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  a{
-    color: #000;
-    &:hover
-    {
-      text-decoration: none;
+  margin-top: -2px;
+  .footer-yellow {
+    background: $base-color;
+    padding: 10px 0;
+    font-weight: 800;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    a {
+      color: #000;
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
-}
 }
 @import "main/animation";
 @import "main/mobile";
