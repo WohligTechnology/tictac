@@ -142,8 +142,8 @@
                 return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
             }
         };
-        if (isMobile.any()) {
-            window.location = "http://tingdigital.in/mobile";
+        if (!==isMobile.any()) {
+            window.location = "http://tingdigital.in";
         }
     </script>
 </body>
