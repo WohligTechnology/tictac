@@ -4,24 +4,62 @@ var adminimage = adminbase + "uploads/";
 var adminhauth = adminbase + "index.php/hauth/";
 var imgpath = adminimage + "image?name=";
 
-var navigationservice = angular.module('navigationservice', [])
+var navigationservice = angular.module('navigationservice', ['ngDialog'])
 
-.factory('NavigationService', function($http) {
+.factory('NavigationService', function($http,ngDialog, $location,$anchorScroll) {
     var navigation = [{
-        name: "Home",
+        name: "website",
         classis: "active",
-        link: "#/home",
-        subnav: [{
-            name: "Subnav1",
-            classis: "active",
-            link: "#/home"
-        }]
+        function: function() {
+            ngDialog.open({
+                template: 'views/content/modal-website.html'
+            });
+        }
     }, {
-        name: "Features",
+        name: "apps",
         active: "",
-        link: "#/feature",
         classis: "active",
-        subnav: []
+        function: function() {
+            ngDialog.open({
+                template: 'views/content/modal-app.html'
+            });
+        }
+    }, {
+        name: "digital marketing",
+        active: "",
+        classis: "active",
+        function: function() {
+            ngDialog.open({
+                template: 'views/content/modal-digitalmarketing.html'
+            });
+        }
+    }, {
+        name: "videos",
+        active: "",
+        classis: "active",
+        function: function() {
+            ngDialog.open({
+                template: 'views/content/modal-videos.html'
+            });
+        }
+    }, {
+        name: "hello",
+        active: "",
+        classis: "active",
+        function:function () {
+          // set the location.hash to the id of
+          // the element you wish to scroll to.
+          var targetTo = $("#hello").offset().top
+          $('html,body').animate({
+            scrollTop: targetTo
+          }, 1000);
+
+        }
+    }, {
+        name: "go back",
+        active: "",
+        link: "http://ting.in/",
+        classis: "active",
     }];
 
     return {
@@ -39,22 +77,22 @@ var navigationservice = angular.module('navigationservice', [])
             return menuname;
         },
         getallapps: function(pageno, callback, err) {
-            return $http.get(adminurl + 'getallapps?pageno=' + pageno + '&maxrow=' + 4, {
+            return $http.get(adminurl + 'getallapps?pageno=' + pageno + '&maxrow=' + 100, {
                 withCredentials: true
             }).success(callback).error(err);
         },
         getalldigitalmarketing: function(pageno, callback, err) {
-            return $http.get(adminurl + 'getalldigitalmarketing?pageno=' + pageno + '&maxrow=' + 8, {
+            return $http.get(adminurl + 'getalldigitalmarketing?pageno=' + pageno + '&maxrow=' + 100, {
                 withCredentials: false
             }).success(callback).error(err);
         },
         getallvideo: function(pageno, callback, err) {
-            return $http.get(adminurl + 'getallvideo?pageno=' + pageno + '&maxrow=' + 6, {
+            return $http.get(adminurl + 'getallvideo?pageno=' + pageno + '&maxrow=' + 100, {
                 withCredentials: false
             }).success(callback).error(err);
         },
         getallwebsite: function(id, pageno, callback, err) {
-            return $http.get(adminurl + 'getallwebsite?id=' + id + '&pageno=' + pageno + '&maxrow=' + 8, {
+            return $http.get(adminurl + 'getallwebsite?id=' + id + '&pageno=' + pageno + '&maxrow=' + 100, {
                 withCredentials: false
             }).success(callback).error(err);
         }

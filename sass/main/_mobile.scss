@@ -13,24 +13,34 @@
   .navbar-fixed-top.nav-bg {
     height: auto;
     .template.menu .navbar-nav {
-      display: block;
-      margin: 0;
-      li {
-        a {
-          &:hover {
+        display: block;
+        margin: 0px;
+    li {
+      a {
+        &:hover {
 
-          }
-          span {
-            border-right: 0;
-          }
+        }
+        span {
+          border-right: 0;
         }
       }
     }
   }
+}
+
   footer {
     position: absolute;
     bottom: 0;
     width: 100%;
+  }
+  .section8 {
+    position: relative;
+    .contact {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
   .blubs .conts .cont-center {
     position: absolute;
@@ -73,6 +83,7 @@
     .app-main .apps .cont-right {
       width: 35%;
       color: #fff;
+      float: left;
       margin-top: 0;
       margin-bottom: 0;
       padding-right: 0;
@@ -84,13 +95,30 @@
     }
   }
   .musical .cont-center {
-    top: 33%;
-    left: 40%;
+    top: 15%;
   }
   .navbar-fixed-top.nav-bg {
+    border: 0;
+    .navbar-header {
+      button {
+        background: #f6e730 !important;
+        border-color: #e3aa00 !important;
+        span {
+          background-color: #e3aa00 !important;
+        }
+      }
+      .navbar-brand {
+        img {
+          float: left;
+          margin-left: 15px;
+          margin-top: -15px;
+          width: 90px;
+          padding-left: 0;
+        }
+      }
     .navbar-nav {
       li > a {
-        border-right: 0px!important;
+        color: #191919;
         text-align: center;
         &:hover {
           color: darken(#191919, 20%);
