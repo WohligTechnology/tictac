@@ -97,7 +97,7 @@ firstapp.directive('toggleClass', function ($compile, $parse) {
       console.log(triggerElement);
       new ScrollMagic.Scene({triggerElement: triggerElement})
 					.setClassToggle(attrs.toggleElement, attrs.toggleClass) // add class toggle
-      //    .addIndicators()
+         .addIndicators()
 					.addTo(controller);
 
 		}
