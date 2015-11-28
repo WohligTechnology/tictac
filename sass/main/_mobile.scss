@@ -12,35 +12,28 @@
 @media (max-width:767px) {
   .navbar-fixed-top.nav-bg {
     height: auto;
-    .template.menu .navbar-nav {
-        display: block;
-        margin: 0px;
-    li {
-      a {
-        &:hover {
-
-        }
-        span {
-          border-right: 0;
+  }
+  .navbar-default .navbar-collapse {
+    padding: 0;
+    border-color: #e3aa00;
+    .navbar-nav {
+      display: block;
+      margin: 0;
+      li {
+        a {
+          text-align: center;
+          border-bottom: 1px solid #e3aa00;
+          span {
+            border-right: 0;
+          }
         }
       }
     }
   }
-}
-
   footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-  }
-  .section8 {
-    position: relative;
-    .contact {
-      position: relative;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
   }
   .blubs .conts .cont-center {
     position: absolute;
@@ -95,7 +88,8 @@
     }
   }
   .musical .cont-center {
-    top: 15%;
+    top: 40%;
+    left: 41%;
   }
   .navbar-fixed-top.nav-bg {
     background: #f6e730;
@@ -117,83 +111,84 @@
           padding-left: 0;
         }
       }
-    .navbar-nav {
-      text-align: center;
-      li > a {
-        color: #191919;
+      .navbar-nav {
         text-align: center;
-        &:hover {
-          color: darken(#191919, 20%);
-        }
-        li:first-child {
-          a {
-            border-left: 0px!important;
+        li > a {
+          color: #191919;
+          text-align: center;
+          &:hover {
+            color: darken(#191919, 20%);
+          }
+          li:first-child {
+            a {
+              border-left: 0px!important;
+            }
           }
         }
+        li+li {
+          border-top: 1px solid #e3aa00;
+        }
       }
-      li+li {
-        border-top: 1px solid #e3aa00;
+    }
+  }
+  @media (max-width:550px) {
+    .rotateMobile {
+      position: fixed;
+      z-index: 101;
+      top: 0;
+      bottom: 0;
+      background: #171717;
+      right: 0;
+      left: 0;
+      text-align: center;
+    }
+  }
+  @media (max-width:448px) {
+    p {
+      font-size: 6px !important;
+    }
+    .letters-bg .type-writer {
+      .cont-center {
+        width: 80%;
+      }
+    }
+    .section3 .road-bg.onroad .nav {
+      ul li {
+        margin: 5px 0;
+        text-align: right;
+        a {
+          font-size: 8px;
+        }
+      }
+      left: 15%;
+    }
+    .letters-bg .type-writer .cont-center p {
+      margin: 0 !important;
+      font-size: 6px !important;
+      line-height: 1;
+    }
+    .letters-bg .type-writer .ios {
+      h3 {
+        font-size: 8px!important;
+      }
+    }
+    .cont-center h4 {
+      font-size: 12px !important;
+      margin: 0 !important;
+    }
+    .btn {
+      padding: 2px 10px !important;
+      font-size: 8px;
+    }
+    .blubs .conts .cont-center {
+      position: absolute;
+      width: 48%;
+      left: 50%;
+    }
+    .musical .cont-center {
+      h4 {
+        font-size: 8px!important;
       }
     }
   }
 }
-@media (max-width:550px) {
-  .rotateMobile {
-    position: fixed;
-    z-index: 101;
-    top: 0;
-    bottom: 0;
-    background: #171717;
-    right: 0;
-    left: 0;
-    text-align: center;
-  }
-}
-@media (max-width:448px) {
-  p {
-    font-size: 6px !important;
-  }
-  .letters-bg .type-writer {
-    .cont-center {
-      width: 80%;
-    }
-  }
-  .section3 .road-bg.onroad .nav {
-    ul li {
-      margin: 5px 0;
-      text-align: right;
-      a {
-        font-size: 8px;
-      }
-    }
-    left: 15%;
-  }
-  .letters-bg .type-writer .cont-center p {
-    margin: 0 !important;
-    font-size: 6px !important;
-    line-height: 1;
-  }
-  .letters-bg .type-writer .ios {
-    h3 {
-      font-size: 8px!important;
-    }
-  }
-  .cont-center h4 {
-    font-size: 12px !important;
-    margin: 0 !important;
-  }
-  .btn {
-    padding: 2px 10px !important;
-    font-size: 8px;
-  }
-  .blubs .conts .cont-center {
-    position: absolute;
-    width: 48%;
-    left: 50%;
-  }
-  .musical .cont-center {
-    h4 {
-      font-size: 8px!important;
-    }
-  }
-} }

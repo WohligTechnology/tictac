@@ -107,8 +107,11 @@ figure {
 .pull-right {
   float: right;
 }
-.full-image {
-  width: 100%;
+.left-image {
+  float: left;
+}
+.right-image {
+  float: right;
 }
 .padding {
   padding: 20px;
@@ -385,7 +388,7 @@ figure {
       font-size: 26px;
     }
   }
-  
+
 }
 .black-white-lines {
   position: relative;
@@ -515,7 +518,7 @@ figure {
     position: relative;
     img {
       width: 75%;
-      margin-top: -311px;
+      margin-top: -315px;
       margin-left: -20px;
       opacity: 0.8;
     }
