@@ -29,7 +29,7 @@ var ftpdetails = {
     host: 'wohlig.co.in',
     user: 'enter your username',
     pass: 'enter your password',
-    remotePath: "public_html/tingdigitalmobile"
+    remotePath: "public_html/tingdigital/mobile"
 };
 
 //Do not change anything below

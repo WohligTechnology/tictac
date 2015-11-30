@@ -211,6 +211,22 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.filterWebsites(7);
     };
 
+		$scope.gotoBottom = function () {
+
+			var targetTo = $("#hello").offset().top
+			$('html,body').animate({
+				scrollTop: targetTo
+			}, 1000);
+
+		};
+		$scope.gotoTop = function () {
+
+			$('html,body').animate({
+				scrollTop: 0
+			}, 1000);
+
+		};
+
 })
 
 .controller('FeatureCtrl', function($scope, TemplateService) {
