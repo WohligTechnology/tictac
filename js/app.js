@@ -1,7 +1,6 @@
 // JavaScript Document
 var ZoomValue = 1;
 var HeightChange  = 1;
-var controller = new ScrollMagic.Controller();
 var Section8Height = 800;
 var firstapp = angular.module('firstapp', [
     'ui.router',
@@ -82,55 +81,6 @@ firstapp.directive('img', function ($compile, $parse) {
 	};
 });
 
-
-
-firstapp.directive('toggleClass', function ($compile, $parse) {
-	return {
-		restrict: 'EA',
-		replace: false,
-		link: function ($scope, element, attrs) {
-
-      console.log(attrs);
-
-			var $element = $(element);
-			var triggerElement = attrs.triggerElement;
-      console.log(triggerElement);
-      new ScrollMagic.Scene({triggerElement: triggerElement})
-					.setClassToggle(attrs.toggleElement, attrs.toggleClass) // add class toggle
-        //  .addIndicators()
-					.addTo(controller);
-
-		}
-	};
-});
-
-var taxiAni = true;
-firstapp.directive('taxiAnimation', function ($compile, $parse) {
-	return {
-		restrict: 'EA',
-		replace: false,
-		link: function ($scope, element, attrs) {
-      new ScrollMagic.Scene({triggerElement: ".taxiAnimation", duration: 200})
-                .addTo(controller)
-                //.addIndicators() // add indicators (requires plugin)
-                .on("enter", function (e) {
-                  console.log("Taxi Enter");
-                  setTimeout(function() {
-                    taxiAni = true;
-                  }, 6000);
-                  if(taxiAni == true)
-                  {
-                    $(".taxiAnimation").attr("src","img/gif/taxianimation.gif");
-                  }
-                  taxiAni = false;
-
-
-                })
-		}
-	};
-});
-
-
 firstapp.filter('serverimage', function () {
 	return function (image) {
 		if (image && image != null) {
@@ -172,10 +122,6 @@ firstapp.directive('youtube', function ($sce) {
 		}
 	};
 });
-
-
-
-
 
 
 function changeZoom() {

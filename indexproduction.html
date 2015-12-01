@@ -2,12 +2,12 @@
 <html lang="en" ng-app="firstapp">
 
 <head ng-controller="headerctrl">
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author" content="">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
     <title ng-bind="'Ting Digital - '+template.title">Ting Digital</title>
 
@@ -20,110 +20,108 @@
         <![endif]-->
 </head>
 
-<body style="background:#161616;">
-    <div class="repeated-item loadedContent" ui-view style = "display:none;"></div>
 
-		<div class="loader" style="background:#161616;z-index:999;text-align: center;position:fixed;top:0;left:0;bottom:0;right:0">
-		<div style="position: absolute ;top: 50%;left:50%;transform: translate(-50%,-50%);">
-						<h2 noloading = "true" style="color:#f6e730;">
-							<span loading-text></span>
-						</h2>
-					</div>
-		</div>
+<body style="background:#191919;">
+    <div class="repeated-item loadedContent" style="display:none;" ui-view></div>
+    <div class="loader" style="background:#161616;z-index:999;text-align: center;position:fixed;top:0;left:0;bottom:0;right:0">
+        <div style="position: absolute ;top: 50%;left:50%;transform: translate(-50%,-50%);">
+            <!-- <img src="img/loading.png" noloading = "true"  alt="" style="opacity: 1"> -->
+            <h2 noloading="true" style="color:#f6e730;">
+						<span loading-text></span>
+					</h2>
+        </div>
+    </div>
+    <div class="rotateMobile" style="display:none;">
+        <img src="img/gif/cell-phone.gif" noloading="true">
+    </div>
+    <div class="hidden">
+        <img src="img/gif/Cat-Hanging.gif">
+        <img src="img/gif/cell-phone.gif">
+        <img src="img/gif/phone.gif">
+        <img src="img/gif/cell-phone.gif">
+        <img src="img/gif/taxianimation.gif">
+        <img src="img/astronaut.png">
+        <img src="img/bulbs.png">
+        <img src="img/coutch.png">
+        <img src="img/donut.png">
+        <img src="img/letgo.png">
+        <img src="img/paper-yellow.png">
+        <img src="img/rikshaw.png">
+        <img src="img/YELLOW-LIGHT.png">
+        <img src="img/gif/Tv-Left.gif">
+        <img src="img/gif/Tv-Right.gif">
+        <img src="img/hello.png">
+    </div>
+    <script>
+        $(window).load(function () {
+            console.log("Loaded");
+            $("body > .loader").hide();
+            $("body > .loadedContent").fadeIn(1000);
+            if (window.matchMedia("(orientation: portrait)").matches) {
+                $("body > .rotateMobile").fadeIn(1000);
 
-		<div class="rotateMobile" style="display:none;">
-			<img src="img/gif/cell-phone.gif">
-		</div>
+                setInterval(function () {
+                    console.log("Check");
+                    if (window.matchMedia("(orientation: landscape)").matches) {
+                        //						window.location.reload();
+                    }
+                }, 500);
 
-		<div class="hidden">
-			<img src="img/gif/Cat-Hanging.gif">
-			<img src="img/gif/cell-phone.gif">
-			<img src="img/gif/Climbing-Buglar.gif">
-			<img src="img/gif/phone.gif">
-			<img src="img/gif/Shaking-Buglar.gif">
-			<img src="img/gif/taxianimation.gif">
-			<img src="img/gif/taxianimation.png">
-			<img src="img/astronaut.png">
-			<img src="img/bulbs.png">
-			<img src="img/coutch.png">
-			<img src="img/donut.png">
-			<img src="img/letgo.png">
-			<img src="img/section2/road-sofa.jpg">
-			<img src="img/section2/TING-LOGO.png">
-			<img src="img/paper-yellow.png">
-			<img src="img/rikshaw.png">
-			<img src="img/BIG-BULBS.png">
-			<img src="img/YELLOW-LIGHT.png">
-			<img src="img/gif/Tv-Left.gif">
-			<img src="img/gif/Tv-Right.gif">
-			<img src="img/hello.png">
-		</div>
+            }
+            if (window.matchMedia("(orientation: landscape)").matches) {
+                setInterval(function () {
+                    console.log("Check");
+                    if (window.matchMedia("(orientation: portrait)").matches) {
+                        window.location.reload();
+                    }
+                }, 500);
+            }
+            $("body > .rotateMobile .continue").click(function () {
+                $("body > .rotateMobile").fadeOut(1000);
+            });
+        });
+    </script>
+    <script>
+        var isMobile = {
+            Android: function () {
+                return navigator.userAgent.match(/Android/i);
+            },
+            BlackBerry: function () {
+                return navigator.userAgent.match(/BlackBerry/i);
+            },
+            iOS: function () {
+                return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+            },
+            Opera: function () {
+                return navigator.userAgent.match(/Opera Mini/i);
+            },
+            Windows: function () {
+                return navigator.userAgent.match(/IEMobile/i);
+            },
+            any: function () {
+                return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+            }
+        };
+        if (!isMobile.any()) {
+            window.location = "http://tingdigital.in";
+        }
+    </script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-70662091-1', 'auto');
+        ga('send', 'pageview');
+    </script>
 
-
-		<link rel="stylesheet" type="text" href="w.css" />
-    <script src="w.js"></script>
-		<script>
-			$(window).load(function() {
-				console.log("Loaded");
-				$("body > .loader").hide();
-				$("body > .loadedContent").fadeIn(1000);
-				if (window.matchMedia("(orientation: portrait)").matches) {
-					$("body > .rotateMobile").fadeIn(1000);
-
-					setInterval(function() {
-						console.log("Check");
-						if (window.matchMedia("(orientation: landscape)").matches) {
-							window.location.reload();
-						}
-					}, 500);
-
-	 			}
-				if (window.matchMedia("(orientation: landscape)").matches) {
-					setInterval(function() {
-						console.log("Check");
-						if (window.matchMedia("(orientation: portrait)").matches) {
-							window.location.reload();
-						}
-					}, 500);
-				}
-				$("body > .rotateMobile .continue").click(function() {
-						$("body > .rotateMobile").fadeOut(1000);
-				});
-			});
-		</script>
-		<script>
-					var isMobile = {
-							Android: function() {
-									return navigator.userAgent.match(/Android/i);
-							},
-							BlackBerry: function() {
-									return navigator.userAgent.match(/BlackBerry/i);
-							},
-							iOS: function() {
-									return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-							},
-							Opera: function() {
-									return navigator.userAgent.match(/Opera Mini/i);
-							},
-							Windows: function() {
-									return navigator.userAgent.match(/IEMobile/i);
-							},
-							any: function() {
-									return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-							}
-					};
-					if (isMobile.any()) {
-							window.location = "http://tingdigital.in/mobile";
-					}
-			</script>
-		<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		ga('create', 'UA-70662091-1', 'auto');
-		ga('send', 'pageview');
-	</script>
 </body>
 
 </html>

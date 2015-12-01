@@ -1,12 +1,5 @@
 var jsArray = [
     './bower_components/jquery/dist/jquery.min.js',
-//    './bower_components/ScrollMagic/scrollmagic/minified/ScrollMagic.min.js',
-//    './bower_components/gsap/src/minified/TweenMax.min.js',
-//  	'./bower_components/ScrollMagic/scrollmagic/minified/plugins/animation.gsap.min.js',
-//  	'./bower_components/ScrollMagic/scrollmagic/minified/plugins/animation.velocity.min.js',
-//  	'./bower_components/ScrollMagic/scrollmagic/minified/plugins/debug.addIndicators.min.js',
-//  	'./bower_components/jquery.smoothwheel/src/jquery.smoothwheel.js',
-
     './bower_components/angular/angular.min.js',
     './bower_components/angular-sanitize/angular-sanitize.min.js',
     './bower_components/ui-router/release/angular-ui-router.min.js',
