@@ -18,13 +18,13 @@ var jsArray = [
     './w/js/templates.js',
 ];
 var replacehostFrom = "http://localhost/demo/";
-var replacehostTo = "http://tingdigital.in/mobile";
+var replacehostTo = "http://tingdigital.in/";
 
 var ftpdetails = {
     host: 'tingworks.in',
     user: 'tingdigital@tingworks.in',
     pass: '111',
-    remotePath: ""
+    remotePath: "/mobile"
 };
 
 //Do not change anything below
@@ -275,4 +275,4 @@ gulp.task('minifyhtml', ["minify:indexHTML", "minify:views", "templatecache"]);
 gulp.task('copy', ["copy:img", "copy:fonts"]);
 
 gulp.task('production', gulpSequence('copy:img','copy:fonts',["sass:production", "minify:indexproduction", "minify:views"], 'clean:tmp', ["minify:css", "templatecache"],'clean:tmp', "concat:js", 'clean:tmp', "uglify:js", 'clean:tmp', "inlinesource", 'clean:tmp', "gzipfile", 'clean:tmp', 'clean:tmp', "zip"));
-// gulp.task('production', gulpSequence(["sass:production", "minify:indexproduction", "minify:views"], 'clean:tmp', ["minify:css", "templatecache"],'clean:tmp', "concat:js", 'clean:tmp', "uglify:js", 'clean:tmp', "inlinesource", 'clean:tmp', "gzipfile", 'clean:tmp', 'clean:tmp', "zip"));
+//gulp.task('production', gulpSequence(["sass:production", "minify:indexproduction", "minify:views"], 'clean:tmp', ["minify:css", "templatecache"],'clean:tmp', "concat:js", 'clean:tmp', "uglify:js", 'clean:tmp', "inlinesource", 'clean:tmp', "gzipfile", 'clean:tmp', 'clean:tmp', "zip"));
