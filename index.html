@@ -38,7 +38,6 @@
 
 	<div class="loader" style="background:#161616;z-index:999;text-align: center;position:fixed;top:0;left:0;bottom:0;right:0">
 	<div style="position: absolute ;top: 50%;left:50%;transform: translate(-50%,-50%);">
-		<!-- <img src="img/loading.png" noloading = "true"  alt="" style="opacity: 1"> -->
 					<h2 noloading = "true" style="color:#f6e730;">
 						<span loading-text></span>
 					</h2>
@@ -79,7 +78,7 @@
 				setInterval(function() {
 					console.log("Check");
 					if (window.matchMedia("(orientation: landscape)").matches) {
-//						window.location.reload();
+						window.location.reload();
 					}
 				}, 500);
 
