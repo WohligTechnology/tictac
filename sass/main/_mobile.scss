@@ -138,10 +138,17 @@
             z-index: 101;
             top: 0;
             bottom: 0;
-            background: #171717;
+            background: #161616;
             right: 0;
             left: 0;
             text-align: center;
+            img{
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              @include transform(translate(-50%,-50%));
+              width: 70%;
+            }
         }
     }
     @media (max-width:448px) {
