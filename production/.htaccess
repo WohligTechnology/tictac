@@ -1,0 +1,20 @@
+<IfModule mod_mime.c>
+    AddCharset utf-8 .css
+    AddCharset utf-8 .js
+    AddCharset utf-8 .html
+    AddEncoding gzip .gz
+</IfModule>
+<FilesMatch "(\.js|\.js\.gz)$">
+    ForceType text/javascript
+</FilesMatch>
+<FilesMatch "(\.css|\.css\.gz)$">
+    ForceType text/css
+</FilesMatch>
+<FilesMatch "(\.html|\.html\.gz)$">
+    ForceType text/html
+    Header append Vary Accept-Encoding
+</FilesMatch>
+<FilesMatch "\.(gif|jpeg|jpg|woff|png|ico|css|js|swf)$">
+     Header set Cache-Control "max-age=604800, public, must-revalidate"
+</FilesMatch>
+DirectoryIndex index.gz.html index.html index.htm index.php
