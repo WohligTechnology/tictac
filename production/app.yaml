@@ -1,5 +1,5 @@
-application: model-hexagon-108010
-version: 1
+application: ornate-course-118412
+version: 2
 runtime: php55
 api_version: 1
 threadsafe: no
@@ -12,7 +12,7 @@ handlers:
 - url: /(.+\.(gif|png|jpg|css|mp3|js|html|json|eot|woff|woff2|ttf|svg|otf|xml|txt|pdf|zip|ico))$
   static_files: \1
   upload: .+\.(gif|png|jpg|css|mp3|js|html|json|eot|woff|woff2|ttf|svg|otf|xml|txt|pdf|zip|ico)$
-  application_readable: true  
-  
+  application_readable: true
+
 - url: /.*
   script: index.php

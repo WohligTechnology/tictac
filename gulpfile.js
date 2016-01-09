@@ -1,29 +1,32 @@
 var jsArray = [
-    './bower_components/jquery/dist/jquery.min.js',
-    './bower_components/ScrollMagic/scrollmagic/minified/ScrollMagic.min.js',
-    './bower_components/gsap/src/minified/TweenMax.min.js',
-  	'./bower_components/ScrollMagic/scrollmagic/minified/plugins/animation.gsap.min.js',
-  	'./bower_components/ScrollMagic/scrollmagic/minified/plugins/animation.velocity.min.js',
-  	'./bower_components/ScrollMagic/scrollmagic/minified/plugins/debug.addIndicators.min.js',
-  	'./bower_components/jquery.smoothwheel/src/jquery.smoothwheel.js',
+  './bower_components/jquery/dist/jquery.min.js',
+  './bower_components/ScrollMagic/scrollmagic/minified/ScrollMagic.min.js',
+  './bower_components/gsap/src/minified/TweenMax.min.js',
+  './bower_components/ScrollMagic/scrollmagic/minified/plugins/animation.gsap.min.js',
+  './bower_components/ScrollMagic/scrollmagic/minified/plugins/animation.velocity.min.js',
+  './bower_components/ScrollMagic/scrollmagic/minified/plugins/debug.addIndicators.min.js',
+  './bower_components/jquery.smoothwheel/src/jquery.smoothwheel.js',
 
-    './bower_components/angular/angular.min.js',
-    './bower_components/angular-sanitize/angular-sanitize.min.js',
-    './bower_components/ui-router/release/angular-ui-router.min.js',
-    './bower_components/bootstrap/dist/js/bootstrap.js',
-    './bower_components/lodash/lodash.min.js',
-    './bower_components/typed.js/dist/typed.min.js',
-    './bower_components/ng-dialog/js/ngDialog.min.js',
+  './bower_components/angular/angular.min.js',
+  './bower_components/angular-sanitize/angular-sanitize.min.js',
+  './bower_components/ui-router/release/angular-ui-router.min.js',
+  './bower_components/bootstrap/dist/js/bootstrap.js',
+  './bower_components/lodash/lodash.min.js',
+  './bower_components/typed.js/dist/typed.min.js',
+  './bower_components/ng-dialog/js/ngDialog.min.js',
 
-    // Common one
-    './js/app.js',
-    './js/controllers.js',
-    './js/templateservice.js',
-    './js/navigation.js',
+  // Common one
+  './js/app.js',
+  './js/controllers.js',
+  './js/templateservice.js',
+  './js/navigation.js',
 
-    // do not remove this
-    './w/js/templates.js',
+  // do not remove this
+  './w/js/templates.js',
 ];
+
+var replacehostFrom = "http://localhost/demo/";
+var replacehostTo = "http://tingdigital.in/";
 
 var ftpString = "U2FsdGVkX1+jcFED/CJbcYNiOJ42eBsjlxqmrcKWSIPH9Sao/4535zPQX5Fa7VYGAHSfkKCXbDpiUfJhkRRijaerS1lJ/k+dSfqsfl45ICkzMTJ7fBNVDj/242ur9ZG4HZDhSe1O/J4vEUboWDRBhg==";
 
