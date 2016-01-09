@@ -874,6 +874,16 @@ a {
   width: 100%;
   bottom: 0;
 }
+.css-light {
+  width: 84px;
+  height: 29px;
+  position: fixed;
+  top: 180px;
+  left: 0;
+  z-index: 99999;
+  text-indent: -9999px;
+  background: url(http://www.csslight.com/ribbons/small-csslight-ribbon-left.png) no-repeat;
+}
 .opl {
   position: fixed;
   top: 100px;
