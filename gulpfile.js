@@ -294,10 +294,17 @@ gulp.task('zip', function() {
 });
 
 
+gulp.task('renamePHP', function() {
+  return gulp.src("./production/index.html")
+    .pipe(rename("./production/index.php"))
+    .pipe(gulp.dest("./"));
+});
+
+
 gulp.task('watch', ["sass:development", "watch:all"]);
 gulp.task('default', ["sass:development", "watch:all"]);
 gulp.task('development', ["sass:development", "watch:all"]);
 gulp.task('minifyhtml', ["minify:indexHTML", "minify:views", "templatecache"]);
 gulp.task('copy', ["copy:img", "copy:fonts"]);
 
-gulp.task('production', gulpSequence(["copy:img", "copy:fonts", "sass:production", "minify:indexproduction", "minify:views"], 'clean:tmp', ["minify:css", "templatecache"], "concat:js", 'clean:tmp', "uglify:js", 'clean:tmp', "inlinesource", 'clean:tmp', "copy:indexhtml", 'clean:tmp', 'clean:tmp', "zip"));
+gulp.task('production', gulpSequence(["copy:img", "copy:fonts", "sass:production", "minify:indexproduction", "minify:views"], 'clean:tmp', ["minify:css", "templatecache"], "concat:js", 'clean:tmp', "uglify:js", 'clean:tmp', "inlinesource", 'clean:tmp', "copy:indexhtml", 'clean:tmp', 'clean:tmp', "zip","renamePHP"));
