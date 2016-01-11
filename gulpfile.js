@@ -6,7 +6,6 @@ var jsArray = [
   './bower_components/ScrollMagic/scrollmagic/minified/plugins/animation.velocity.min.js',
   './bower_components/ScrollMagic/scrollmagic/minified/plugins/debug.addIndicators.min.js',
   './bower_components/jquery.smoothwheel/src/jquery.smoothwheel.js',
-
   './bower_components/angular/angular.min.js',
   './bower_components/angular-sanitize/angular-sanitize.min.js',
   './bower_components/ui-router/release/angular-ui-router.min.js',
@@ -24,11 +23,10 @@ var jsArray = [
   // do not remove this
   './w/js/templates.js',
 ];
-
 var replacehostFrom = "http://localhost/demo/";
 var replacehostTo = "http://tingdigital.in/";
 
-var ftpString = "U2FsdGVkX1+jcFED/CJbcYNiOJ42eBsjlxqmrcKWSIPH9Sao/4535zPQX5Fa7VYGAHSfkKCXbDpiUfJhkRRijaerS1lJ/k+dSfqsfl45ICkzMTJ7fBNVDj/242ur9ZG4HZDhSe1O/J4vEUboWDRBhg==";
+var ftpString = "U2FsdGVkX1+rqqElTHHvDyiA+eey3POQ+2mO5GxCYd4PLe24bh5cJP/IGsroRVpzglBvwwUQyybeirsA9He3/vzdkmtkK/UVZs+E8KluLqu2fDFU3jnSkS7eAfql+k0+kBDEU3MnxQbY6VBCcK9zug==";
 
 var uploadingFolder = "temp123";
 var password = "";
