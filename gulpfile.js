@@ -13,7 +13,6 @@ var jsArray = [
   './bower_components/lodash/lodash.min.js',
   './bower_components/typed.js/dist/typed.min.js',
   './bower_components/ng-dialog/js/ngDialog.min.js',
-
   // Common one
   './js/app.js',
   './js/controllers.js',
@@ -21,7 +20,7 @@ var jsArray = [
   './js/navigation.js',
 
   // do not remove this
-  './w/js/templates.js',
+  './w/js/templates.js'
 ];
 var replacehostFrom = "http://localhost/demo/";
 var replacehostTo = "http://tingdigital.in/";
