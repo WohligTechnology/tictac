@@ -897,5 +897,9 @@ a {
     background: url(https://s3.amazonaws.com/onepagelove/one-page-love-award-left.png) no-repeat;
   }
 }
+.main.social-icons a{
+  display: table-cell;
+  margin-bottom: 5px;
+}
 @import "main/animation";
 @import "main/mobile";
