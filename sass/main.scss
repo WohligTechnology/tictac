@@ -98,22 +98,22 @@ figure {
   margin: 0;
 }
 .star-bg {
-  background-image: url(../img/background/star.jpg);
+  background-image: url("../img/background/star.jpg");
   background-repeat: repeat;
   background-size: auto;
   overflow: hidden;
 }
 .halfstar-bg {
-  background-image: url(../img/background/halfstar.jpg);
+  background-image: url("../img/background/halfstar.jpg");
   background-repeat: repeat;
 }
 .road-bg {
-  background: url(../img/background/paper-road.png) no-repeat;
+  background: url("../img/background/paper-road.png") no-repeat;
   background-size: 100% 100%;
   min-height: 500px;
 }
 .letters-bg {
-  background: url(../img/background/letters.jpg) repeat;
+  background: url("../img/background/letters.jpg") repeat;
   background-size: cover;
   min-height: 400px;
 }
@@ -198,7 +198,6 @@ header.stickyheader {
 .padding {
   padding: 20px;
 }
-
 // .paper-bg {
 //     background: url(../img/background/paper-repeat.jpg) no-repeat;
 //     background-size: cover;
@@ -225,7 +224,7 @@ header.stickyheader {
   }
 }
 .ngdialog-overlay {
-  background: url(../img/background/Inside-popup-page-texture.jpg) no-repeat;
+  background: url("../img/background/Inside-popup-page-texture.jpg") no-repeat;
   background-size: cover;
   z-index: 1;
 }
@@ -613,7 +612,6 @@ header.stickyheader {
 .musical {
   position: relative;
   padding: 30px 0;
-
   //	margin-top: 50px;
   .cont-center {
     position: absolute;
@@ -680,7 +678,7 @@ header.stickyheader {
         img.ring {
           position: absolute;
           right: -5px;
-          bottom: 0px;
+          bottom: 0;
           width: 50px;
           z-index: 0;
         }
@@ -689,8 +687,7 @@ header.stickyheader {
         z-index: 4;
         position: relative;
         p {
-          margin: 0;
-          margin-top: 10px;
+          margin: 10px 0 0;
           text-align: right;
           color: #fff;
           a {
@@ -882,7 +879,7 @@ a {
   left: 0;
   z-index: 99999;
   text-indent: -9999px;
-  background: url(http://www.csslight.com/ribbons/small-csslight-ribbon-left.png) no-repeat;
+  background: url("http://www.csslight.com/ribbons/small-csslight-ribbon-left.png") no-repeat;
 }
 .opl {
   position: fixed;
@@ -894,12 +891,16 @@ a {
     height: 56px;
     text-indent: -9999px;
     display: block;
-    background: url(https://s3.amazonaws.com/onepagelove/one-page-love-award-left.png) no-repeat;
+    background: url("https://s3.amazonaws.com/onepagelove/one-page-love-award-left.png") no-repeat;
   }
 }
-.main.social-icons a{
+.main.social-icons a {
   display: table-cell;
   margin-bottom: 5px;
+}
+li.divider {
+  padding-left: 25px;
+  border-left: 1px solid #F6E730;
 }
 @import "main/animation";
 @import "main/mobile";
