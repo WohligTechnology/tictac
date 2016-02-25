@@ -58,7 +58,7 @@ var navigationservice = angular.module('navigationservice', ['ngDialog'])
     }, {
         name: "go back",
         active: "",
-        link: "http://ting.in/",
+        link: "http://tingdigital.com.au",
         classis: "active",
     }];
 
