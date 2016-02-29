@@ -46,6 +46,7 @@ var navigationservice = angular.module('navigationservice', ['ngDialog'])
         name: "hello",
         active: "",
         classis: "active",
+        anchor: "hello",
 
     }, {
         name: "go back",
