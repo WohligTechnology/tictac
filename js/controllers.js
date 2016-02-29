@@ -1,6 +1,6 @@
 angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'ngSanitize', 'ngDialog', 'duScroll'])
 
-.controller('HomeCtrl', function($scope, $state, TemplateService, NavigationService, $timeout, ngDialog, $location, $anchorScroll, $stateParams, $document) {
+.controller('HomeCtrl', function($scope, $state, TemplateService, NavigationService, $timeout, ngDialog, $stateParams, $document, $location) {
   //Used to name the .html file
 
 
