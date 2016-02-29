@@ -7,6 +7,7 @@ var jsArray = [
     './bower_components/lodash/lodash.min.js',
     './bower_components/typed.js/dist/typed.min.js',
     './bower_components/ng-dialog/js/ngDialog.min.js',
+    './bower_components/angular-scroll/angular-scroll.min.js',
 
     // Common one
     './js/app.js',
