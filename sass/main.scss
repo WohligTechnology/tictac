@@ -898,5 +898,12 @@ a {
   display: table-cell;
   margin-bottom: 5px;
 }
+.navbar-default .navbar-nav>.active>a {
+  background-color: $base-color;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #555;
+    background-color: #F6E730;
+}
 @import "main/animation";
 @import "main/mobile";

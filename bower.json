@@ -12,7 +12,7 @@
     "node_modules",
     "bower_components",
     "test",
-    
+
     "tests"
   ],
   "dependencies": {
@@ -34,6 +34,7 @@
     "ScrollMagic": "~2.0.5",
     "gsap": "https://github.com/greensock/GreenSock-JS.git#~1.18.0",
     "ng-dialog": "~0.5.5",
+    "angular-scroll": "^1.0.0",
     "jquery.smoothwheel": "https://github.com/fatlinesofcode/jquery.smoothwheel.git"
   }
 }
