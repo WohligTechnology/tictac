@@ -45,7 +45,7 @@ var navigationservice = angular.module('navigationservice', ['ngDialog'])
     }, {
         name: "hello",
         active: "",
-        classis: "active",
+        classis: "",
         anchor:"hello"
         // function:function () {
         //   // set the location.hash to the id of
