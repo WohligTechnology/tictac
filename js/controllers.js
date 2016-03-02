@@ -7,6 +7,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   TemplateService.title = $scope.menutitle;
   $scope.navigation = NavigationService.getnav();
   console.log($stateParams.id);
+
   function makeAnimation(id) {
     if (_.isEmpty(id)) {
       id = "home";
@@ -237,14 +238,11 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.filterWebsites(7);
   };
 
-  // $scope.gotoBottom = function () {
-  //
-  // 	var targetTo = $("#hello").offset().top
-  // 	$('html,body').animate({
-  // 		scrollTop: targetTo
-  // 	}, 1000);
-  //
-  // };
+  $scope.gotoBottom = function() {
+    $('html,body').animate({
+      scrollTop: $(document).height()
+    }, 1000);
+  };
   $scope.gotoTop = function() {
 
     $('html,body').animate({
