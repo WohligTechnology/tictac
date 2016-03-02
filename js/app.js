@@ -22,11 +22,6 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
       templateUrl: "views/template.html",
       controller: 'HomeCtrl'
     })
-    .state('homeid', {
-      url: "/:id",
-      templateUrl: "views/template.html",
-      controller: 'HomeCtrl'
-    })
     .state('feature', {
       url: "/feature",
       templateUrl: "views/template.html",
