@@ -49,9 +49,8 @@ var navigationservice = angular.module('navigationservice', ['ngDialog'])
         function:function () {
           // set the location.hash to the id of
           // the element you wish to scroll to.
-          var targetTo = $("#hello").offset().top
           $('html,body').animate({
-            scrollTop: targetTo
+            scrollTop: $(document).height()
           }, 1000);
 
         }

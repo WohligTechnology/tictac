@@ -212,11 +212,9 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     };
 
 		$scope.gotoBottom = function () {
-
-			var targetTo = $("#hello").offset().top
-			$('html,body').animate({
-				scrollTop: targetTo
-			}, 1000);
+      $('html,body').animate({
+        scrollTop: $(document).height()
+      }, 1000);
 
 		};
 		$scope.gotoTop = function () {
