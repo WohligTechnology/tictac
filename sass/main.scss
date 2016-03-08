@@ -22,6 +22,9 @@ img {
 img.doneLoading {
   opacity: 1;
 }
+body{
+  overflow-x: hidden;
+}
 p {
   font-size: 14px;
   font-family: $font-family;
