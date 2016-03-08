@@ -26,6 +26,12 @@ p {
   font-size: 14px;
   font-family: $font-family;
 }
+body{
+  overflow-x: hidden;
+}
+.section8{
+  overflow: hidden;
+}
 h1,
 h2,
 h3,
