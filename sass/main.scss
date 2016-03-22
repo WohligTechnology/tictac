@@ -796,5 +796,52 @@ figure {
     background: url("https://s3.amazonaws.com/onepagelove/one-page-love-award-left.png") no-repeat;
   }
 }
+.navbar-fixed-top.nav-bg {
+  position: fixed;
+  width: 100%;
+  background: $base-color;
+  border: 0;
+  height: 40px;
+  .logo {
+    font-size: 26px;
+    color: #191919;
+    padding: 10px 0 0 30px;
+    img {
+      float: left;
+      margin-right: 10px;
+      margin-top: -10px;
+      width: 90px;
+      padding-left: 0;
+    }
+  }
+  .template.menu {
+    text-align: center;
+    .navbar-nav {
+      float: none;
+      margin: 0 auto;
+      display: inline-block;
+      margin-left: -129px;
+      li {
+        a {
+          color: #191919;
+          font-size: 16px;
+          cursor: pointer;
+          position: relative;
+          padding: 15px 0;
+          &:hover span {
+            color: lighten(#191919, 20%);
+            text-decoration: underline;
+          }
+          span {
+            padding: 0 15px;
+            border-right: 1px solid #191919;
+            @include transition ( all 300ms ease);
+          }
+        }
+      }
+    }
+  }
+}
+
 @import "main/animation";
 @import "main/mobile";
