@@ -202,8 +202,23 @@
     }
   }
 }
-@media (min-width:767px) and (max-width:1024px)  {
+@media (min-width:767px) and (max-width:1024px) {
   .rotateMobile {
     display: none!important;
+  }
+  .musical .cont-center {
+    top: 34%;
+    left: 42%;
+  }
+  .blubs .conts .cont-center {
+    position: absolute;
+    width: 360px;
+    left: 55%;
+  }
+  .blubs .conts .cont-center h4,
+  .musical .cont-center h4 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-family: LW,sans-serif;
   }
 }
