@@ -1,205 +1,224 @@
 @media (max-width:992px) {
-    .projects {
-        margin: 20px 0;
+  .projects {
+    margin: 20px 0;
+  }
+  .box {
+    margin: 0 auto;
+    img {
+      width: 100%;
     }
-    .box {
-        margin: 0 auto;
-        img {
-            width: 100%;
-        }
-    }
+  }
 }
-
 @media (max-width:767px) {
-    .navbar-fixed-top.nav-bg {
-        height: auto;
+  .navbar-fixed-top.nav-bg {
+    height: auto;
+  }
+  .navbar-default .navbar-collapse {
+    padding: 0;
+    border-color: #e3aa00;
+    .navbar-nav {
+      display: block;
+      margin: 0;
+      li {
+        a {
+          text-align: center;
+          border-bottom: 1px solid #e3aa00;
+          span {
+            border-right: 0;
+          }
+        }
+      }
     }
-    .navbar-default .navbar-collapse {
-        padding: 0;
-        border-color: #e3aa00;
-        .navbar-nav {
-            display: block;
-            margin: 0;
-            li {
-                a {
-                    text-align: center;
-                    border-bottom: 1px solid #e3aa00;
-                    span {
-                        border-right: 0;
-                    }
-                }
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  .blubs .conts .cont-center {
+    position: absolute;
+    width: 48%;
+    left: 48%;
+  }
+  .section3 .road-bg.onroad .nav {
+    ul {
+      padding: 0;
+      li {
+        a {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .cont-center {
+    h4 {
+      font-size: 16px !important;
+      margin-bottom: 10px !important;
+    }
+  }
+  p {
+    font-size: 10px !important;
+    margin-bottom: 5px !important;
+  }
+  .btn {
+    padding: 3px 12px !important;
+  }
+  .letters-bg .type-writer .ios {
+    font-size: 14px;
+    h3 {
+      font-size: 14px!important;
+    }
+  }
+  .letters-bg .type-writer {
+    .cont-center p {
+      margin: 10px 0 !important;
+    }
+    .app-main .apps .cont-right {
+      width: 35%;
+      color: #fff;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-right: 0;
+      h4 {
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .musical .cont-center {
+    top: 40%;
+    left: 41%;
+  }
+  .navbar-fixed-top.nav-bg {
+    background: #f6e730;
+    border: 0;
+    z-index: 100;
+    .navbar-header {
+      button {
+        background: #f6e730 !important;
+        border-color: #e3aa00 !important;
+        span {
+          background-color: #e3aa00 !important;
+        }
+      }
+      .navbar-brand {
+        img {
+          float: left;
+          margin-left: 15px;
+          margin-top: -15px;
+          width: 90px;
+          padding-left: 0;
+        }
+      }
+      .navbar-nav {
+        text-align: center;
+        li > a {
+          color: #191919;
+          text-align: center;
+          &:hover {
+            color: darken(#191919, 20%);
+          }
+          li:first-child {
+            a {
+              border-left: 0px!important;
             }
+          }
         }
+        li+li {
+          border-top: 1px solid #e3aa00;
+        }
+      }
     }
-    footer {
+  }
+  @media (max-width:550px) {
+    .rotateMobile {
+      position: fixed;
+      z-index: 101;
+      top: 0;
+      bottom: 0;
+      background: #161616;
+      right: 0;
+      left: 0;
+      text-align: center;
+      img {
         position: absolute;
-        bottom: 0;
-        width: 100%;
+        top: 50%;
+        left: 50%;
+        @include transform(translate(-50%,-50%));
+        width: 70%;
+      }
     }
-    .blubs .conts .cont-center {
-        position: absolute;
-        width: 48%;
-        left: 48%;
-    }
-    .section3 .road-bg.onroad .nav {
-        ul {
-            padding: 0;
-            li {
-                a {
-                    font-size: 12px;
-                }
-            }
-        }
-    }
-    .cont-center {
-        h4 {
-            font-size: 16px !important;
-            margin-bottom: 10px !important;
-        }
+  }
+  @media (max-width:448px) {
+    .road-bg.onroad .nav ul li {
+      margin: 0;
     }
     p {
-        font-size: 10px !important;
-        margin-bottom: 5px !important;
-    }
-    .btn {
-        padding: 3px 12px !important;
-    }
-    .letters-bg .type-writer .ios {
-        font-size: 14px;
-        h3 {
-            font-size: 14px!important;
-        }
+      font-size: 6px !important;
     }
     .letters-bg .type-writer {
-        .cont-center p {
-            margin: 10px 0 !important;
+      .cont-center {
+        width: 80%;
+      }
+    }
+    .section3 .road-bg.onroad .nav {
+      ul li {
+        margin: 5px 0;
+        text-align: right;
+        a {
+          font-size: 8px;
         }
-        .app-main .apps .cont-right {
-            width: 35%;
-            color: #fff;
-            margin-top: 0;
-            margin-bottom: 0;
-            padding-right: 0;
-            h4 {
-                text-align: center;
-                font-size: 16px;
-                margin-bottom: 10px;
-            }
-        }
+      }
+      left: 15%;
+    }
+    .letters-bg .type-writer .cont-center p {
+      margin: 0 !important;
+      font-size: 6px !important;
+      line-height: 1;
+    }
+    .letters-bg .type-writer .ios {
+      h3 {
+        font-size: 8px!important;
+      }
+    }
+    .cont-center h4 {
+      font-size: 12px !important;
+      margin: 0 !important;
+    }
+    .btn {
+      padding: 2px 10px !important;
+      font-size: 8px;
+    }
+    .blubs .conts .cont-center {
+      position: absolute;
+      width: 48%;
+      left: 50%;
     }
     .musical .cont-center {
-        top: 40%;
-        left: 41%;
+      h4 {
+        font-size: 8px!important;
+      }
     }
-    .navbar-fixed-top.nav-bg {
-        background: #f6e730;
-        border: 0;
-        z-index: 100;
-        .navbar-header {
-            button {
-                background: #f6e730 !important;
-                border-color: #e3aa00 !important;
-                span {
-                    background-color: #e3aa00 !important;
-                }
-            }
-            .navbar-brand {
-                img {
-                    float: left;
-                    margin-left: 15px;
-                    margin-top: -15px;
-                    width: 90px;
-                    padding-left: 0;
-                }
-            }
-            .navbar-nav {
-                text-align: center;
-                li > a {
-                    color: #191919;
-                    text-align: center;
-                    &:hover {
-                        color: darken(#191919, 20%);
-                    }
-                    li:first-child {
-                        a {
-                            border-left: 0px!important;
-                        }
-                    }
-                }
-                li+li {
-                    border-top: 1px solid #e3aa00;
-                }
-            }
-        }
-    }
-    @media (max-width:550px) {
-        .rotateMobile {
-            position: fixed;
-            z-index: 101;
-            top: 0;
-            bottom: 0;
-            background: #161616;
-            right: 0;
-            left: 0;
-            text-align: center;
-            img{
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              @include transform(translate(-50%,-50%));
-              width: 70%;
-            }
-        }
-    }
-    @media (max-width:448px) {
-        .road-bg.onroad .nav ul li {
-            margin: 0px 0;
-        }
-        p {
-            font-size: 6px !important;
-        }
-        .letters-bg .type-writer {
-            .cont-center {
-                width: 80%;
-            }
-        }
-        .section3 .road-bg.onroad .nav {
-            ul li {
-                margin: 5px 0;
-                text-align: right;
-                a {
-                    font-size: 8px;
-                }
-            }
-            left: 15%;
-        }
-        .letters-bg .type-writer .cont-center p {
-            margin: 0 !important;
-            font-size: 6px !important;
-            line-height: 1;
-        }
-        .letters-bg .type-writer .ios {
-            h3 {
-                font-size: 8px!important;
-            }
-        }
-        .cont-center h4 {
-            font-size: 12px !important;
-            margin: 0 !important;
-        }
-        .btn {
-            padding: 2px 10px !important;
-            font-size: 8px;
-        }
-        .blubs .conts .cont-center {
-            position: absolute;
-            width: 48%;
-            left: 50%;
-        }
-        .musical .cont-center {
-            h4 {
-                font-size: 8px!important;
-            }
-        }
-    }
+  }
+}
+@media (min-width:767px) and (max-width:1024px) {
+  .rotateMobile {
+    display: none!important;
+  }
+  .musical .cont-center {
+    top: 34%;
+    left: 42%;
+  }
+  .blubs .conts .cont-center {
+    position: absolute;
+    width: 360px;
+    left: 55%;
+  }
+  .blubs .conts .cont-center h4,
+  .musical .cont-center h4 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-family: LW,sans-serif;
+  }
 }
