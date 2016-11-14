@@ -1,4 +1,5 @@
 /*Start writing sass here*/
+
 @import "../bower_components/ng-dialog/css/ngDialog.css";
 @import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
 @import "../bower_components/fontawesome/css/font-awesome.min.css";
@@ -6,26 +7,32 @@
 @include font-face("LW", "../fonts/LINOWRITE_2");
 $base-color: #f6e730;
 $bg-color: #fff;
-$font-family: "LW", sans-serif !default;
+$font-family: "LW",
+sans-serif !default;
 img.loading {
   text-align: center;
   opacity: 1;
   width: 32px !important;
   height: auto;
 }
+
 img {
   opacity: 0;
 }
+
 img.doneLoading {
   opacity: 1;
 }
+
 body {
   overflow-x: hidden;
 }
+
 p {
   font-size: 14px;
   font-family: $font-family;
 }
+
 h1,
 h2,
 h3,
@@ -35,6 +42,7 @@ h6 {
   font-family: $font-family;
   font-weight: 600;
 }
+
 .btn {
   display: inline-block;
   padding: 6px 12px;
@@ -65,17 +73,20 @@ h6 {
     color: lighten(#000, 30%)!important;
   }
 }
+
 .btn.active,
 .btn:active {
   outline: 0;
   box-shadow: none;
 }
+
 .btn:active:focus,
- {
+{
   outline: 0;
   outline: 0 auto -webkit-focus-ring-color;
   outline-offset: 0;
 }
+
 .btn.btn-white {
   color: #fff;
   border-color: #fff;
@@ -84,44 +95,55 @@ h6 {
     color: darken(#fff, 15%)!important;
   }
 }
+
 body {
   margin: 0;
   font-family: $font-family;
 }
+
 figure {
   margin: 0;
 }
+
 .star-bg {
   background-image: url("../img/background/star.jpg");
   background-repeat: repeat;
   background-size: auto;
   overflow: hidden;
 }
+
 .road-bg {
   background: url("../img/background/paper-road.png") no-repeat;
   background-size: 100% 100%;
   min-height: 700px;
 }
+
 .letters-bg {
   background: url("../img/background/letters.jpg") no-repeat;
   background-size: 100% 100%;
   min-height: 400px;
 }
+
 .pull-right {
   float: right;
 }
+
 .full-image {
   width: 100%;
 }
+
 .left-image {
   float: left;
 }
+
 .right-image {
   float: right;
 }
+
 .padding {
   padding: 20px;
 }
+
 //	.ngdialog-content {
 //		background: url("../img/background/paper-repeat.jpg") no-repeat;
 //		background-size: cover;
@@ -137,6 +159,7 @@ figure {
   width: 100%;
   z-index: 2;
 }
+
 .ngdialog-close {
   position: absolute;
   top: 15px;
@@ -155,25 +178,31 @@ figure {
     color: darken(#ddd, 10%);
   }
 }
+
 .ngdialog-content {
   background: 0 0;
   z-index: 2;
   position: relative;
 }
+
 .ngdialog-overlay {
   background: url("../img/background/Inside-popup-page-texture.jpg") no-repeat;
   background-size: cover;
   z-index: 1;
 }
+
 .text-center {
   text-align: center;
 }
+
 .margin-auto {
   margin: 0 auto;
 }
+
 .margin-bottom {
   margin-bottom: 10px;
 }
+
 .section1 {
   padding-top: 80px;
   position: relative;
@@ -207,12 +236,15 @@ figure {
     bottom: 0;
   }
 }
+
 .relative {
   position: relative;
 }
+
 .road-sofa {
   margin-top: 100px;
 }
+
 .buildings {
   z-index: 2;
   position: relative;
@@ -228,6 +260,7 @@ figure {
     }
   }
 }
+
 .road-bg.onroad {
   position: relative;
   overflow: hidden;
@@ -274,6 +307,7 @@ figure {
     left: 40%;
   }
 }
+
 .letters-bg {
   position: relative;
   .hands {
@@ -393,6 +427,7 @@ figure {
     }
   }
 }
+
 .black-white-lines {
   position: relative;
   .buregler1 {
@@ -423,6 +458,7 @@ figure {
     }
   }
 }
+
 .blubs {
   position: relative;
   .bulb-2 {
@@ -491,6 +527,7 @@ figure {
     }
   }
 }
+
 .musical {
   position: relative;
   background-color: #191919;
@@ -541,11 +578,12 @@ figure {
     z-index: 0;
   }
 }
+
 .contact {
   min-height: 700px;
   padding: 150px 0;
   .hello {
-    width: 60%;
+    width: 75%;
     margin: 0 auto;
     .ting-hello {
       position: relative;
@@ -597,6 +635,7 @@ figure {
     }
   }
 }
+
 .footer-bg {
   .paper-crush {
     img {
@@ -604,6 +643,7 @@ figure {
     }
   }
 }
+
 //type cusor css
 .typed-cursor {
   opacity: 1;
@@ -611,6 +651,7 @@ figure {
   -moz-animation: blink 0.7s infinite;
   animation: blink 0.7s infinite;
 }
+
 @keyframes blink {
   0% {
     opacity: 1;
@@ -622,6 +663,7 @@ figure {
     opacity: 1;
   }
 }
+
 @-webkit-keyframes blink {
   0% {
     opacity: 1;
@@ -633,6 +675,7 @@ figure {
     opacity: 1;
   }
 }
+
 @-moz-keyframes blink {
   0% {
     opacity: 1;
@@ -644,6 +687,7 @@ figure {
     opacity: 1;
   }
 }
+
 .row-flex {
   display: -webkit-box;
   display: -moz-box;
@@ -651,9 +695,11 @@ figure {
   display: -ms-flexbox;
   display: flex;
 }
+
 .flex-box {
   padding: 0 20px;
 }
+
 .col-flex {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
@@ -661,12 +707,15 @@ figure {
   -ms-flex: 1;
   flex: 1;
 }
+
 .min-height {
   min-height: 210px !important;
 }
+
 .projects {
   margin-bottom: 25px;
 }
+
 .head {
   min-height: 45px;
   margin: 30px 0;
@@ -693,6 +742,7 @@ figure {
     }
   }
 }
+
 .main {
   h4 {
     font-size: 16px;
@@ -700,6 +750,7 @@ figure {
     font-weight: 600;
   }
 }
+
 .arrow-down {
   border: 1px solid #000;
   height: 30px;
@@ -716,6 +767,7 @@ figure {
     font-size: 26px;
   }
 }
+
 .social-icons {
   margin: 5px 0 10px;
   i {
@@ -737,6 +789,7 @@ figure {
     }
   }
 }
+
 .box {
   position: relative;
   cursor: pointer;
@@ -745,13 +798,15 @@ figure {
     position: absolute;
     top: 50%;
     left: 50%;
-    @include transform(translate(-50%,-50%));
+    @include transform(translate(-50%,
+    -50%));
     i {
       font-size: 45px;
       color: #fff;
     }
   }
 }
+
 .section8 {
   position: relative;
   margin-top: -2px;
@@ -770,9 +825,11 @@ figure {
     }
   }
 }
+
 .main {
   height: 50px;
 }
+
 .css-light {
   width: 84px;
   height: 29px;
@@ -783,6 +840,7 @@ figure {
   text-indent: -9999px;
   background: url("http://www.csslight.com/ribbons/small-csslight-ribbon-left.png") no-repeat;
 }
+
 .opl {
   position: fixed;
   top: 100px;
@@ -796,6 +854,7 @@ figure {
     background: url("https://s3.amazonaws.com/onepagelove/one-page-love-award-left.png") no-repeat;
   }
 }
+
 .navbar-fixed-top.nav-bg {
   position: fixed;
   width: 100%;
