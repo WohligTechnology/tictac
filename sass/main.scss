@@ -903,5 +903,17 @@ a {
     background: url(https://s3.amazonaws.com/onepagelove/one-page-love-award-left.png) no-repeat;
   }
 }
+.msg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+      @include transform(translate(-50%,-50%));
+}
+.App{
+  .ngdialog-content {
+
+    height: 100%;
+}
+}
 @import "main/animation";
 @import "main/mobile";

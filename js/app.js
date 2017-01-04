@@ -50,7 +50,20 @@ firstapp.directive('typedJs', function ($document) {
 		}
 	}
 });
-
+firstapp.directive('autoHeight', function($compile, $parse) {
+    return {
+        restrict: 'EA',
+        replace: false,
+        link: function($scope, element, attrs) {
+            var $element = $(element);
+            var windowHeight = $(window).height();
+            var addHeight = function() {
+                $element.css("min-height", windowHeight);
+            };
+            addHeight();
+        }
+    };
+});
 firstapp.directive('loadingText', function ($document) {
 	return {
 		restrict: 'EA',

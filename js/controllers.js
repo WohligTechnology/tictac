@@ -188,6 +188,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 	$scope.showVideos = function () {
 		ngDialog.open({
 			scope: $scope,
+			  className: 'App',
 			template: 'views/content/modal-videos.html'
 		});
 	};
@@ -195,6 +196,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 	$scope.showMarketing = function () {
 		ngDialog.open({
 			scope: $scope,
+			  className: 'App',
 			template: 'views/content/modal-digitalmarketing.html'
 		});
 	};
@@ -202,6 +204,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 	$scope.showApp = function () {
 		ngDialog.open({
 			scope: $scope,
+			  className: 'App',
 			template: 'views/content/modal-app.html'
 		});
 	};
