@@ -4,7 +4,9 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 	//Used to name the .html file
 
 
-	$scope.sec8css = {height:Section8Height};
+	$scope.sec8css = {
+		height: Section8Height
+	};
 	$scope.template = TemplateService.changecontent("home");
 	$scope.menutitle = NavigationService.makeactive("Home");
 	TemplateService.title = $scope.menutitle;
@@ -174,21 +176,21 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 	// }];
 
 	// $scope.videos = [{
-	//     title: 'travelibro',
-	//     img: 'img/videos/1.jpg'
+	// 	title: 'travelibro',
+	// 	img: 'img/videos/1.jpg'
 	// }, {
-	//     title: 'lifpix',
-	//     img: 'img/videos/2.jpg'
+	// 	title: 'lifpix',
+	// 	img: 'img/videos/2.jpg'
 	// }, {
-	//     title: 'alacris preschool',
-	//     img: 'img/videos/3.jpg'
+	// 	title: 'alacris preschool',
+	// 	img: 'img/videos/3.jpg'
 	// }];
 
 
 	$scope.showVideos = function () {
 		ngDialog.open({
 			scope: $scope,
-			  className: 'App',
+			className: 'App',
 			template: 'views/content/modal-videos.html'
 		});
 	};
@@ -196,7 +198,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 	$scope.showMarketing = function () {
 		ngDialog.open({
 			scope: $scope,
-			  className: 'App',
+			className: 'App',
 			template: 'views/content/modal-digitalmarketing.html'
 		});
 	};
@@ -204,7 +206,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 	$scope.showApp = function () {
 		ngDialog.open({
 			scope: $scope,
-			  className: 'App',
+			className: 'App',
 			template: 'views/content/modal-app.html'
 		});
 	};
@@ -217,9 +219,9 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 	};
 
 	$scope.gotoBottom = function () {
-    $('html,body').animate({
-      scrollTop: $(document).height()
-    }, 1000);
+		$('html,body').animate({
+			scrollTop: $(document).height()
+		}, 1000);
 	};
 	$scope.gotoTop = function () {
 
