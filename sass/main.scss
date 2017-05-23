@@ -251,7 +251,7 @@ header.stickyheader {
   height: 30px;
   width: 30px;
   padding: 0 6px;
-  line-height: 1;
+  line-height: 0.9;
   z-index: 2;
   &:hover {
     background: lighten(#000, 10%);
@@ -845,7 +845,7 @@ header.stickyheader {
   .radio-website {
     padding: 17px 0;
     input[type="radio"] {
-      margin-left: 20px;
+      margin-left: -15px;
       &:focus {
         outline: thin dotted;
         outline: 0 auto -webkit-focus-ring-color;
