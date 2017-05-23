@@ -2,13 +2,32 @@
     <div class="website container">
         <div class="head">
             <h2 class="margin-less">Website</h2>
-            <form class="radio-website">
-                <input type="radio" name="type" value="7" ng-model="filterid" ng-click="filterWebsites(7)"> all
+                          <form class="radio-website">
+                <label class="radio-inline" ng-click="filterWebsites(7)">
+                <input type="radio" name="type" value="7" ng-model="filterid">all
+                </label>
+                            <label class="radio-inline" ng-click="filterWebsites(1)">
+                <input type="radio" name="type" value="1" ng-model="filterid">static
+                </label>
+                            <label class="radio-inline" ng-click="filterWebsites(2)">
+                <input type="radio" name="type" value="2" ng-model="filterid">ecom
+                </label>
+                            <label class="radio-inline" ng-click="filterWebsites(3)">
+                <input type="radio" name="type" value="3" ng-model="filterid">cms
+                </label>
+                            <label class="radio-inline" ng-click="filterWebsites(4)">
+                <input type="radio" name="type" value="4" ng-model="filterid">portal
+                </label>
+                            <label class="radio-inline" ng-click="filterWebsites(5)">
+                <input type="radio" name="type" value="5" ng-model="filterid">responsive
+                </label>
+
+                <!--<input type="radio" name="type" value="7" ng-model="filterid" ng-click="filterWebsites(7)"> <label for="">all</label>
                 <input type="radio" name="type" value="1" ng-model="filterid" ng-click="filterWebsites(1)"> static
                 <input type="radio" name="type" value="2" ng-model="filterid" ng-click="filterWebsites(2)"> ecom
                 <input type="radio" name="type" value="3" ng-model="filterid" ng-click="filterWebsites(3)"> cms
                 <input type="radio" name="type" value="4" ng-model="filterid" ng-click="filterWebsites(4)"> portal
-                <input type="radio" name="type" value="5" ng-model="filterid" ng-click="filterWebsites(5)"> responsive
+                <input type="radio" name="type" value="5" ng-model="filterid" ng-click="filterWebsites(5)"> responsive-->
             </form>
         </div>
         <div class="row">
