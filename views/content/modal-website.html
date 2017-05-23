@@ -14,17 +14,16 @@
         <div class="row">
             <div class="col-sm-3 col-xs-6" ng-repeat="items in website">
                 <div class="projects">
-                   <a href="{{items.link|extlink}}" target="_blank">
-          						<div class="box">
-          							<img src="{{items.image | serverimage}}" class="full-image">
-          						</div>
-          						<div class="main">
-          							<h4 class="text-center">{{items.title}}</h4>
-          						</div>
-                   </a>
+                    <a href="{{items.link|extlink}}" target="_blank">
+                        <div class="box">
+                            <img src="{{items.image | serverimage}}" class="full-image">
+                        </div>
+                        <div class="main">
+                            <h4 class="text-center">{{items.title}}</h4>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
-
     </div>
 </div>
